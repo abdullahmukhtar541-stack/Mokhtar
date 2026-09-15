@@ -1,2591 +1,5905 @@
 <!DOCTYPE html>
 <html lang="ps" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
 
-<title>عبدالله مختار | Personal Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="د عبدالله مختار شخصي مسلکي Portfolio ویب‌سایټ.">
-<meta name="author" content="عبدالله مختار">
-<meta name="theme-color" content="#0b0f19">
+  <title>عبدالله مختار | شخصي ویب سایټ</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta
+    name="description"
+    content="د عبدالله مختار شخصي ویب سایټ — د ویب سیستمونو جوړونکی، د ټکنالوژۍ مینه‌وال او د اداري او مالي سیستمونو علاقه‌مند."
+  >
 
-<style>
-:root{
-    --bg:#070a11;
-    --bg2:#0c111c;
-    --card:#101621;
-    --card2:#131b28;
-    --text:#f8fafc;
-    --muted:#94a3b8;
-    --line:rgba(255,255,255,.09);
-    --accent:#19c37d;
-    --accent2:#27e89b;
-    --blue:#3b82f6;
-    --gold:#f5b942;
-    --danger:#ef4444;
-    --shadow:0 25px 80px rgba(0,0,0,.35);
-}
+  <meta
+    name="keywords"
+    content="عبدالله مختار, ویب ډیزاین, ویب سیستم, پښتو ویب سایټ, افغانستان, کلات, زابل, حسابداري سیستم"
+  >
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+  <meta name="author" content="عبدالله مختار">
+  <meta name="theme-color" content="#07111f">
 
-html{
-    scroll-behavior:smooth;
-}
+  <meta property="og:title" content="عبدالله مختار | شخصي ویب سایټ">
+  <meta
+    property="og:description"
+    content="د عبدالله مختار شخصي ویب سایټ او پروژې"
+  >
+  <meta
+    property="og:image"
+    content="https://i.ibb.co/C566gpXN/IMG-20260303-WA0121.jpg"
+  >
+  <meta property="og:type" content="website">
 
-body{
-    font-family:"Noto Naskh Arabic",Tahoma,sans-serif;
-    background:
-        radial-gradient(circle at 15% 10%,rgba(25,195,125,.09),transparent 28%),
-        radial-gradient(circle at 85% 30%,rgba(59,130,246,.08),transparent 25%),
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="عبدالله مختار">
+  <meta
+    name="twitter:description"
+    content="د عبدالله مختار شخصي ویب سایټ"
+  >
+  <meta
+    name="twitter:image"
+    content="https://i.ibb.co/C566gpXN/IMG-20260303-WA0121.jpg"
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3A%3C/text%3E%3C/svg%3E"
+  >
+
+  <style>
+    /* =========================================================
+       ROOT
+    ========================================================= */
+
+    :root {
+      --bg: #050914;
+      --bg-soft: #08111f;
+      --card: rgba(13, 23, 39, 0.76);
+      --card-solid: #0d1727;
+      --card-light: #111d30;
+
+      --text: #f8fafc;
+      --text-soft: #dbe4ef;
+      --muted: #91a0b5;
+
+      --line: rgba(255,255,255,.09);
+      --line-strong: rgba(255,255,255,.16);
+
+      --primary: #18c783;
+      --primary-light: #36e89d;
+      --primary-dark: #0d9e68;
+
+      --blue: #3b82f6;
+      --purple: #8b5cf6;
+      --gold: #f5b942;
+      --danger: #ef4444;
+
+      --shadow:
+        0 25px 70px rgba(0,0,0,.35);
+
+      --shadow-small:
+        0 10px 35px rgba(0,0,0,.22);
+
+      --radius: 24px;
+      --radius-small: 16px;
+
+      --container: 1180px;
+
+      --header-height: 78px;
+    }
+
+    /* LIGHT MODE */
+
+    body.light {
+      --bg: #f4f8fb;
+      --bg-soft: #eaf1f7;
+
+      --card: rgba(255,255,255,.82);
+      --card-solid: #ffffff;
+      --card-light: #f8fbff;
+
+      --text: #102033;
+      --text-soft: #334155;
+      --muted: #64748b;
+
+      --line: rgba(15,23,42,.09);
+      --line-strong: rgba(15,23,42,.15);
+
+      --shadow:
+        0 25px 70px rgba(15,23,42,.10);
+
+      --shadow-small:
+        0 10px 35px rgba(15,23,42,.08);
+    }
+
+    /* =========================================================
+       RESET
+    ========================================================= */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      font-family: "Noto Naskh Arabic", Tahoma, Arial, sans-serif;
+      background:
+        radial-gradient(
+          circle at 15% 10%,
+          rgba(24,199,131,.08),
+          transparent 28%
+        ),
+        radial-gradient(
+          circle at 90% 30%,
+          rgba(59,130,246,.08),
+          transparent 30%
+        ),
         var(--bg);
-    color:var(--text);
-    line-height:1.8;
-    overflow-x:hidden;
-}
 
-body::before{
-    content:"";
-    position:fixed;
-    inset:0;
-    pointer-events:none;
-    z-index:-1;
-    background:
-        linear-gradient(rgba(7,10,17,.92),rgba(7,10,17,.96)),
-        url("https://i.ibb.co/jv0C0ks4/Chat-GPT-Image-Jul-13-2026-03-52-32-PM.png")
-        center/cover no-repeat;
-}
+      color: var(--text);
 
-a{
-    color:inherit;
-    text-decoration:none;
-}
+      min-height: 100vh;
 
-button,
-input,
-select{
-    font-family:inherit;
-}
+      line-height: 1.9;
 
-.container{
-    width:min(1180px,92%);
-    margin:auto;
-}
+      overflow-x: hidden;
 
-/* ================= HEADER ================= */
-
-header{
-    position:fixed;
-    top:0;
-    right:0;
-    left:0;
-    z-index:9999;
-    background:rgba(7,10,17,.78);
-    backdrop-filter:blur(20px);
-    border-bottom:1px solid var(--line);
-}
-
-.nav{
-    min-height:76px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:25px;
-}
-
-.logo{
-    font-size:1.45rem;
-    font-weight:800;
-    white-space:nowrap;
-}
-
-.logo span{
-    color:var(--accent);
-}
-
-.nav-links{
-    display:flex;
-    align-items:center;
-    gap:25px;
-    list-style:none;
-}
-
-.nav-links a{
-    color:#cbd5e1;
-    font-weight:700;
-    transition:.3s;
-}
-
-.nav-links a:hover{
-    color:var(--accent2);
-}
-
-.nav-actions{
-    display:flex;
-    align-items:center;
-    gap:10px;
-}
-
-.online{
-    display:flex;
-    align-items:center;
-    gap:7px;
-    color:#86efac;
-    font-size:.88rem;
-}
-
-.dot{
-    width:8px;
-    height:8px;
-    border-radius:50%;
-    background:#22c55e;
-    box-shadow:0 0 15px #22c55e;
-}
-
-.menu-btn{
-    display:none;
-    border:1px solid var(--line);
-    background:var(--card);
-    color:white;
-    padding:8px 12px;
-    border-radius:10px;
-    cursor:pointer;
-}
-
-/* ================= HERO ================= */
-
-.hero{
-    min-height:100vh;
-    padding-top:130px;
-    display:grid;
-    grid-template-columns:1.1fr .9fr;
-    align-items:center;
-    gap:70px;
-}
-
-.hero-content{
-    max-width:720px;
-}
-
-.small-label{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    color:var(--accent2);
-    border:1px solid rgba(25,195,125,.25);
-    background:rgba(25,195,125,.07);
-    padding:6px 15px;
-    border-radius:50px;
-    font-weight:700;
-    margin-bottom:22px;
-}
-
-.hero h1{
-    font-size:clamp(2.6rem,6vw,5rem);
-    line-height:1.18;
-    margin-bottom:20px;
-    font-weight:800;
-}
-
-.hero h1 span{
-    color:var(--accent);
-}
-
-.hero h2{
-    font-size:1.35rem;
-    color:#dbe4ee;
-    margin-bottom:20px;
-}
-
-.hero p{
-    color:var(--muted);
-    font-size:1.05rem;
-    max-width:680px;
-}
-
-.location{
-    margin-top:18px;
-    color:#93c5fd;
-    font-weight:700;
-}
-
-.hero-buttons{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
-    margin-top:28px;
-}
-
-.btn{
-    border:0;
-    cursor:pointer;
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    gap:8px;
-    padding:12px 21px;
-    border-radius:12px;
-    font-weight:800;
-    transition:.3s;
-}
-
-.btn:hover{
-    transform:translateY(-3px);
-}
-
-.btn-primary{
-    background:var(--accent);
-    color:#04120b;
-    box-shadow:0 15px 35px rgba(25,195,125,.2);
-}
-
-.btn-secondary{
-    border:1px solid var(--line);
-    background:rgba(255,255,255,.04);
-    color:white;
-}
-
-.hero-image{
-    display:flex;
-    justify-content:center;
-}
-
-.profile-wrap{
-    width:min(390px,80vw);
-    aspect-ratio:1;
-    position:relative;
-}
-
-.profile-wrap::before{
-    content:"";
-    position:absolute;
-    inset:-25px;
-    border:1px solid rgba(25,195,125,.15);
-    border-radius:50%;
-    animation:rotate 18s linear infinite;
-}
-
-.profile-wrap::after{
-    content:"";
-    position:absolute;
-    inset:12px;
-    border:1px dashed rgba(59,130,246,.3);
-    border-radius:50%;
-}
-
-.profile{
-    position:relative;
-    z-index:2;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    border-radius:50%;
-    border:8px solid #111925;
-    box-shadow:
-        0 0 0 2px rgba(25,195,125,.4),
-        0 25px 80px rgba(0,0,0,.6);
-}
-
-@keyframes rotate{
-    from{transform:rotate(0)}
-    to{transform:rotate(360deg)}
-}
-
-/* ================= GENERAL ================= */
-
-section{
-    scroll-margin-top:100px;
-}
-
-.section{
-    padding:100px 0 0;
-}
-
-.section-heading{
-    max-width:720px;
-    margin:0 auto 45px;
-    text-align:center;
-}
-
-.section-heading .eyebrow{
-    color:var(--accent);
-    font-weight:800;
-}
-
-.section-heading h2{
-    font-size:2.35rem;
-    margin:7px 0;
-}
-
-.section-heading p{
-    color:var(--muted);
-}
-
-/* ================= STATS ================= */
-
-.stats{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:15px;
-}
-
-.stat{
-    padding:25px;
-    text-align:center;
-    background:rgba(16,22,33,.82);
-    border:1px solid var(--line);
-    border-radius:18px;
-}
-
-.stat strong{
-    display:block;
-    font-size:2rem;
-    color:var(--accent);
-}
-
-.stat span{
-    color:var(--muted);
-}
-
-/* ================= ABOUT ================= */
-
-.about-grid{
-    display:grid;
-    grid-template-columns:1.1fr .9fr;
-    gap:25px;
-}
-
-.about-card,
-.info-card,
-.project-card,
-.contact-card,
-.live-card,
-.converter{
-    background:rgba(16,22,33,.82);
-    border:1px solid var(--line);
-    border-radius:20px;
-    box-shadow:var(--shadow);
-}
-
-.about-card{
-    padding:32px;
-}
-
-.about-card h3{
-    font-size:1.5rem;
-    margin-bottom:12px;
-}
-
-.about-card p{
-    color:var(--muted);
-    line-height:2;
-}
-
-.info-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:15px;
-}
-
-.info-card{
-    padding:24px;
-}
-
-.info-card .icon{
-    font-size:2rem;
-}
-
-.info-card h3{
-    color:var(--accent2);
-    margin:5px 0;
-}
-
-.info-card p{
-    color:var(--muted);
-    font-size:.94rem;
-}
-
-/* ================= SKILLS ================= */
-
-.skills{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:15px;
-}
-
-.skill{
-    padding:24px;
-    text-align:center;
-    background:var(--card);
-    border:1px solid var(--line);
-    border-radius:18px;
-    transition:.3s;
-}
-
-.skill:hover{
-    transform:translateY(-7px);
-    border-color:rgba(25,195,125,.45);
-}
-
-.skill-icon{
-    font-size:2.2rem;
-}
-
-.skill h3{
-    margin-top:7px;
-}
-
-.skill p{
-    color:var(--muted);
-    font-size:.9rem;
-}
-
-/* ================= PROJECTS ================= */
-
-.projects{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
-}
-
-.project-card{
-    overflow:hidden;
-    transition:.35s;
-}
-
-.project-card:hover{
-    transform:translateY(-8px);
-    border-color:rgba(25,195,125,.35);
-}
-
-.project-image{
-    height:210px;
-    overflow:hidden;
-}
-
-.project-image img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    transition:.5s;
-}
-
-.project-card:hover img{
-    transform:scale(1.06);
-}
-
-.project-body{
-    padding:22px;
-}
-
-.project-tag{
-    color:var(--accent);
-    font-size:.85rem;
-    font-weight:800;
-}
-
-.project-body h3{
-    margin:5px 0;
-}
-
-.project-body p{
-    color:var(--muted);
-    font-size:.92rem;
-}
-
-.project-link{
-    display:inline-block;
-    margin-top:12px;
-    color:var(--accent2);
-    font-weight:800;
-}
-
-/* ================= LIVE ================= */
-
-.live-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:20px;
-}
-
-.live-card{
-    padding:28px;
-    overflow:hidden;
-    position:relative;
-}
-
-.live-card::before{
-    content:"";
-    position:absolute;
-    top:0;
-    right:0;
-    left:0;
-    height:3px;
-    background:linear-gradient(90deg,var(--accent),var(--blue));
-}
-
-.card-head{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:20px;
-}
-
-.card-head span{
-    color:var(--accent);
-    font-size:.85rem;
-}
-
-.clock{
-    text-align:center;
-    padding:15px;
-}
-
-.clock-time{
-    direction:ltr;
-    font-family:Arial,sans-serif;
-    font-size:clamp(3.2rem,6vw,5rem);
-    font-weight:800;
-    letter-spacing:3px;
-}
-
-.clock-ampm{
-    color:var(--accent);
-    font-weight:800;
-    font-size:1.1rem;
-}
-
-.clock-date{
-    color:var(--muted);
-    margin-top:6px;
-}
-
-.weather-main{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-}
-
-.temperature{
-    font-size:3.2rem;
-    font-weight:800;
-}
-
-.weather-icon{
-    font-size:4rem;
-}
-
-.weather-details{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:10px;
-    margin-top:20px;
-}
-
-.weather-detail{
-    padding:12px;
-    border:1px solid var(--line);
-    background:rgba(255,255,255,.03);
-    border-radius:12px;
-    color:#cbd5e1;
-}
-
-/* ================= CURRENCY ================= */
-
-.currency-grid{
-    display:grid;
-    grid-template-columns:repeat(6,1fr);
-    gap:12px;
-}
-
-.currency-card{
-    padding:20px 10px;
-    text-align:center;
-    background:var(--card);
-    border:1px solid var(--line);
-    border-radius:17px;
-    transition:.3s;
-}
-
-.currency-card:hover{
-    transform:translateY(-5px);
-    border-color:rgba(25,195,125,.4);
-}
-
-.flag{
-    font-size:2rem;
-}
-
-.currency-name{
-    font-weight:800;
-    margin:5px 0;
-    font-size:.9rem;
-}
-
-.rate{
-    color:#86efac;
-    font-weight:800;
-}
-
-.rate-small{
-    color:var(--muted);
-    font-size:.75rem;
-}
-
-.converter{
-    margin-top:20px;
-    padding:28px;
-}
-
-.converter-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    gap:15px;
-}
-
-.input-group label{
-    display:block;
-    color:#cbd5e1;
-    margin-bottom:6px;
-    font-weight:700;
-}
-
-.input-group input,
-.input-group select{
-    width:100%;
-    background:#080d16;
-    color:white;
-    border:1px solid #263246;
-    border-radius:11px;
-    padding:13px;
-    outline:none;
-}
-
-.input-group input:focus,
-.input-group select:focus{
-    border-color:var(--accent);
-}
-
-.convert-result{
-    margin-top:18px;
-    text-align:center;
-    padding:14px;
-    background:rgba(25,195,125,.08);
-    border:1px solid rgba(25,195,125,.2);
-    border-radius:12px;
-    color:#86efac;
-    font-weight:800;
-}
-
-/* ================= GALLERY ================= */
-
-.gallery-top{
-    text-align:center;
-}
-
-.gallery-grid{
-    display:none;
-    grid-template-columns:repeat(4,1fr);
-    gap:15px;
-    margin-top:25px;
-}
-
-.gallery-grid.show{
-    display:grid;
-}
-
-.gallery-item{
-    position:relative;
-    height:245px;
-    overflow:hidden;
-    border-radius:16px;
-    border:1px solid var(--line);
-    background:#111827;
-    cursor:pointer;
-}
-
-.gallery-item img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    transition:.5s;
-}
-
-.gallery-item:hover img{
-    transform:scale(1.08);
-}
-
-.gallery-item::after{
-    content:"🔍";
-    position:absolute;
-    inset:0;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:rgba(0,0,0,.35);
-    opacity:0;
-    transition:.3s;
-    font-size:2rem;
-}
-
-.gallery-item:hover::after{
-    opacity:1;
-}
-
-.download-btn{
-    position:absolute;
-    z-index:5;
-    bottom:10px;
-    left:10px;
-    padding:6px 11px;
-    border-radius:9px;
-    background:rgba(0,0,0,.85);
-    color:white;
-    font-size:.8rem;
-    font-weight:800;
-}
-
-.gallery-count{
-    color:var(--muted);
-    margin-top:12px;
-}
-
-/* ================= CONTACT ================= */
-
-.contact-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:18px;
-}
-
-.contact-card{
-    padding:30px;
-    text-align:center;
-}
-
-.contact-icon{
-    font-size:2.5rem;
-}
-
-.contact-card h3{
-    color:var(--accent);
-    margin:5px 0;
-}
-
-.contact-card p,
-.contact-card a{
-    color:#cbd5e1;
-    font-weight:700;
-}
-
-.contact-card a:hover{
-    color:var(--accent2);
-}
-
-/* ================= VISITOR ================= */
-
-.visitor-panel{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:15px;
-}
-
-.visitor-box{
-    padding:25px;
-    text-align:center;
-    background:var(--card);
-    border:1px solid var(--line);
-    border-radius:18px;
-}
-
-.visitor-number{
-    color:var(--accent);
-    font-size:2rem;
-    font-weight:800;
-}
-
-/* ================= MODAL ================= */
-
-.modal{
-    display:none;
-    position:fixed;
-    inset:0;
-    z-index:20000;
-    align-items:center;
-    justify-content:center;
-    padding:20px;
-    background:rgba(0,0,0,.93);
-    backdrop-filter:blur(10px);
-}
-
-.modal.show{
-    display:flex;
-}
-
-.modal-content{
-    max-width:950px;
-    width:100%;
-    text-align:center;
-}
-
-.modal-content img{
-    max-width:100%;
-    max-height:75vh;
-    border-radius:15px;
-    border:2px solid var(--accent);
-}
-
-.modal-actions{
-    margin-top:15px;
-}
-
-.modal-download{
-    display:inline-block;
-    padding:10px 20px;
-    background:var(--accent);
-    color:#04120b;
-    border-radius:10px;
-    font-weight:800;
-}
-
-.close{
-    position:fixed;
-    top:15px;
-    left:25px;
-    color:white;
-    font-size:3rem;
-    cursor:pointer;
-}
-
-/* ================= FOOTER ================= */
-
-footer{
-    margin-top:100px;
-    padding:45px 20px;
-    text-align:center;
-    border-top:1px solid var(--line);
-    background:#050810;
-}
-
-.footer-name{
-    color:var(--accent);
-    font-weight:800;
-}
-
-footer p{
-    color:var(--muted);
-}
-
-/* ================= MOBILE MENU ================= */
-
-.mobile-menu{
-    display:none;
-    position:absolute;
-    top:76px;
-    right:0;
-    left:0;
-    padding:20px;
-    background:#0a0f18;
-    border-bottom:1px solid var(--line);
-}
-
-.mobile-menu.show{
-    display:block;
-}
-
-.mobile-menu a{
-    display:block;
-    padding:10px;
-    border-bottom:1px solid var(--line);
-    color:#cbd5e1;
-}
-
-/* ================= RESPONSIVE ================= */
-
-@media(max-width:1050px){
-
-    .nav-links{
-        display:none;
+      transition:
+        background .3s ease,
+        color .3s ease;
     }
 
-    .menu-btn{
-        display:block;
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+
+      background-image:
+        linear-gradient(
+          rgba(255,255,255,.018) 1px,
+          transparent 1px
+        ),
+        linear-gradient(
+          90deg,
+          rgba(255,255,255,.018) 1px,
+          transparent 1px
+        );
+
+      background-size: 45px 45px;
+
+      pointer-events: none;
+
+      z-index: -3;
+
+      mask-image: linear-gradient(
+        to bottom,
+        black,
+        transparent 85%
+      );
     }
 
-    .hero{
-        gap:35px;
+    body::after {
+      content: "";
+
+      position: fixed;
+
+      width: 450px;
+      height: 450px;
+
+      border-radius: 50%;
+
+      background: rgba(24,199,131,.07);
+
+      filter: blur(100px);
+
+      top: -150px;
+      left: -150px;
+
+      pointer-events: none;
+
+      z-index: -2;
     }
 
-    .currency-grid{
-        grid-template-columns:repeat(3,1fr);
+    a {
+      color: inherit;
+      text-decoration: none;
     }
 
-    .gallery-grid{
-        grid-template-columns:repeat(3,1fr);
+    button,
+    input,
+    select {
+      font: inherit;
     }
 
-    .skills{
-        grid-template-columns:repeat(2,1fr);
-    }
-}
-
-@media(max-width:800px){
-
-    .hero{
-        grid-template-columns:1fr;
-        text-align:center;
-        padding-top:120px;
+    button {
+      cursor: pointer;
     }
 
-    .hero-content{
-        margin:auto;
+    img {
+      max-width: 100%;
+      display: block;
     }
 
-    .hero-buttons{
-        justify-content:center;
+    ::selection {
+      background: var(--primary);
+      color: #03130d;
     }
 
-    .hero-image{
-        order:-1;
+    /* =========================================================
+       LOADER
+    ========================================================= */
+
+    .loader {
+      position: fixed;
+      inset: 0;
+
+      background: var(--bg);
+
+      display: grid;
+      place-items: center;
+
+      z-index: 99999;
+
+      transition:
+        opacity .5s ease,
+        visibility .5s ease;
     }
 
-    .profile-wrap{
-        width:280px;
+    .loader.hide {
+      opacity: 0;
+      visibility: hidden;
     }
 
-    .stats{
-        grid-template-columns:1fr 1fr;
+    .loader-box {
+      text-align: center;
     }
 
-    .about-grid,
-    .live-grid{
-        grid-template-columns:1fr;
+    .loader-logo {
+      width: 70px;
+      height: 70px;
+
+      margin: auto auto 15px;
+
+      border-radius: 22px;
+
+      display: grid;
+      place-items: center;
+
+      font-size: 30px;
+      font-weight: 800;
+
+      color: #03130d;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--primary),
+          var(--primary-light)
+        );
+
+      box-shadow:
+        0 0 50px rgba(24,199,131,.25);
+
+      animation: loaderPulse 1.3s infinite;
     }
 
-    .projects{
-        grid-template-columns:1fr 1fr;
+    .loader-text {
+      color: var(--muted);
+      font-size: 14px;
     }
 
-    .contact-grid{
-        grid-template-columns:1fr;
+    @keyframes loaderPulse {
+      0%,100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.08);
+      }
     }
 
-    .converter-grid{
-        grid-template-columns:1fr;
+    /* =========================================================
+       SCROLL PROGRESS
+    ========================================================= */
+
+    .scroll-progress {
+      position: fixed;
+
+      top: 0;
+      right: 0;
+
+      width: 0%;
+      height: 3px;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--blue),
+          var(--primary),
+          var(--gold)
+        );
+
+      z-index: 10000;
     }
 
-    .gallery-grid{
-        grid-template-columns:1fr 1fr;
-    }
-}
+    /* =========================================================
+       CONTAINER
+    ========================================================= */
 
-@media(max-width:550px){
+    .container {
+      width: min(
+        calc(100% - 36px),
+        var(--container)
+      );
 
-    .container{
-        width:min(94%,500px);
-    }
-
-    .nav{
-        min-height:68px;
+      margin-inline: auto;
     }
 
-    .logo{
-        font-size:1.2rem;
+    /* =========================================================
+       HEADER
+    ========================================================= */
+
+    .header {
+      position: fixed;
+
+      top: 0;
+      right: 0;
+      left: 0;
+
+      height: var(--header-height);
+
+      z-index: 5000;
+
+      border-bottom: 1px solid transparent;
+
+      background: rgba(5,9,20,.68);
+
+      backdrop-filter: blur(20px);
+
+      transition:
+        background .3s ease,
+        border .3s ease,
+        box-shadow .3s ease;
     }
 
-    .online{
-        display:none;
+    body.light .header {
+      background: rgba(244,248,251,.75);
     }
 
-    .hero h1{
-        font-size:2.5rem;
+    .header.scrolled {
+      border-color: var(--line);
+
+      box-shadow:
+        0 12px 35px rgba(0,0,0,.12);
     }
 
-    .hero h2{
-        font-size:1.08rem;
+    .nav {
+      height: 100%;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 25px;
     }
 
-    .section{
-        padding-top:75px;
+    .brand {
+      display: flex;
+
+      align-items: center;
+
+      gap: 12px;
+
+      min-width: max-content;
     }
 
-    .section-heading h2{
-        font-size:1.9rem;
+    .brand-icon {
+      width: 46px;
+      height: 46px;
+
+      border-radius: 15px;
+
+      display: grid;
+      place-items: center;
+
+      font-size: 21px;
+      font-weight: 800;
+
+      color: #03130d;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--primary),
+          var(--primary-light)
+        );
+
+      box-shadow:
+        0 10px 30px rgba(24,199,131,.2);
     }
 
-    .stats{
-        grid-template-columns:1fr 1fr;
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+
+      line-height: 1.35;
     }
 
-    .about-grid{
-        grid-template-columns:1fr;
+    .brand-text strong {
+      font-size: 17px;
     }
 
-    .info-grid{
-        grid-template-columns:1fr;
+    .brand-text span {
+      color: var(--muted);
+      font-size: 11px;
     }
 
-    .skills{
-        grid-template-columns:1fr 1fr;
+    .nav-links {
+      display: flex;
+
+      align-items: center;
+
+      gap: 4px;
     }
 
-    .projects{
-        grid-template-columns:1fr;
+    .nav-links a {
+      position: relative;
+
+      padding: 9px 11px;
+
+      color: var(--muted);
+
+      font-size: 13px;
+
+      border-radius: 11px;
+
+      transition:
+        color .25s ease,
+        background .25s ease;
     }
 
-    .currency-grid{
-        grid-template-columns:1fr 1fr;
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--text);
+
+      background: rgba(255,255,255,.055);
     }
 
-    .gallery-grid{
-        grid-template-columns:1fr;
+    .nav-links a.active::after {
+      content: "";
+
+      position: absolute;
+
+      bottom: 2px;
+
+      right: 50%;
+
+      transform: translateX(50%);
+
+      width: 18px;
+      height: 2px;
+
+      border-radius: 99px;
+
+      background: var(--primary);
     }
 
-    .gallery-item{
-        height:280px;
+    .nav-actions {
+      display: flex;
+
+      align-items: center;
+
+      gap: 8px;
     }
 
-    .visitor-panel{
-        grid-template-columns:1fr;
+    .icon-btn {
+      width: 40px;
+      height: 40px;
+
+      border: 1px solid var(--line);
+
+      background: rgba(255,255,255,.035);
+
+      color: var(--text);
+
+      border-radius: 12px;
+
+      display: grid;
+      place-items: center;
+
+      transition: .25s ease;
     }
 
-    .weather-main{
-        align-items:center;
+    .icon-btn:hover {
+      border-color: rgba(24,199,131,.4);
+
+      transform: translateY(-2px);
+
+      background:
+        rgba(24,199,131,.08);
     }
 
-    .temperature{
-        font-size:2.5rem;
+    .mobile-menu {
+      display: none;
     }
-}
-</style>
+
+    /* =========================================================
+       HERO
+    ========================================================= */
+
+    .hero {
+      min-height: 100vh;
+
+      padding:
+        calc(var(--header-height) + 70px)
+        0
+        70px;
+
+      display: grid;
+
+      align-items: center;
+    }
+
+    .hero-grid {
+      display: grid;
+
+      grid-template-columns:
+        minmax(0, 1.12fr)
+        minmax(360px, .88fr);
+
+      gap: 70px;
+
+      align-items: center;
+    }
+
+    .hero-content {
+      animation:
+        heroText .9s ease both;
+    }
+
+    @keyframes heroText {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .eyebrow {
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 9px;
+
+      padding: 7px 13px;
+
+      border-radius: 99px;
+
+      border: 1px solid rgba(24,199,131,.22);
+
+      background:
+        rgba(24,199,131,.07);
+
+      color: var(--primary-light);
+
+      font-size: 13px;
+
+      margin-bottom: 20px;
+    }
+
+    .eyebrow-dot {
+      width: 8px;
+      height: 8px;
+
+      border-radius: 50%;
+
+      background: var(--primary);
+
+      box-shadow:
+        0 0 0 5px rgba(24,199,131,.09);
+
+      animation: onlinePulse 1.8s infinite;
+    }
+
+    @keyframes onlinePulse {
+      0%,100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: .45;
+      }
+    }
+
+    .hero h1 {
+      font-size:
+        clamp(38px, 5vw, 70px);
+
+      line-height: 1.2;
+
+      letter-spacing: -.8px;
+
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      background:
+        linear-gradient(
+          90deg,
+          var(--primary),
+          var(--primary-light),
+          #7dd3fc
+        );
+
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      color: transparent;
+    }
+
+    .hero-role {
+      min-height: 45px;
+
+      color: var(--text-soft);
+
+      font-size:
+        clamp(18px, 2.2vw, 25px);
+
+      font-weight: 700;
+
+      margin-bottom: 15px;
+    }
+
+    .hero-role span {
+      color: var(--primary-light);
+    }
+
+    .hero-description {
+      max-width: 680px;
+
+      color: var(--muted);
+
+      font-size: 16px;
+
+      line-height: 2.05;
+
+      margin-bottom: 23px;
+    }
+
+    .location {
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 8px;
+
+      color: var(--muted);
+
+      font-size: 13px;
+
+      margin-bottom: 25px;
+    }
+
+    .location-icon {
+      color: var(--primary);
+    }
+
+    .hero-buttons {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 11px;
+
+      margin-bottom: 28px;
+    }
+
+    .btn {
+      display: inline-flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      gap: 9px;
+
+      min-height: 47px;
+
+      padding:
+        9px 18px;
+
+      border-radius: 14px;
+
+      border: 1px solid var(--line);
+
+      font-size: 14px;
+
+      font-weight: 700;
+
+      transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease,
+        background .25s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    .btn-primary {
+      color: #03130d;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--primary),
+          var(--primary-light)
+        );
+
+      border-color: transparent;
+
+      box-shadow:
+        0 12px 35px rgba(24,199,131,.18);
+    }
+
+    .btn-primary:hover {
+      box-shadow:
+        0 18px 45px rgba(24,199,131,.27);
+    }
+
+    .btn-outline {
+      color: var(--text);
+
+      background:
+        rgba(255,255,255,.035);
+    }
+
+    .btn-outline:hover {
+      border-color:
+        rgba(24,199,131,.35);
+
+      background:
+        rgba(24,199,131,.06);
+    }
+
+    .hero-mini {
+      display: flex;
+
+      align-items: center;
+
+      flex-wrap: wrap;
+
+      gap: 12px;
+    }
+
+    .mini-status {
+      display: flex;
+
+      align-items: center;
+
+      gap: 8px;
+
+      padding: 8px 12px;
+
+      border: 1px solid var(--line);
+
+      border-radius: 12px;
+
+      background:
+        rgba(255,255,255,.025);
+
+      color: var(--muted);
+
+      font-size: 12px;
+    }
+
+    .mini-status strong {
+      color: var(--text);
+    }
+
+    /* HERO IMAGE */
+
+    .hero-visual {
+      position: relative;
+
+      min-height: 510px;
+
+      display: grid;
+
+      place-items: center;
+
+      animation:
+        heroVisual .9s .15s ease both;
+    }
+
+    @keyframes heroVisual {
+      from {
+        opacity: 0;
+        transform: scale(.94) translateY(25px);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    .hero-orb {
+      position: absolute;
+
+      width: 390px;
+      height: 390px;
+
+      border-radius: 50%;
+
+      background:
+        radial-gradient(
+          circle,
+          rgba(24,199,131,.22),
+          rgba(59,130,246,.08) 45%,
+          transparent 70%
+        );
+
+      filter: blur(10px);
+
+      animation:
+        floatOrb 6s ease-in-out infinite;
+    }
+
+    @keyframes floatOrb {
+      0%,100% {
+        transform: translateY(0) scale(1);
+      }
+
+      50% {
+        transform: translateY(-18px) scale(1.04);
+      }
+    }
+
+    .profile-ring {
+      position: relative;
+
+      width:
+        clamp(270px, 34vw, 400px);
+
+      aspect-ratio: 1;
+
+      padding: 9px;
+
+      border-radius: 50%;
+
+      background:
+        conic-gradient(
+          from 0deg,
+          var(--primary),
+          var(--blue),
+          var(--purple),
+          var(--gold),
+          var(--primary)
+        );
+
+      box-shadow:
+        0 30px 90px rgba(0,0,0,.35),
+        0 0 70px rgba(24,199,131,.13);
+
+      animation:
+        ringRotate 14s linear infinite;
+    }
+
+    @keyframes ringRotate {
+      to {
+        filter:
+          hue-rotate(360deg);
+      }
+    }
+
+    .profile-inner {
+      width: 100%;
+      height: 100%;
+
+      border-radius: 50%;
+
+      padding: 6px;
+
+      background: var(--bg);
+
+      animation: none;
+    }
+
+    .profile-inner img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+
+      border-radius: 50%;
+
+      border: 1px solid var(--line);
+    }
+
+    .floating-card {
+      position: absolute;
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 9px;
+
+      padding: 10px 13px;
+
+      border-radius: 15px;
+
+      background:
+        rgba(10,18,31,.78);
+
+      border: 1px solid var(--line-strong);
+
+      backdrop-filter: blur(15px);
+
+      box-shadow: var(--shadow-small);
+
+      color: var(--text);
+
+      font-size: 12px;
+
+      animation:
+        floatCard 4s ease-in-out infinite;
+    }
+
+    body.light .floating-card {
+      background:
+        rgba(255,255,255,.82);
+    }
+
+    .floating-card.one {
+      top: 15%;
+      right: 1%;
+    }
+
+    .floating-card.two {
+      bottom: 17%;
+      left: 0;
+      animation-delay: 1s;
+    }
+
+    .floating-card.three {
+      bottom: 4%;
+      right: 12%;
+      animation-delay: 2s;
+    }
+
+    @keyframes floatCard {
+      0%,100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-9px);
+      }
+    }
+
+    .floating-icon {
+      width: 31px;
+      height: 31px;
+
+      border-radius: 10px;
+
+      display: grid;
+      place-items: center;
+
+      background:
+        rgba(24,199,131,.1);
+
+      color: var(--primary);
+    }
+
+    /* =========================================================
+       STATS
+    ========================================================= */
+
+    .stats {
+      margin-top: -20px;
+
+      position: relative;
+
+      z-index: 5;
+    }
+
+    .stats-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap: 12px;
+    }
+
+    .stat-card {
+      padding: 19px;
+
+      border:
+        1px solid var(--line);
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255,255,255,.045),
+          rgba(255,255,255,.018)
+        );
+
+      border-radius: 18px;
+
+      transition: .25s ease;
+    }
+
+    body.light .stat-card {
+      background: rgba(255,255,255,.7);
+    }
+
+    .stat-card:hover {
+      transform: translateY(-5px);
+
+      border-color:
+        rgba(24,199,131,.25);
+    }
+
+    .stat-number {
+      font-size: 27px;
+
+      font-weight: 800;
+
+      color: var(--text);
+
+      line-height: 1.3;
+    }
+
+    .stat-label {
+      color: var(--muted);
+
+      font-size: 12px;
+    }
+
+    /* =========================================================
+       SECTIONS
+    ========================================================= */
+
+    section {
+      padding: 105px 0;
+    }
+
+    .section-head {
+      max-width: 720px;
+
+      margin:
+        0 auto 45px;
+
+      text-align: center;
+    }
+
+    .section-kicker {
+      display: inline-block;
+
+      color: var(--primary);
+
+      font-size: 13px;
+
+      font-weight: 800;
+
+      margin-bottom: 5px;
+    }
+
+    .section-head h2 {
+      font-size:
+        clamp(28px, 4vw, 43px);
+
+      line-height: 1.35;
+
+      margin-bottom: 8px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+
+      font-size: 14px;
+    }
+
+    /* =========================================================
+       ABOUT
+    ========================================================= */
+
+    .about-grid {
+      display: grid;
+
+      grid-template-columns:
+        .95fr 1.05fr;
+
+      gap: 22px;
+
+      align-items: stretch;
+    }
+
+    .glass-card {
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255,255,255,.045),
+          rgba(255,255,255,.018)
+        );
+
+      border: 1px solid var(--line);
+
+      border-radius: var(--radius);
+
+      box-shadow: var(--shadow-small);
+
+      backdrop-filter: blur(14px);
+    }
+
+    body.light .glass-card {
+      background:
+        rgba(255,255,255,.76);
+    }
+
+    .about-card {
+      padding: 30px;
+    }
+
+    .about-card h3 {
+      font-size: 24px;
+
+      margin-bottom: 13px;
+    }
+
+    .about-card p {
+      color: var(--muted);
+
+      line-height: 2.1;
+
+      font-size: 14px;
+
+      margin-bottom: 13px;
+    }
+
+    .about-points {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, 1fr);
+
+      gap: 11px;
+
+      margin-top: 22px;
+    }
+
+    .about-point {
+      display: flex;
+
+      align-items: center;
+
+      gap: 10px;
+
+      padding: 12px;
+
+      border: 1px solid var(--line);
+
+      border-radius: 14px;
+
+      color: var(--text-soft);
+
+      font-size: 12px;
+
+      background:
+        rgba(255,255,255,.025);
+    }
+
+    .check {
+      width: 26px;
+      height: 26px;
+
+      flex: 0 0 auto;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 9px;
+
+      color: var(--primary);
+
+      background:
+        rgba(24,199,131,.1);
+    }
+
+    /* =========================================================
+       SERVICES
+    ========================================================= */
+
+    .services-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, 1fr);
+
+      gap: 12px;
+    }
+
+    .service-card {
+      position: relative;
+
+      padding: 23px;
+
+      border: 1px solid var(--line);
+
+      border-radius: 20px;
+
+      background:
+        rgba(255,255,255,.025);
+
+      overflow: hidden;
+
+      transition: .3s ease;
+    }
+
+    .service-card::before {
+      content: "";
+
+      position: absolute;
+
+      width: 130px;
+      height: 130px;
+
+      border-radius: 50%;
+
+      background:
+        rgba(24,199,131,.08);
+
+      top: -70px;
+      left: -70px;
+
+      transition: .3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+
+      border-color:
+        rgba(24,199,131,.3);
+
+      box-shadow:
+        0 20px 50px rgba(0,0,0,.18);
+    }
+
+    .service-card:hover::before {
+      transform: scale(1.6);
+    }
+
+    .service-icon {
+      width: 46px;
+      height: 46px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 14px;
+
+      background:
+        rgba(24,199,131,.09);
+
+      color: var(--primary);
+
+      font-size: 20px;
+
+      margin-bottom: 13px;
+
+      position: relative;
+    }
+
+    .service-card h4 {
+      font-size: 17px;
+
+      margin-bottom: 5px;
+
+      position: relative;
+    }
+
+    .service-card p {
+      color: var(--muted);
+
+      font-size: 12px;
+
+      line-height: 1.9;
+
+      position: relative;
+    }
+
+    /* =========================================================
+       SKILLS
+    ========================================================= */
+
+    .skills-grid {
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 22px;
+    }
+
+    .skills-card {
+      padding: 29px;
+    }
+
+    .skill {
+      margin-bottom: 20px;
+    }
+
+    .skill:last-child {
+      margin-bottom: 0;
+    }
+
+    .skill-head {
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      margin-bottom: 7px;
+
+      font-size: 13px;
+    }
+
+    .skill-head span:last-child {
+      color: var(--primary);
+
+      font-size: 12px;
+    }
+
+    .skill-bar {
+      height: 8px;
+
+      border-radius: 99px;
+
+      overflow: hidden;
+
+      background:
+        rgba(255,255,255,.07);
+    }
+
+    .skill-progress {
+      width: 0;
+
+      height: 100%;
+
+      border-radius: inherit;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--blue),
+          var(--primary),
+          var(--primary-light)
+        );
+
+      transition:
+        width 1.3s cubic-bezier(.2,.7,.2,1);
+    }
+
+    .skills-description {
+      color: var(--muted);
+
+      font-size: 14px;
+
+      line-height: 2;
+
+      margin-bottom: 22px;
+    }
+
+    .tech-list {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 8px;
+    }
+
+    .tech {
+      padding: 7px 10px;
+
+      border-radius: 10px;
+
+      border: 1px solid var(--line);
+
+      background:
+        rgba(255,255,255,.025);
+
+      color: var(--text-soft);
+
+      font-size: 11px;
+    }
+
+    /* =========================================================
+       PROJECTS
+    ========================================================= */
+
+    .projects-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 17px;
+    }
+
+    .project-card {
+      overflow: hidden;
+
+      border:
+        1px solid var(--line);
+
+      border-radius: 22px;
+
+      background:
+        rgba(255,255,255,.025);
+
+      transition: .3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+
+      border-color:
+        rgba(24,199,131,.25);
+
+      box-shadow:
+        0 25px 60px rgba(0,0,0,.25);
+    }
+
+    .project-image {
+      height: 225px;
+
+      position: relative;
+
+      overflow: hidden;
+    }
+
+    .project-image img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+
+      transition:
+        transform .55s ease;
+    }
+
+    .project-card:hover .project-image img {
+      transform: scale(1.07);
+    }
+
+    .project-overlay {
+      position: absolute;
+
+      inset: 0;
+
+      display: flex;
+
+      align-items: flex-end;
+
+      padding: 15px;
+
+      background:
+        linear-gradient(
+          transparent 35%,
+          rgba(0,0,0,.75)
+        );
+
+      opacity: .95;
+    }
+
+    .project-tag {
+      display: inline-flex;
+
+      padding: 5px 9px;
+
+      border-radius: 9px;
+
+      background:
+        rgba(0,0,0,.4);
+
+      border: 1px solid rgba(255,255,255,.13);
+
+      color: white;
+
+      font-size: 10px;
+    }
+
+    .project-body {
+      padding: 20px;
+    }
+
+    .project-body h3 {
+      font-size: 19px;
+
+      margin-bottom: 7px;
+    }
+
+    .project-body p {
+      color: var(--muted);
+
+      font-size: 12px;
+
+      line-height: 1.9;
+
+      min-height: 48px;
+
+      margin-bottom: 15px;
+    }
+
+    .project-link {
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 7px;
+
+      color: var(--primary-light);
+
+      font-size: 12px;
+
+      font-weight: 700;
+    }
+
+    /* =========================================================
+       ROADMAP
+    ========================================================= */
+
+    .roadmap {
+      position: relative;
+
+      max-width: 850px;
+
+      margin: auto;
+    }
+
+    .roadmap::before {
+      content: "";
+
+      position: absolute;
+
+      top: 0;
+      bottom: 0;
+
+      right: 24px;
+
+      width: 2px;
+
+      background:
+        linear-gradient(
+          var(--primary),
+          rgba(24,199,131,.04)
+        );
+    }
+
+    .road-item {
+      position: relative;
+
+      padding-right: 70px;
+
+      margin-bottom: 27px;
+    }
+
+    .road-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .road-dot {
+      position: absolute;
+
+      right: 11px;
+      top: 6px;
+
+      width: 28px;
+      height: 28px;
+
+      border-radius: 50%;
+
+      display: grid;
+      place-items: center;
+
+      background:
+        var(--bg);
+
+      border:
+        2px solid var(--primary);
+
+      color: var(--primary);
+
+      font-size: 11px;
+
+      z-index: 2;
+    }
+
+    .road-content {
+      padding: 19px;
+
+      border: 1px solid var(--line);
+
+      border-radius: 18px;
+
+      background:
+        rgba(255,255,255,.025);
+
+      transition: .25s ease;
+    }
+
+    .road-content:hover {
+      transform: translateX(-5px);
+
+      border-color:
+        rgba(24,199,131,.25);
+    }
+
+    .road-content h3 {
+      font-size: 17px;
+
+      margin-bottom: 4px;
+    }
+
+    .road-content p {
+      color: var(--muted);
+
+      font-size: 12px;
+    }
+
+    /* =========================================================
+       LIVE INFO
+    ========================================================= */
+
+    .live-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 14px;
+    }
+
+    .live-card {
+      padding: 25px;
+
+      border:
+        1px solid var(--line);
+
+      border-radius: 21px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255,255,255,.045),
+          rgba(255,255,255,.015)
+        );
+    }
+
+    .live-top {
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      margin-bottom: 18px;
+    }
+
+    .live-title {
+      display: flex;
+
+      align-items: center;
+
+      gap: 9px;
+
+      font-size: 14px;
+
+      font-weight: 700;
+    }
+
+    .live-icon {
+      width: 39px;
+      height: 39px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 12px;
+
+      background:
+        rgba(24,199,131,.09);
+
+      color: var(--primary);
+    }
+
+    .live-badge {
+      color: var(--primary);
+
+      font-size: 10px;
+
+      padding: 4px 8px;
+
+      border-radius: 8px;
+
+      background:
+        rgba(24,199,131,.08);
+    }
+
+    .clock {
+      font-family:
+        Tahoma,
+        Arial,
+        sans-serif;
+
+      direction: ltr;
+
+      text-align: center;
+
+      font-size: 34px;
+
+      font-weight: 800;
+
+      letter-spacing: 2px;
+
+      margin: 10px 0 4px;
+    }
+
+    .date {
+      text-align: center;
+
+      color: var(--muted);
+
+      font-size: 11px;
+    }
+
+    .weather-main {
+      display: flex;
+
+      align-items: center;
+
+      gap: 16px;
+
+      margin-bottom: 15px;
+    }
+
+    .weather-icon {
+      font-size: 48px;
+    }
+
+    .temperature {
+      font-family: Tahoma, Arial, sans-serif;
+
+      direction: ltr;
+
+      font-size: 36px;
+
+      font-weight: 800;
+    }
+
+    .weather-description {
+      color: var(--muted);
+
+      font-size: 12px;
+    }
+
+    .weather-details {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2,1fr);
+
+      gap: 8px;
+    }
+
+    .weather-detail {
+      padding: 9px;
+
+      border-radius: 11px;
+
+      background:
+        rgba(255,255,255,.025);
+
+      border: 1px solid var(--line);
+
+      font-size: 10px;
+
+      color: var(--muted);
+
+      text-align: center;
+    }
+
+    .weather-detail strong {
+      display: block;
+
+      color: var(--text);
+
+      font-size: 12px;
+    }
+
+    /* =========================================================
+       CURRENCY
+    ========================================================= */
+
+    .currency-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap: 12px;
+
+      margin-bottom: 22px;
+    }
+
+    .currency-card {
+      padding: 18px;
+
+      border:
+        1px solid var(--line);
+
+      border-radius: 17px;
+
+      background:
+        rgba(255,255,255,.025);
+
+      transition: .25s ease;
+    }
+
+    .currency-card:hover {
+      transform: translateY(-4px);
+
+      border-color:
+        rgba(59,130,246,.25);
+    }
+
+    .currency-head {
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      margin-bottom: 12px;
+    }
+
+    .currency-code {
+      font-family:
+        Tahoma,
+        Arial,
+        sans-serif;
+
+      direction: ltr;
+
+      font-weight: 800;
+    }
+
+    .currency-flag {
+      font-size: 19px;
+    }
+
+    .currency-rate {
+      direction: ltr;
+
+      text-align: right;
+
+      font-family:
+        Tahoma,
+        Arial,
+        sans-serif;
+
+      font-size: 18px;
+
+      font-weight: 700;
+    }
+
+    .currency-name {
+      color: var(--muted);
+
+      font-size: 10px;
+
+      margin-top: 2px;
+    }
+
+    .currency-updated {
+      color: var(--muted);
+
+      font-size: 10px;
+
+      margin-top: 14px;
+
+      text-align: center;
+    }
+
+    .converter {
+      padding: 24px;
+
+      border:
+        1px solid var(--line);
+
+      border-radius: 21px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(59,130,246,.07),
+          rgba(24,199,131,.05)
+        );
+    }
+
+    .converter h3 {
+      margin-bottom: 15px;
+
+      font-size: 19px;
+    }
+
+    .converter-grid {
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 11px;
+    }
+
+    .field {
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 6px;
+    }
+
+    .field label {
+      color: var(--muted);
+
+      font-size: 11px;
+    }
+
+    .field input,
+    .field select {
+      width: 100%;
+
+      min-height: 47px;
+
+      border:
+        1px solid var(--line);
+
+      outline: none;
+
+      border-radius: 12px;
+
+      padding:
+        7px 12px;
+
+      background:
+        rgba(0,0,0,.13);
+
+      color: var(--text);
+
+      transition: .2s ease;
+    }
+
+    body.light .field input,
+    body.light .field select {
+      background: #f8fafc;
+    }
+
+    .field input:focus,
+    .field select:focus {
+      border-color:
+        rgba(24,199,131,.45);
+
+      box-shadow:
+        0 0 0 3px rgba(24,199,131,.07);
+    }
+
+    .converter-result {
+      margin-top: 13px;
+
+      padding: 15px;
+
+      border-radius: 13px;
+
+      background:
+        rgba(24,199,131,.07);
+
+      border:
+        1px solid rgba(24,199,131,.13);
+
+      text-align: center;
+
+      color: var(--text-soft);
+
+      font-size: 14px;
+    }
+
+    .converter-result strong {
+      color: var(--primary-light);
+
+      font-size: 20px;
+    }
+
+    /* =========================================================
+       GALLERY
+    ========================================================= */
+
+    .gallery-top {
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 15px;
+
+      margin-bottom: 20px;
+    }
+
+    .gallery-count {
+      color: var(--muted);
+
+      font-size: 13px;
+    }
+
+    .gallery-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap: 10px;
+    }
+
+    .gallery-item {
+      position: relative;
+
+      aspect-ratio: 1 / 1;
+
+      overflow: hidden;
+
+      border-radius: 16px;
+
+      border: 1px solid var(--line);
+
+      background:
+        #0b1220;
+
+      cursor: pointer;
+
+      transition: .3s ease;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+
+      transition:
+        transform .5s ease,
+        filter .5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.09);
+
+      filter:
+        brightness(.7);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+
+      inset: 0;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      opacity: 0;
+
+      background:
+        rgba(0,0,0,.45);
+
+      transition: .25s ease;
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    .zoom-icon {
+      width: 42px;
+      height: 42px;
+
+      border-radius: 13px;
+
+      display: grid;
+      place-items: center;
+
+      background:
+        rgba(255,255,255,.14);
+
+      backdrop-filter: blur(10px);
+
+      color: white;
+    }
+
+    /* =========================================================
+       CONTACT
+    ========================================================= */
+
+    .contact-box {
+      position: relative;
+
+      overflow: hidden;
+
+      padding: 40px;
+
+      border-radius: 28px;
+
+      border:
+        1px solid rgba(24,199,131,.18);
+
+      background:
+        radial-gradient(
+          circle at 10% 10%,
+          rgba(24,199,131,.13),
+          transparent 28%
+        ),
+        radial-gradient(
+          circle at 90% 80%,
+          rgba(59,130,246,.13),
+          transparent 30%
+        ),
+        rgba(255,255,255,.025);
+    }
+
+    .contact-box::before {
+      content: "";
+
+      position: absolute;
+
+      width: 200px;
+      height: 200px;
+
+      border-radius: 50%;
+
+      border:
+        1px solid rgba(24,199,131,.12);
+
+      left: -80px;
+      bottom: -100px;
+    }
+
+    .contact-content {
+      position: relative;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 30px;
+    }
+
+    .contact-content h2 {
+      font-size:
+        clamp(25px, 4vw, 38px);
+
+      margin-bottom: 8px;
+    }
+
+    .contact-content p {
+      color: var(--muted);
+
+      font-size: 13px;
+    }
+
+    .contact-actions {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 10px;
+    }
+
+    /* =========================================================
+       VISITOR
+    ========================================================= */
+
+    .visitor-card {
+      margin-top: 25px;
+
+      padding: 18px;
+
+      border:
+        1px solid var(--line);
+
+      border-radius: 18px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 15px;
+
+      background:
+        rgba(255,255,255,.02);
+    }
+
+    .visitor-left {
+      display: flex;
+
+      align-items: center;
+
+      gap: 11px;
+    }
+
+    .visitor-icon {
+      width: 40px;
+      height: 40px;
+
+      border-radius: 12px;
+
+      display: grid;
+      place-items: center;
+
+      background:
+        rgba(139,92,246,.1);
+
+      color: #a78bfa;
+    }
+
+    .visitor-text strong {
+      display: block;
+
+      font-size: 13px;
+    }
+
+    .visitor-text span {
+      color: var(--muted);
+
+      font-size: 10px;
+    }
+
+    .visitor-id {
+      direction: ltr;
+
+      font-family:
+        Tahoma,
+        Arial,
+        sans-serif;
+
+      color: var(--primary);
+
+      font-size: 11px;
+    }
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+
+    footer {
+      padding:
+        35px 0 25px;
+
+      border-top:
+        1px solid var(--line);
+    }
+
+    .footer-content {
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 20px;
+    }
+
+    .footer-brand {
+      font-size: 14px;
+
+      font-weight: 700;
+    }
+
+    .footer-copy,
+    .footer-address {
+      color: var(--muted);
+
+      font-size: 11px;
+    }
+
+    /* =========================================================
+       MODAL
+    ========================================================= */
+
+    .modal {
+      position: fixed;
+
+      inset: 0;
+
+      background:
+        rgba(0,0,0,.86);
+
+      backdrop-filter: blur(12px);
+
+      z-index: 9000;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      padding: 20px;
+
+      opacity: 0;
+
+      visibility: hidden;
+
+      transition: .3s ease;
+    }
+
+    .modal.open {
+      opacity: 1;
+
+      visibility: visible;
+    }
+
+    .modal-content {
+      position: relative;
+
+      max-width: min(1000px, 96vw);
+
+      max-height: 90vh;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+    }
+
+    .modal-image {
+      max-width: 90vw;
+
+      max-height: 82vh;
+
+      object-fit: contain;
+
+      border-radius: 17px;
+
+      box-shadow:
+        0 30px 100px rgba(0,0,0,.5);
+    }
+
+    .modal-close,
+    .modal-prev,
+    .modal-next {
+      position: absolute;
+
+      width: 44px;
+      height: 44px;
+
+      border: 1px solid rgba(255,255,255,.15);
+
+      border-radius: 13px;
+
+      background:
+        rgba(10,15,25,.72);
+
+      color: white;
+
+      display: grid;
+      place-items: center;
+
+      z-index: 5;
+
+      backdrop-filter: blur(10px);
+
+      transition: .2s ease;
+    }
+
+    .modal-close:hover,
+    .modal-prev:hover,
+    .modal-next:hover {
+      background:
+        rgba(24,199,131,.18);
+
+      border-color:
+        rgba(24,199,131,.4);
+    }
+
+    .modal-close {
+      top: -15px;
+      left: -15px;
+    }
+
+    .modal-prev {
+      right: -65px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .modal-next {
+      left: -65px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .modal-counter {
+      position: absolute;
+
+      bottom: -40px;
+
+      left: 50%;
+
+      transform: translateX(-50%);
+
+      color: white;
+
+      font-size: 12px;
+    }
+
+    /* =========================================================
+       BACK TO TOP
+    ========================================================= */
+
+    .back-top {
+      position: fixed;
+
+      bottom: 22px;
+      left: 22px;
+
+      width: 45px;
+      height: 45px;
+
+      border:
+        1px solid var(--line);
+
+      border-radius: 14px;
+
+      background:
+        rgba(12,20,33,.8);
+
+      color: var(--text);
+
+      display: grid;
+      place-items: center;
+
+      opacity: 0;
+
+      visibility: hidden;
+
+      transform: translateY(15px);
+
+      transition: .25s ease;
+
+      z-index: 4000;
+
+      backdrop-filter: blur(15px);
+    }
+
+    body.light .back-top {
+      background:
+        rgba(255,255,255,.82);
+    }
+
+    .back-top.show {
+      opacity: 1;
+
+      visibility: visible;
+
+      transform: translateY(0);
+    }
+
+    /* =========================================================
+       TOAST
+    ========================================================= */
+
+    .toast {
+      position: fixed;
+
+      bottom: 25px;
+      right: 50%;
+
+      transform:
+        translate(50%, 25px);
+
+      padding: 11px 16px;
+
+      border-radius: 12px;
+
+      background:
+        rgba(12,20,33,.92);
+
+      border:
+        1px solid var(--line);
+
+      color: white;
+
+      font-size: 12px;
+
+      opacity: 0;
+
+      visibility: hidden;
+
+      transition: .3s ease;
+
+      z-index: 10000;
+
+      box-shadow: var(--shadow-small);
+    }
+
+    .toast.show {
+      opacity: 1;
+
+      visibility: visible;
+
+      transform:
+        translate(50%, 0);
+    }
+
+    /* =========================================================
+       REVEAL ANIMATION
+    ========================================================= */
+
+    .reveal {
+      opacity: 0;
+
+      transform:
+        translateY(28px);
+
+      transition:
+        opacity .7s ease,
+        transform .7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+
+      transform:
+        translateY(0);
+    }
+
+    /* =========================================================
+       RESPONSIVE
+    ========================================================= */
+
+    @media (max-width: 1100px) {
+
+      .nav-links {
+        gap: 0;
+      }
+
+      .nav-links a {
+        padding-inline: 8px;
+      }
+
+      .hero-grid {
+        gap: 35px;
+      }
+
+      .projects-grid {
+        grid-template-columns:
+          repeat(2,1fr);
+      }
+
+      .gallery-grid {
+        grid-template-columns:
+          repeat(3,1fr);
+      }
+    }
+
+    @media (max-width: 900px) {
+
+      .nav-links {
+        position: fixed;
+
+        top: calc(var(--header-height) + 8px);
+
+        right: 18px;
+        left: 18px;
+
+        padding: 12px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        background:
+          rgba(8,15,27,.95);
+
+        border:
+          1px solid var(--line);
+
+        border-radius: 18px;
+
+        backdrop-filter: blur(25px);
+
+        box-shadow:
+          0 25px 70px rgba(0,0,0,.3);
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        transform:
+          translateY(-10px);
+
+        transition: .25s ease;
+      }
+
+      body.light .nav-links {
+        background:
+          rgba(255,255,255,.96);
+      }
+
+      .nav-links.open {
+        opacity: 1;
+
+        visibility: visible;
+
+        transform:
+          translateY(0);
+      }
+
+      .nav-links a {
+        width: 100%;
+
+        padding: 12px 14px;
+      }
+
+      .nav-links a.active::after {
+        right: 7px;
+
+        top: 50%;
+        bottom: auto;
+
+        transform:
+          translateY(-50%);
+
+        width: 3px;
+        height: 18px;
+      }
+
+      .mobile-menu {
+        display: grid;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-content {
+        text-align: center;
+      }
+
+      .hero-description {
+        margin-inline: auto;
+      }
+
+      .location,
+      .hero-buttons,
+      .hero-mini {
+        justify-content: center;
+      }
+
+      .hero-visual {
+        min-height: 430px;
+
+        grid-row: 1;
+      }
+
+      .about-grid,
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .live-grid {
+        grid-template-columns:
+          repeat(2,1fr);
+      }
+
+      .contact-content {
+        flex-direction: column;
+
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 700px) {
+
+      section {
+        padding: 75px 0;
+      }
+
+      .container {
+        width:
+          min(
+            calc(100% - 26px),
+            var(--container)
+          );
+      }
+
+      .stats-grid {
+        grid-template-columns:
+          repeat(2,1fr);
+      }
+
+      .services-grid,
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .currency-grid {
+        grid-template-columns:
+          repeat(2,1fr);
+      }
+
+      .gallery-grid {
+        grid-template-columns:
+          repeat(2,1fr);
+      }
+
+      .live-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .converter-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-box {
+        padding: 27px 20px;
+      }
+
+      .footer-content {
+        flex-direction: column;
+
+        text-align: center;
+      }
+
+      .floating-card.one {
+        right: -2px;
+      }
+
+      .floating-card.two {
+        left: -2px;
+      }
+
+      .modal-prev {
+        right: 8px;
+        top: auto;
+        bottom: 10px;
+
+        transform: none;
+      }
+
+      .modal-next {
+        left: 8px;
+        top: auto;
+        bottom: 10px;
+
+        transform: none;
+      }
+
+      .modal-close {
+        top: 8px;
+        left: 8px;
+      }
+    }
+
+    @media (max-width: 500px) {
+
+      .brand-text {
+        display: none;
+      }
+
+      .hero {
+        padding-top:
+          calc(var(--header-height) + 35px);
+      }
+
+      .hero h1 {
+        font-size: 37px;
+      }
+
+      .hero-role {
+        font-size: 18px;
+      }
+
+      .hero-description {
+        font-size: 13px;
+      }
+
+      .hero-visual {
+        min-height: 350px;
+      }
+
+      .profile-ring {
+        width: 270px;
+      }
+
+      .hero-orb {
+        width: 300px;
+        height: 300px;
+      }
+
+      .floating-card {
+        font-size: 10px;
+
+        padding: 8px 9px;
+      }
+
+      .floating-icon {
+        width: 27px;
+        height: 27px;
+      }
+
+      .floating-card.one {
+        top: 8%;
+      }
+
+      .floating-card.two {
+        bottom: 13%;
+      }
+
+      .floating-card.three {
+        bottom: 2%;
+      }
+
+      .about-points {
+        grid-template-columns: 1fr;
+      }
+
+      .currency-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        gap: 7px;
+      }
+
+      .gallery-item {
+        border-radius: 11px;
+      }
+
+      .visitor-card {
+        align-items: flex-start;
+
+        flex-direction: column;
+      }
+
+      .visitor-id {
+        margin-right: 50px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
+  <!-- =========================================================
+       LOADER
+  ========================================================== -->
+
+  <div class="loader" id="loader">
+    <div class="loader-box">
+      <div class="loader-logo">ع</div>
+      <div class="loader-text">
+        ویب سایټ چمتو کېږي...
+      </div>
+    </div>
+  </div>
+
+  <!-- SCROLL PROGRESS -->
+
+  <div
+    class="scroll-progress"
+    id="scrollProgress"
+  ></div>
+
+  <!-- =========================================================
+       HEADER
+  ========================================================== -->
+
+  <header
+    class="header"
+    id="header"
+  >
+
+    <div class="container nav">
+
+      <a
+        href="#home"
+        class="brand"
+        aria-label="عبدالله مختار"
+      >
+
+        <div class="brand-icon">
+          ع
+        </div>
+
+        <div class="brand-text">
+          <strong>
+            عبدالله مختار
+          </strong>
+
+          <span>
+            شخصي ویب سایټ
+          </span>
+        </div>
+
+      </a>
+
+      <nav
+        class="nav-links"
+        id="navLinks"
+      >
+
+        <a
+          href="#home"
+          class="active"
+        >
+          کور
+        </a>
+
+        <a href="#about">
+          زما په اړه
+        </a>
+
+        <a href="#skills">
+          مهارتونه
+        </a>
+
+        <a href="#projects">
+          پروژې
+        </a>
+
+        <a href="#live">
+          ژوندۍ معلومات
+        </a>
+
+        <a href="#currency">
+          اسعار
+        </a>
+
+        <a href="#gallery">
+          ګالري
+        </a>
+
+        <a href="#contact">
+          اړیکه
+        </a>
+
+      </nav>
+
+      <div class="nav-actions">
+
+        <button
+          class="icon-btn"
+          id="themeToggle"
+          type="button"
+          title="رنګ بدلول"
+          aria-label="د ویب سایټ بڼه بدلول"
+        >
+          ☀️
+        </button>
+
+        <button
+          class="icon-btn mobile-menu"
+          id="mobileMenu"
+          type="button"
+          aria-label="مینو خلاصول"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <!-- =======================================================
+         HERO
+    ======================================================== -->
+
+    <section
+      class="hero"
+      id="home"
+    >
+
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            <span>
+              شخصي Portfolio
+            </span>
+          </div>
+
+          <h1>
+            سلام، زه
+            <span>
+              عبدالله مختار
+            </span>
+            یم
+          </h1>
+
+          <div class="hero-role">
+            زه
+            <span id="typedRole">
+              د ویب سیستمونو جوړونکی
+            </span>
+          </div>
+
+          <p class="hero-description">
+            د ویب سیستمونو جوړونکی، د ټکنالوژۍ مینه‌وال او د اداري او مالي چارو علاقه‌مند.
+            زما هدف دا دی چې ساده، ښکلي، چټک او د کار وړ ډیجیټل سیستمونه جوړ کړم.
+          </p>
+
+          <div class="location">
+            <span class="location-icon">
+              📍
+            </span>
+
+            <span>
+              زابل ولایت، کلات ښار — افغانستان 🇦🇫
+            </span>
+          </div>
+
+          <div class="hero-buttons">
+
+            <a
+              class="btn btn-primary"
+              href="https://wa.me/93702624188"
+              target="_blank"
+              rel="noopener"
+            >
+              💬 WhatsApp
+            </a>
+
+            <a
+              class="btn btn-outline"
+              href="https://abdullahmukhtar541-stack.github.io/abdullah-receipts/"
+              target="_blank"
+              rel="noopener"
+            >
+              🚀 زما پروژه وګورئ
+            </a>
+
+            <a
+              class="btn btn-outline"
+              href="#gallery"
+            >
+              🖼️ ګالري
+            </a>
+
+          </div>
+
+          <div class="hero-mini">
+
+            <div class="mini-status">
+              <span class="eyebrow-dot"></span>
+              <strong>
+                Online
+              </strong>
+              حالت فعال
+            </div>
+
+            <div class="mini-status">
+              🌐
+              <strong>
+                پښتو
+              </strong>
+              RTL
+            </div>
+
+            <div class="mini-status">
+              ⚡
+              <strong>
+                Responsive
+              </strong>
+              ډیزاین
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- HERO IMAGE -->
+
+        <div class="hero-visual">
+
+          <div class="hero-orb"></div>
+
+          <div class="profile-ring">
+
+            <div class="profile-inner">
+
+              <img
+                src="https://i.ibb.co/C566gpXN/IMG-20260303-WA0121.jpg"
+                alt="عبدالله مختار"
+                loading="eager"
+              >
+
+            </div>
+
+          </div>
+
+          <div class="floating-card one">
+
+            <div class="floating-icon">
+              💻
+            </div>
+
+            <div>
+              <strong>
+                Web Development
+              </strong>
+              <br>
+              <span>
+                ویب سیستمونه
+              </span>
+            </div>
+
+          </div>
+
+          <div class="floating-card two">
+
+            <div class="floating-icon">
+              📊
+            </div>
+
+            <div>
+              <strong>
+                Management
+              </strong>
+              <br>
+              <span>
+                اداري سیستمونه
+              </span>
+            </div>
+
+          </div>
+
+          <div class="floating-card three">
+
+            <div class="floating-icon">
+              ⚡
+            </div>
+
+            <div>
+              <strong>
+                Modern UI
+              </strong>
+              <br>
+              <span>
+                عصري ډیزاین
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =======================================================
+         STATS
+    ======================================================== -->
+
+    <div class="stats">
+
+      <div class="container stats-grid">
+
+        <div class="stat-card reveal">
+          <div class="stat-number">
+            33+
+          </div>
+          <div class="stat-label">
+            د ګالري عکسونه
+          </div>
+        </div>
+
+        <div class="stat-card reveal">
+          <div class="stat-number">
+            24/7
+          </div>
+          <div class="stat-label">
+            شخصي Portfolio
+          </div>
+        </div>
+
+        <div class="stat-card reveal">
+          <div class="stat-number">
+            6+
+          </div>
+          <div class="stat-label">
+            د اسعارو معلومات
+          </div>
+        </div>
+
+        <div class="stat-card reveal">
+          <div class="stat-number">
+            100%
+          </div>
+          <div class="stat-label">
+            Responsive ډیزاین
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- =======================================================
+         ABOUT
+    ======================================================== -->
+
+    <section id="about">
+
+      <div class="container">
+
+        <div class="section-head reveal">
+
+          <span class="section-kicker">
+            ABOUT ME
+          </span>
+
+          <h2>
+            زما په اړه
+          </h2>
+
+          <p>
+            د ټکنالوژۍ، ویب سیستمونو او عملي ډیجیټل حل‌لارو سره زما علاقه
+          </p>
+
+        </div>
+
+        <div class="about-grid">
+
+          <div class="glass-card about-card reveal">
+
+            <h3>
+              زه څه ډول کار کوم؟
+            </h3>
+
+            <p>
+              زه هڅه کوم چې د کاروونکي لپاره داسې سیستمونه جوړ کړم چې
+              هم ښکلي وي او هم استعمال یې ساده وي.
+            </p>
+
+            <p>
+              په ځانګړي ډول د دوکانونو، حسابدارۍ، مدیریت، راپورونو،
+              معلوماتو او شخصي ویب‌سایټونو په جوړولو کې علاقه لرم.
+            </p>
 
-<header>
-<div class="nav container">
+            <div class="about-points">
 
-<a href="#home" class="logo">
-عبدالله <span>مختار</span>
-</a>
+              <div class="about-point">
+                <span class="check">✓</span>
+                ساده او واضح ډیزاین
+              </div>
 
-<ul class="nav-links">
-<li><a href="#about">زما په اړه</a></li>
-<li><a href="#skills">مهارتونه</a></li>
-<li><a href="#projects">پروژې</a></li>
-<li><a href="#live">ژوندۍ معلومات</a></li>
-<li><a href="#currency">اسعار</a></li>
-<li><a href="#gallery">ګالري</a></li>
-<li><a href="#contact">اړیکه</a></li>
-</ul>
+              <div class="about-point">
+                <span class="check">✓</span>
+                پښتو او RTL ملاتړ
+              </div>
 
-<div class="nav-actions">
+              <div class="about-point">
+                <span class="check">✓</span>
+                Mobile Responsive
+              </div>
 
-<div class="online">
-<span class="dot"></span>
-آنلاین
-</div>
+              <div class="about-point">
+                <span class="check">✓</span>
+                عملي ویب سیستمونه
+              </div>
 
-<button class="menu-btn" onclick="toggleMobileMenu()">☰</button>
+            </div>
 
-</div>
+          </div>
 
-</div>
+          <div class="services-grid">
 
-<div class="mobile-menu" id="mobileMenu">
+            <div class="service-card reveal">
 
-<a href="#about" onclick="closeMobileMenu()">زما په اړه</a>
-<a href="#skills" onclick="closeMobileMenu()">مهارتونه</a>
-<a href="#projects" onclick="closeMobileMenu()">پروژې</a>
-<a href="#live" onclick="closeMobileMenu()">ژوندۍ معلومات</a>
-<a href="#currency" onclick="closeMobileMenu()">اسعار</a>
-<a href="#gallery" onclick="closeMobileMenu()">ګالري</a>
-<a href="#contact" onclick="closeMobileMenu()">اړیکه</a>
+              <div class="service-icon">
+                💻
+              </div>
 
-</div>
-</header>
+              <h4>
+                ویب سیستمونه
+              </h4>
 
+              <p>
+                د دوکان، حسابدارۍ، مدیریت او نورو اړتیاوو لپاره
+                د ویب پر بنسټ سیستمونه.
+              </p>
 
-<main>
+            </div>
 
-<!-- ================= HERO ================= -->
+            <div class="service-card reveal">
 
-<section class="hero container" id="home">
+              <div class="service-icon">
+                🎨
+              </div>
 
-<div class="hero-content">
+              <h4>
+                UI ډیزاین
+              </h4>
 
-<div class="small-label">
-✦ شخصي Portfolio
-</div>
+              <p>
+                عصري، پاک او د موبایل او کمپیوټر لپاره مناسب
+                User Interface.
+              </p>
 
-<h1>
-سلام، زه <span>عبدالله مختار</span> یم
-</h1>
+            </div>
 
-<h2>
-د ویب سیستمونو جوړونکی، د ټکنالوژۍ مینه‌وال او د اداري او مالي چارو علاقه‌مند
-</h2>
+            <div class="service-card reveal">
 
-<p>
-زه د عصري ویب‌سایټونو، ویب سیستمونو، ډیجیټل حل‌لارو،
-اداري او مالي سیستمونو له جوړولو سره ځانګړې علاقه لرم.
-زما هدف دا دی چې ساده، چټک، ښکلي او ګټور ډیجیټل سیستمونه جوړ کړم.
-</p>
+              <div class="service-icon">
+                📊
+              </div>
 
-<div class="location">
-📍 زابل ولایت، کلات ښار — افغانستان
-</div>
+              <h4>
+                اداري سیستمونه
+              </h4>
 
-<div class="hero-buttons">
+              <p>
+                د معلوماتو، ریکارډونو، راپورونو او مدیریت لپاره
+                منظم سیستمونه.
+              </p>
 
-<a
-href="https://wa.me/93702624188"
-target="_blank"
-rel="noopener"
-class="btn btn-primary">
-💬 په WhatsApp اړیکه
-</a>
+            </div>
 
-<a
-href="https://abdullahmukhtar541-stack.github.io/abdullah-receipts/"
-target="_blank"
-rel="noopener"
-class="btn btn-secondary">
-🌐 زما پروژه
-</a>
+            <div class="service-card reveal">
 
-<a
-href="#contact"
-class="btn btn-secondary">
-📞 اړیکه
-</a>
+              <div class="service-icon">
+                ⚙️
+              </div>
 
-</div>
+              <h4>
+                JavaScript
+              </h4>
 
-</div>
+              <p>
+                متحرک امکانات، محاسبې، API، Modal، Gallery او
+                Interactive برخې.
+              </p>
 
+            </div>
 
-<div class="hero-image">
+          </div>
 
-<div class="profile-wrap">
+        </div>
 
-<img
-class="profile"
-src="https://i.ibb.co/C566gpXN/IMG-20260303-WA0121.jpg"
-alt="عبدالله مختار"
-loading="eager">
+      </div>
 
-</div>
+    </section>
 
-</div>
+    <!-- =======================================================
+         SKILLS
+    ======================================================== -->
 
-</section>
+    <section id="skills">
 
+      <div class="container">
 
-<!-- ================= STATS ================= -->
+        <div class="section-head reveal">
 
-<section class="section container">
+          <span class="section-kicker">
+            SKILLS
+          </span>
 
-<div class="stats">
+          <h2>
+            زما مهارتونه
+          </h2>
 
-<div class="stat">
-<strong>33+</strong>
-<span>د ګالري عکسونه</span>
-</div>
+          <p>
+            هغه تخنیکي برخې چې زه پرې کار کوم
+          </p>
 
-<div class="stat">
-<strong>24/7</strong>
-<span>آنلاین Portfolio</span>
-</div>
+        </div>
 
-<div class="stat">
-<strong>6+</strong>
-<span>د اسعارو ډولونه</span>
-</div>
+        <div class="skills-grid">
 
-<div class="stat">
-<strong>100%</strong>
-<span>Responsive Design</span>
-</div>
+          <div class="glass-card skills-card reveal">
 
-</div>
+            <div class="skill">
 
-</section>
+              <div class="skill-head">
+                <span>Web Development</span>
+                <span>90%</span>
+              </div>
 
+              <div class="skill-bar">
+                <div
+                  class="skill-progress"
+                  data-width="90%"
+                ></div>
+              </div>
 
-<!-- ================= ABOUT ================= -->
+            </div>
 
-<section class="section container" id="about">
+            <div class="skill">
 
-<div class="section-heading">
+              <div class="skill-head">
+                <span>UI / UX Design</span>
+                <span>85%</span>
+              </div>
 
-<div class="eyebrow">ABOUT ME</div>
+              <div class="skill-bar">
+                <div
+                  class="skill-progress"
+                  data-width="85%"
+                ></div>
+              </div>
 
-<h2>زما په اړه</h2>
+            </div>
 
-<p>
-زما د کار، تجربې، علاقو او راتلونکو اهدافو لنډه پېژندنه
-</p>
+            <div class="skill">
 
-</div>
+              <div class="skill-head">
+                <span>JavaScript</span>
+                <span>80%</span>
+              </div>
 
+              <div class="skill-bar">
+                <div
+                  class="skill-progress"
+                  data-width="80%"
+                ></div>
+              </div>
 
-<div class="about-grid">
+            </div>
 
-<div class="about-card">
+            <div class="skill">
 
-<h3>👨‍💻 عبدالله مختار</h3>
+              <div class="skill-head">
+                <span>Management Systems</span>
+                <span>88%</span>
+              </div>
 
-<p>
-زه د ټکنالوژۍ، ویب ډیزاین، ډیجیټل سیستمونو، اداري چارو
-او مالي سیستمونو سره علاقه لرم. هڅه کوم داسې سیستمونه
-جوړ کړم چې کارول یې اسانه، ډیزاین یې مسلکي او د کاروونکو
-لپاره ګټور وي.
-</p>
+              <div class="skill-bar">
+                <div
+                  class="skill-progress"
+                  data-width="88%"
+                ></div>
+              </div>
 
-<p style="margin-top:15px;">
-د ویب‌سایټونو ترڅنګ د حسابدارۍ، دوکان مدیریت، راپورونو،
-ډیجیټل معاملو او نورو اداري سیستمونو په جوړولو کې هم
-ځانګړې علاقه لرم.
-</p>
+            </div>
 
-</div>
+          </div>
 
+          <div class="glass-card skills-card reveal">
 
-<div class="info-grid">
+            <p class="skills-description">
+              زما د ویب پروژو په جوړولو کې هڅه دا وي چې
+              ډیزاین، فعالیت، سرعت او ساده استعمال یو ځای وساتل شي.
+            </p>
 
-<div class="info-card">
-<div class="icon">💻</div>
-<h3>ټکنالوژي</h3>
-<p>HTML، CSS، JavaScript او عصري ویب سیستمونه.</p>
-</div>
+            <div class="tech-list">
 
-<div class="info-card">
-<div class="icon">📊</div>
-<h3>اداري چارې</h3>
-<p>اداري او مالي سیستمونو ته ډیجیټل حل‌لارې.</p>
-</div>
+              <span class="tech">
+                HTML5
+              </span>
 
-<div class="info-card">
-<div class="icon">🎨</div>
-<h3>ډیزاین</h3>
-<p>پاک، عصري، Responsive او کاروونکي‌دوست ډیزاین.</p>
-</div>
+              <span class="tech">
+                CSS3
+              </span>
 
-<div class="info-card">
-<div class="icon">🚀</div>
-<h3>راتلونکی</h3>
-<p>د لا ګټورو او مسلکي سیستمونو جوړول.</p>
-</div>
+              <span class="tech">
+                JavaScript
+              </span>
 
-</div>
+              <span class="tech">
+                Responsive Design
+              </span>
 
-</div>
+              <span class="tech">
+                REST API
+              </span>
 
-</section>
+              <span class="tech">
+                GitHub Pages
+              </span>
 
+              <span class="tech">
+                MySQL
+              </span>
 
-<!-- ================= SKILLS ================= -->
+              <span class="tech">
+                Python
+              </span>
 
-<section class="section container" id="skills">
+              <span class="tech">
+                RTL
+              </span>
 
-<div class="section-heading">
+              <span class="tech">
+                PWA
+              </span>
 
-<div class="eyebrow">MY SKILLS</div>
+            </div>
 
-<h2>زما مهارتونه</h2>
+          </div>
 
-<p>هغه برخې چې له جوړولو او کار کولو سره یې علاقه لرم</p>
+        </div>
 
-</div>
+      </div>
 
+    </section>
 
-<div class="skills">
+    <!-- =======================================================
+         PROJECTS
+    ======================================================== -->
 
-<div class="skill">
-<div class="skill-icon">🌐</div>
-<h3>Web Development</h3>
-<p>د ویب‌سایټونو او ویب سیستمونو جوړول</p>
-</div>
+    <section id="projects">
 
-<div class="skill">
-<div class="skill-icon">🎨</div>
-<h3>UI Design</h3>
-<p>عصري او ښکلي کارن‌مخونه</p>
-</div>
+      <div class="container">
 
-<div class="skill">
-<div class="skill-icon">📊</div>
-<h3>Management</h3>
-<p>اداري او مالي سیستمونه</p>
-</div>
+        <div class="section-head reveal">
 
-<div class="skill">
-<div class="skill-icon">⚙️</div>
-<h3>JavaScript</h3>
-<p>Interactive او Dynamic سیستمونه</p>
-</div>
+          <span class="section-kicker">
+            PROJECTS
+          </span>
 
-</div>
+          <h2>
+            زما پروژې
+          </h2>
 
-</section>
+          <p>
+            ځینې هغه ویب پروژې چې ما جوړې کړې دي
+          </p>
 
+        </div>
 
-<!-- ================= PROJECTS ================= -->
+        <div class="projects-grid">
 
-<section class="section container" id="projects">
+          <article class="project-card reveal">
 
-<div class="section-heading">
+            <div class="project-image">
 
-<div class="eyebrow">MY PROJECTS</div>
+              <img
+                src="https://i.ibb.co/jv0C0ks4/Chat-GPT-Image-Jul-13-2026-03-52-32-PM.png"
+                alt="د دوکان او محاسبې سیستم"
+                loading="lazy"
+              >
 
-<h2>ځانګړې پروژې</h2>
+              <div class="project-overlay">
 
-<p>زما د ویب او ډیجیټل سیستمونو یوه برخه</p>
+                <span class="project-tag">
+                  Accounting System
+                </span>
 
-</div>
+              </div>
 
+            </div>
 
-<div class="projects">
+            <div class="project-body">
 
-<div class="project-card">
+              <h3>
+                د دوکان او محاسبې سیستم
+              </h3>
 
-<div class="project-image">
-<img
-src="https://i.ibb.co/jv0C0ks4/Chat-GPT-Image-Jul-13-2026-03-52-32-PM.png"
-alt="پروژه">
-</div>
+              <p>
+                د دوکان د خرڅلاو، مشتریانو، حسابونو، جنسونو او
+                مدیریتي معلوماتو لپاره ویب سیستم.
+              </p>
 
-<div class="project-body">
+              <a
+                class="project-link"
+                href="https://abdullahmukhtar541-stack.github.io/abdullah-receipts/"
+                target="_blank"
+                rel="noopener"
+              >
+                پروژه پرانیزئ
+                ←
+              </a>
 
-<div class="project-tag">WEB SYSTEM</div>
+            </div>
 
-<h3>د حساب او بیل سیستم</h3>
+          </article>
 
-<p>
-د دوکان لپاره د بیل، مشتریانو، حسابونو او راپورونو
-عصري ویب سیستم.
-</p>
+          <article class="project-card reveal">
 
-<a
-class="project-link"
-href="https://abdullahmukhtar541-stack.github.io/abdullah-receipts/"
-target="_blank"
-rel="noopener">
-پروژه پرانیزئ →
-</a>
+            <div class="project-image">
 
-</div>
+              <img
+                src="https://i.ibb.co/VYx5vzp2/image.jpg"
+                alt="Digital Solutions"
+                loading="lazy"
+              >
 
-</div>
+              <div class="project-overlay">
 
+                <span class="project-tag">
+                  Digital Solutions
+                </span>
 
-<div class="project-card">
+              </div>
 
-<div class="project-image">
-<img
-src="https://i.ibb.co/VYx5vzp2/image.jpg"
-alt="ډیجیټل پروژه">
-</div>
+            </div>
 
-<div class="project-body">
+            <div class="project-body">
 
-<div class="project-tag">DIGITAL</div>
+              <h3>
+                ډیجیټل حل‌لارې
+              </h3>
 
-<h3>ډیجیټل حل‌لارې</h3>
+              <p>
+                د ډیجیټل خدماتو او عصري ویب حل‌لارو لپاره
+                د ډیزاین او سیستم مفکوره.
+              </p>
 
-<p>
-د ورځنیو کارونو د اسانه کولو لپاره ساده او عملي
-ډیجیټل سیستمونه.
-</p>
+              <a
+                class="project-link"
+                href="#contact"
+              >
+                نور معلومات
+                ←
+              </a>
 
-<a href="#contact" class="project-link">
-نور معلومات →
-</a>
+            </div>
 
-</div>
+          </article>
 
-</div>
+          <article class="project-card reveal">
 
+            <div class="project-image">
 
-<div class="project-card">
+              <img
+                src="https://i.ibb.co/XZYGynys/1773051801334.jpg"
+                alt="شخصي Portfolio"
+                loading="lazy"
+              >
 
-<div class="project-image">
-<img
-src="https://i.ibb.co/XZYGynys/1773051801334.jpg"
-alt="Portfolio">
-</div>
+              <div class="project-overlay">
 
-<div class="project-body">
+                <span class="project-tag">
+                  Portfolio
+                </span>
 
-<div class="project-tag">PORTFOLIO</div>
+              </div>
 
-<h3>شخصي Portfolio</h3>
+            </div>
 
-<p>
-زما شخصي ویب‌سایټ چې پکې زما پېژندنه، پروژې،
-ګالري، اړیکې او ژوندۍ معلومات شامل دي.
-</p>
+            <div class="project-body">
 
-<a href="#home" class="project-link">
-Portfolio وګورئ →
-</a>
+              <h3>
+                شخصي Portfolio
+              </h3>
 
-</div>
+              <p>
+                د شخصي معلوماتو، پروژو، مهارتونو، ګالري او
+                ژوندیو معلوماتو لپاره عصري ویب‌سایټ.
+              </p>
 
-</div>
+              <a
+                class="project-link"
+                href="#home"
+              >
+                اوسنی سایټ
+                ←
+              </a>
 
-</div>
+            </div>
 
-</section>
+          </article>
 
+        </div>
 
-<!-- ================= LIVE ================= -->
+      </div>
 
-<section class="section container" id="live">
+    </section>
 
-<div class="section-heading">
+    <!-- =======================================================
+         ROADMAP
+    ======================================================== -->
 
-<div class="eyebrow">LIVE INFORMATION</div>
+    <section>
 
-<h2>ژوندۍ معلومات</h2>
+      <div class="container">
 
-<p>د افغانستان وخت او د کلات د هوا معلومات</p>
+        <div class="section-head reveal">
 
-</div>
+          <span class="section-kicker">
+            WORKFLOW
+          </span>
 
+          <h2>
+            زما د کار طریقه
+          </h2>
 
-<div class="live-grid">
+          <p>
+            د یوې ویب پروژې د جوړولو ساده بهیر
+          </p>
 
+        </div>
 
-<div class="live-card">
+        <div class="roadmap">
 
-<div class="card-head">
-<h3>🕐 د افغانستان وخت</h3>
-<span>Asia/Kabul</span>
-</div>
+          <div class="road-item reveal">
 
-<div class="clock">
+            <div class="road-dot">
+              ۱
+            </div>
 
-<div class="clock-time" id="clockTime">
-12:00:00
-</div>
+            <div class="road-content">
 
-<div class="clock-ampm" id="clockAMPM">
-PM
-</div>
+              <h3>
+                پلان جوړول
+              </h3>
 
-<div class="clock-date" id="clockDate">
----
-</div>
+              <p>
+                لومړی د پروژې هدف، اړتیاوې او د کاروونکي اړتیا معلومېږي.
+              </p>
 
-</div>
+            </div>
 
-</div>
+          </div>
 
+          <div class="road-item reveal">
 
-<div class="live-card">
+            <div class="road-dot">
+              ۲
+            </div>
 
-<div class="card-head">
+            <div class="road-content">
 
-<h3>🌤️ د کلات هوا</h3>
+              <h3>
+                ډیزاین
+              </h3>
 
-<span id="weatherStatus">
-معلومات اخلي...
-</span>
+              <p>
+                د ویب‌سایټ یا سیستم لپاره عصري او د کاروونکي لپاره ساده
+                Interface جوړېږي.
+              </p>
 
-</div>
+            </div>
 
-<div class="weather-main">
+          </div>
 
-<div>
+          <div class="road-item reveal">
 
-<div class="temperature" id="temperature">
---°C
-</div>
+            <div class="road-dot">
+              ۳
+            </div>
 
-<div id="weatherText">
-هوا معلوموي...
-</div>
+            <div class="road-content">
 
-</div>
+              <h3>
+                پروګرام کول
+              </h3>
 
-<div class="weather-icon" id="weatherIcon">
-🌤️
-</div>
+              <p>
+                HTML، CSS، JavaScript او اړین API یا Backend برخې
+                له سیستم سره نښلول کېږي.
+              </p>
 
-</div>
+            </div>
 
-<div class="weather-details">
+          </div>
 
-<div class="weather-detail">
-💧 رطوبت:
-<strong id="humidity">--%</strong>
-</div>
+          <div class="road-item reveal">
 
-<div class="weather-detail">
-💨 باد:
-<strong id="wind">-- km/h</strong>
-</div>
+            <div class="road-dot">
+              ۴
+            </div>
 
-</div>
+            <div class="road-content">
 
-</div>
+              <h3>
+                ازموینه او پرمختګ
+              </h3>
 
-</div>
+              <p>
+                سیستم ازمویل کېږي، ستونزې اصلاح کېږي او د موبایل او
+                کمپیوټر لپاره برابرېږي.
+              </p>
 
-</section>
+            </div>
 
+          </div>
 
-<!-- ================= CURRENCY ================= -->
+        </div>
 
-<section class="section container" id="currency">
+      </div>
 
-<div class="section-heading">
+    </section>
 
-<div class="eyebrow">CURRENCY</div>
+    <!-- =======================================================
+         LIVE INFORMATION
+    ======================================================== -->
 
-<h2>💱 د اسعارو تبادله</h2>
+    <section id="live">
 
-<p>د مهمو اسعارو د افغانۍ پر وړاندې نرخونه</p>
+      <div class="container">
 
-</div>
+        <div class="section-head reveal">
 
+          <span class="section-kicker">
+            LIVE INFORMATION
+          </span>
 
-<div class="currency-grid">
+          <h2>
+            ژوندۍ معلومات
+          </h2>
 
-<div class="currency-card">
-<div class="flag">🇺🇸</div>
-<div class="currency-name">امریکایي ډالر</div>
-<div class="rate" id="USD">-- AFN</div>
-<div class="rate-small">1 USD</div>
-</div>
+          <p>
+            د کلات ښار وخت او د هوا معلومات
+          </p>
 
-<div class="currency-card">
-<div class="flag">🇪🇺</div>
-<div class="currency-name">یورو</div>
-<div class="rate" id="EUR">-- AFN</div>
-<div class="rate-small">1 EUR</div>
-</div>
+        </div>
 
-<div class="currency-card">
-<div class="flag">🇮🇷</div>
-<div class="currency-name">ایراني تومان</div>
-<div class="rate" id="IRR">-- AFN</div>
-<div class="rate-small">1000 IRR</div>
-</div>
+        <div class="live-grid">
 
-<div class="currency-card">
-<div class="flag">🇵🇰</div>
-<div class="currency-name">پاکستانۍ کلدارې</div>
-<div class="rate" id="PKR">-- AFN</div>
-<div class="rate-small">1 PKR</div>
-</div>
+          <!-- CLOCK -->
 
-<div class="currency-card">
-<div class="flag">🇮🇳</div>
-<div class="currency-name">هندي کلدارې</div>
-<div class="rate" id="INR">-- AFN</div>
-<div class="rate-small">1 INR</div>
-</div>
+          <div class="live-card reveal">
 
-<div class="currency-card">
-<div class="flag">🇦🇪</div>
-<div class="currency-name">اماراتي درهم</div>
-<div class="rate" id="AED">-- AFN</div>
-<div class="rate-small">1 AED</div>
-</div>
+            <div class="live-top">
 
-</div>
+              <div class="live-title">
 
+                <div class="live-icon">
+                  🕐
+                </div>
 
-<div class="converter">
+                افغانستان وخت
 
-<div class="card-head">
-<h3>🔄 د اسعارو محاسبه</h3>
-<span>Currency Converter</span>
-</div>
+              </div>
 
-<div class="converter-grid">
+              <span class="live-badge">
+                LIVE
+              </span>
 
-<div class="input-group">
+            </div>
 
-<label>مقدار</label>
+            <div
+              class="clock"
+              id="clock"
+            >
+              --:--:--
+            </div>
 
-<input
-type="number"
-id="amount"
-value="1"
-min="0"
-oninput="convertCurrency()">
+            <div
+              class="date"
+              id="date"
+            >
+              معلومات چمتو کېږي...
+            </div>
 
-</div>
+          </div>
 
+          <!-- WEATHER -->
 
-<div class="input-group">
+          <div class="live-card reveal">
 
-<label>له</label>
+            <div class="live-top">
 
-<select id="fromCurrency" onchange="convertCurrency()">
+              <div class="live-title">
 
-<option value="USD">امریکایي ډالر</option>
-<option value="EUR">یورو</option>
-<option value="IRR">ایراني ریال</option>
-<option value="PKR">پاکستانۍ کلدارې</option>
-<option value="INR">هندي کلدارې</option>
-<option value="AED">اماراتي درهم</option>
-<option value="AFN">افغانۍ</option>
+                <div class="live-icon">
+                  🌤️
+                </div>
 
-</select>
+                کلات هوا
 
-</div>
+              </div>
 
+              <span class="live-badge">
+                LIVE
+              </span>
 
-<div class="input-group">
+            </div>
 
-<label>ته</label>
+            <div class="weather-main">
 
-<select id="toCurrency" onchange="convertCurrency()">
+              <div
+                class="weather-icon"
+                id="weatherIcon"
+              >
+                🌤️
+              </div>
 
-<option value="AFN">افغانۍ</option>
-<option value="USD">امریکایي ډالر</option>
-<option value="EUR">یورو</option>
-<option value="IRR">ایراني ریال</option>
-<option value="PKR">پاکستانۍ کلدارې</option>
-<option value="INR">هندي کلدارې</option>
-<option value="AED">اماراتي درهم</option>
+              <div>
 
-</select>
+                <div
+                  class="temperature"
+                  id="temperature"
+                >
+                  --°C
+                </div>
 
-</div>
+                <div
+                  class="weather-description"
+                  id="weatherDescription"
+                >
+                  معلومات چمتو کېږي...
+                </div>
 
-</div>
+              </div>
 
-<div class="convert-result" id="convertResult">
-محاسبه چمتو ده
-</div>
+            </div>
 
-</div>
+            <div class="weather-details">
 
-</section>
+              <div class="weather-detail">
 
+                رطوبت
 
-<!-- ================= GALLERY ================= -->
+                <strong id="humidity">
+                  --%
+                </strong>
 
-<section class="section container" id="gallery">
+              </div>
 
-<div class="section-heading">
+              <div class="weather-detail">
 
-<div class="eyebrow">MY GALLERY</div>
+                باد
 
-<h2>🖼️ زما عکسونو ګالري</h2>
+                <strong id="wind">
+                  -- km/h
+                </strong>
 
-<p>
-ټول عکسونه یوازې د تڼۍ له کلیک وروسته ښکاره کېږي
-</p>
+              </div>
 
-</div>
+            </div>
 
+          </div>
 
-<div class="gallery-top">
+          <!-- SITE STATUS -->
 
-<button
-class="btn btn-primary"
-id="galleryButton"
-onclick="toggleGallery()">
-📸 ګالري خلاصول
-</button>
+          <div class="live-card reveal">
 
-<div class="gallery-count">
-ټول عکسونه: <strong>33</strong>
-</div>
+            <div class="live-top">
 
-</div>
+              <div class="live-title">
 
+                <div class="live-icon">
+                  🌐
+                </div>
 
-<div class="gallery-grid" id="galleryGrid">
+                ویب‌سایټ حالت
 
+              </div>
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/C566gpXN/IMG-20260303-WA0121.jpg" alt="عکس 1">
-<a class="download-btn" href="https://i.ibb.co/C566gpXN/IMG-20260303-WA0121.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+              <span class="live-badge">
+                ACTIVE
+              </span>
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/VYx5vzp2/image.jpg" alt="عکس 2">
-<a class="download-btn" href="https://i.ibb.co/VYx5vzp2/image.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+            </div>
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/XZYGynys/1773051801334.jpg" alt="عکس 3">
-<a class="download-btn" href="https://i.ibb.co/XZYGynys/1773051801334.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+            <div
+              style="
+                text-align:center;
+                font-size:55px;
+                margin:10px 0;
+              "
+            >
+              🟢
+            </div>
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/Q7TZF4CQ/1758517957114.jpg" alt="عکس 4">
-<a class="download-btn" href="https://i.ibb.co/Q7TZF4CQ/1758517957114.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+            <div
+              style="
+                text-align:center;
+                font-size:16px;
+                font-weight:700;
+              "
+            >
+              ویب‌سایټ فعال دی
+            </div>
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/rRL5pCDM/IMG-20260910-WA0002.jpg" alt="عکس 5">
-<a class="download-btn" href="https://i.ibb.co/rRL5pCDM/IMG-20260910-WA0002.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+            <div
+              style="
+                text-align:center;
+                color:var(--muted);
+                font-size:11px;
+                margin-top:5px;
+              "
+            >
+              Portfolio آنلاین دی
+            </div>
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/whjTz6Hz/Screenshot-Gallery.jpg" alt="عکس 6">
-<a class="download-btn" href="https://i.ibb.co/whjTz6Hz/Screenshot-Gallery.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+          </div>
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/zH4JMhjH/Screenshot-Gallery.jpg" alt="عکس 7">
-<a class="download-btn" href="https://i.ibb.co/zH4JMhjH/Screenshot-Gallery.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+        </div>
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/SDsjCLSY/Screenshot-Gallery.jpg" alt="عکس 8">
-<a class="download-btn" href="https://i.ibb.co/SDsjCLSY/Screenshot-Gallery.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+      </div>
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/ZRM5R9n3/Hello-Sanghee-1-1.png" alt="عکس 9">
-<a class="download-btn" href="https://i.ibb.co/ZRM5R9n3/Hello-Sanghee-1-1.png" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+    </section>
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/zVjn9KBV/IMG-20260609-WA0048.jpg" alt="عکس 10">
-<a class="download-btn" href="https://i.ibb.co/zVjn9KBV/IMG-20260609-WA0048.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+    <!-- =======================================================
+         CURRENCY
+    ======================================================== -->
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/7dfRKf29/IMG-20260611-WA0042.jpg" alt="عکس 11">
-<a class="download-btn" href="https://i.ibb.co/7dfRKf29/IMG-20260611-WA0042.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+    <section id="currency">
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/yB8Bjr9Q/IMG-20260701-WA0023.jpg" alt="عکس 12">
-<a class="download-btn" href="https://i.ibb.co/yB8Bjr9Q/IMG-20260701-WA0023.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+      <div class="container">
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/fVDWncf2/IMG-20260701-WA0024.jpg" alt="عکس 13">
-<a class="download-btn" href="https://i.ibb.co/fVDWncf2/IMG-20260701-WA0024.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+        <div class="section-head reveal">
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/j9bhTjB5/Screenshot-20240909-130452-Remini.jpg" alt="عکس 14">
-<a class="download-btn" href="https://i.ibb.co/j9bhTjB5/Screenshot-20240909-130452-Remini.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+          <span class="section-kicker">
+            CURRENCY
+          </span>
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/CKNxkjJh/Screenshot-20241204-115216-Remini.jpg" alt="عکس 15">
-<a class="download-btn" href="https://i.ibb.co/CKNxkjJh/Screenshot-20241204-115216-Remini.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+          <h2>
+            د اسعارو معلومات
+          </h2>
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/Lzktg9gm/1733296667513.jpg" alt="عکس 16">
-<a class="download-btn" href="https://i.ibb.co/Lzktg9gm/1733296667513.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+          <p>
+            د AFN پر بنسټ د اسعارو د تبادلې معلومات
+          </p>
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/B5SBbWtX/1733296573768.jpg" alt="عکس 17">
-<a class="download-btn" href="https://i.ibb.co/B5SBbWtX/1733296573768.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+        </div>
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/ccCv7cML/Screenshot-20241203-193311-Remini.jpg" alt="عکس 18">
-<a class="download-btn" href="https://i.ibb.co/ccCv7cML/Screenshot-20241203-193311-Remini.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+        <div
+          class="currency-grid"
+          id="currencyGrid"
+        >
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/FtnXMJv/Screenshot-20241203-193208-Remini.jpg" alt="عکس 19">
-<a class="download-btn" href="https://i.ibb.co/FtnXMJv/Screenshot-20241203-193208-Remini.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+          <div class="currency-card reveal">
+            <div class="currency-head">
+              <span class="currency-code">
+                USD
+              </span>
+              <span class="currency-flag">🇺🇸</span>
+            </div>
+            <div
+              class="currency-rate"
+              id="rate-USD"
+            >
+              --
+            </div>
+            <div class="currency-name">
+              امریکایي ډالر
+            </div>
+          </div>
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/Lzg9M8n0/Screenshot-20241203-170824-Gallery.jpg" alt="عکس 20">
-<a class="download-btn" href="https://i.ibb.co/Lzg9M8n0/Screenshot-20241203-170824-Gallery.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+          <div class="currency-card reveal">
+            <div class="currency-head">
+              <span class="currency-code">
+                EUR
+              </span>
+              <span class="currency-flag">🇪🇺</span>
+            </div>
+            <div
+              class="currency-rate"
+              id="rate-EUR"
+            >
+              --
+            </div>
+            <div class="currency-name">
+              یورو
+            </div>
+          </div>
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/p6zxVwWb/Screenshot-Remini.jpg" alt="عکس 21">
-<a class="download-btn" href="https://i.ibb.co/p6zxVwWb/Screenshot-Remini.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+          <div class="currency-card reveal">
+            <div class="currency-head">
+              <span class="currency-code">
+                PKR
+              </span>
+              <span class="currency-flag">🇵🇰</span>
+            </div>
+            <div
+              class="currency-rate"
+              id="rate-PKR"
+            >
+              --
+            </div>
+            <div class="currency-name">
+              پاکستانۍ روپۍ
+            </div>
+          </div>
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/6xnGCFL/C360-2024-03-10-07-46-19-918.jpg" alt="عکس 22">
-<a class="download-btn" href="https://i.ibb.co/6xnGCFL/C360-2024-03-10-07-46-19-918.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+          <div class="currency-card reveal">
+            <div class="currency-head">
+              <span class="currency-code">
+                INR
+              </span>
+              <span class="currency-flag">🇮🇳</span>
+            </div>
+            <div
+              class="currency-rate"
+              id="rate-INR"
+            >
+              --
+            </div>
+            <div class="currency-name">
+              هندۍ روپۍ
+            </div>
+          </div>
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/ZbQ2mRx/1148.jpg" alt="عکس 23">
-<a class="download-btn" href="https://i.ibb.co/ZbQ2mRx/1148.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+          <div class="currency-card reveal">
+            <div class="currency-head">
+              <span class="currency-code">
+                AED
+              </span>
+              <span class="currency-flag">🇦🇪</span>
+            </div>
+            <div
+              class="currency-rate"
+              id="rate-AED"
+            >
+              --
+            </div>
+            <div class="currency-name">
+              اماراتي درهم
+            </div>
+          </div>
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/ksNdSvd4/Screenshot-20241206-190414-Remini.jpg" alt="عکس 24">
-<a class="download-btn" href="https://i.ibb.co/ksNdSvd4/Screenshot-20241206-190414-Remini.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+          <div class="currency-card reveal">
+            <div class="currency-head">
+              <span class="currency-code">
+                IRR
+              </span>
+              <span class="currency-flag">🇮🇷</span>
+            </div>
+            <div
+              class="currency-rate"
+              id="rate-IRR"
+            >
+              --
+            </div>
+            <div class="currency-name">
+              ایراني ریال
+            </div>
+          </div>
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/XZxMDCx2/Screenshot-20241204-183143-Remini.jpg" alt="عکس 25">
-<a class="download-btn" href="https://i.ibb.co/XZxMDCx2/Screenshot-20241204-183143-Remini.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+        </div>
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/Swg3BFVZ/image.jpg" alt="عکس 26">
-<a class="download-btn" href="https://i.ibb.co/Swg3BFVZ/image.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+        <div class="converter reveal">
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/JR2W2910/Screenshot-20250820-082907-Gallery.jpg" alt="عکس 27">
-<a class="download-btn" href="https://i.ibb.co/JR2W2910/Screenshot-20250820-082907-Gallery.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+          <h3>
+            💱 د اسعارو محاسبه
+          </h3>
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/Zz0ZVT2v/Screenshot-Cap-Cut.jpg" alt="عکس 28">
-<a class="download-btn" href="https://i.ibb.co/Zz0ZVT2v/Screenshot-Cap-Cut.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+          <div class="converter-grid">
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/93Cv0dvC/Screenshot-Video-Player.jpg" alt="عکس 29">
-<a class="download-btn" href="https://i.ibb.co/93Cv0dvC/Screenshot-Video-Player.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+            <div class="field">
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/99tY6NzK/Screenshot-Video-Player.jpg" alt="عکس 30">
-<a class="download-btn" href="https://i.ibb.co/99tY6NzK/Screenshot-Video-Player.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+              <label for="amount">
+                اندازه
+              </label>
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/S73Q19Gt/Screenshot-Video-Player.jpg" alt="عکس 31">
-<a class="download-btn" href="https://i.ibb.co/S73Q19Gt/Screenshot-Video-Player.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+              <input
+                type="number"
+                id="amount"
+                value="1000"
+                min="0"
+                step="any"
+              >
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/xS7Qq6rf/Screenshot-Video-Player.jpg" alt="عکس 32">
-<a class="download-btn" href="https://i.ibb.co/xS7Qq6rf/Screenshot-Video-Player.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+            </div>
 
-<div class="gallery-item" onclick="openModal(this)">
-<img src="https://i.ibb.co/fzQwwDWF/Screenshot-Video-Player.jpg" alt="عکس 33">
-<a class="download-btn" href="https://i.ibb.co/fzQwwDWF/Screenshot-Video-Player.jpg" download target="_blank" onclick="event.stopPropagation()">⬇️ ډاونلوډ</a>
-</div>
+            <div class="field">
 
-</div>
+              <label for="currency">
+                اسعار
+              </label>
 
-</section>
+              <select id="currency">
 
+                <option value="USD">
+                  USD — ډالر
+                </option>
 
-<!-- ================= CONTACT ================= -->
+                <option value="EUR">
+                  EUR — یورو
+                </option>
 
-<section class="section container" id="contact">
+                <option value="PKR">
+                  PKR — روپۍ
+                </option>
 
-<div class="section-heading">
+                <option value="INR">
+                  INR — هندۍ روپۍ
+                </option>
 
-<div class="eyebrow">CONTACT</div>
+                <option value="AED">
+                  AED — درهم
+                </option>
 
-<h2>📞 له ما سره اړیکه</h2>
+                <option value="IRR">
+                  IRR — ریال
+                </option>
 
-<p>د اړیکې لپاره لاندې لارې کارولی شئ</p>
+              </select>
 
-</div>
+            </div>
 
+          </div>
 
-<div class="contact-grid">
+          <div
+            class="converter-result"
+            id="converterResult"
+          >
+            د نرخ معلومات راځي...
+          </div>
 
-<div class="contact-card">
+          <div
+            class="currency-updated"
+            id="currencyUpdated"
+          >
+            د اسعارو معلومات ترلاسه کېږي...
+          </div>
 
-<div class="contact-icon">📱</div>
+        </div>
 
-<h3>WhatsApp</h3>
+      </div>
 
-<a href="https://wa.me/93702624188" target="_blank" rel="noopener">
-0702624188
-</a>
+    </section>
 
-</div>
+    <!-- =======================================================
+         GALLERY
+    ======================================================== -->
 
+    <section id="gallery">
 
-<div class="contact-card">
+      <div class="container">
 
-<div class="contact-icon">🌐</div>
+        <div class="section-head reveal">
 
-<h3>آنلاین پروژه</h3>
+          <span class="section-kicker">
+            GALLERY
+          </span>
 
-<a href="https://abdullahmukhtar541-stack.github.io/abdullah-receipts/" target="_blank" rel="noopener">
-پروژه پرانیزئ
-</a>
+          <h2>
+            زما ګالري
+          </h2>
 
-</div>
+          <p>
+            د پروژو او یادګارونو انځورونه
+          </p>
 
+        </div>
 
-<div class="contact-card">
+        <div class="gallery-top">
 
-<div class="contact-icon">📍</div>
+          <div class="gallery-count">
+            ټول
+            <strong>
+              33
+            </strong>
+            عکسونه
+          </div>
 
-<h3>ادرس</h3>
+          <button
+            class="btn btn-outline"
+            id="galleryTopButton"
+            type="button"
+          >
+            🖼️ ټول عکسونه
+          </button>
 
-<p>
-زابل ولایت، کلات ښار، افغانستان 🇦🇫
-</p>
+        </div>
 
-</div>
+        <div
+          class="gallery-grid"
+          id="galleryGrid"
+        >
+          <!-- JavaScript will load images -->
+        </div>
 
-</div>
+      </div>
 
-</section>
+    </section>
 
+    <!-- =======================================================
+         CONTACT
+    ======================================================== -->
 
-<!-- ================= VISITOR ================= -->
+    <section id="contact">
 
-<section class="section container">
+      <div class="container">
 
-<div class="section-heading">
+        <div class="contact-box reveal">
 
-<div class="eyebrow">VISITORS</div>
+          <div class="contact-content">
 
-<h2>👁️ د ویب‌سایټ لیدنې</h2>
+            <div>
 
-<p>
-ستاسې محرمیت ته درناوی کېږي؛ پټ ایمیل یا شخصي معلومات نه راټولېږي.
-</p>
+              <h2>
+                راځئ اړیکه ونیسو
+              </h2>
 
-</div>
+              <p>
+                که زما د پروژو، ویب سیستمونو یا ډیزاین په اړه
+                معلومات غواړئ، له ما سره اړیکه ونیسئ.
+              </p>
 
+            </div>
 
-<div class="visitor-panel">
+            <div class="contact-actions">
 
-<div class="visitor-box">
+              <a
+                class="btn btn-primary"
+                href="https://wa.me/93702624188"
+                target="_blank"
+                rel="noopener"
+              >
+                💬 WhatsApp
+              </a>
 
-<div>👤</div>
+              <button
+                class="btn btn-outline"
+                type="button"
+                id="copyPhone"
+              >
+                📋 نمبر کاپي
+              </button>
 
-<div class="visitor-number" id="visitorId">
----
-</div>
+              <a
+                class="btn btn-outline"
+                href="https://abdullahmukhtar541-stack.github.io/abdullah-receipts/"
+                target="_blank"
+                rel="noopener"
+              >
+                🚀 پروژه
+              </a>
 
-<div>
-ستاسې Anonymous ID
-</div>
+            </div>
 
-</div>
+          </div>
 
+          <div class="visitor-card">
 
-<div class="visitor-box">
+            <div class="visitor-left">
 
-<div>👁️</div>
+              <div class="visitor-icon">
+                👁️
+              </div>
 
-<div class="visitor-number" id="visitCount">
-0
-</div>
+              <div class="visitor-text">
 
-<div>
-ستاسې د دې براوزر لیدنې
-</div>
+                <strong>
+                  ستا د براوزر معلومات
+                </strong>
 
-</div>
+                <span>
+                  دا شمېر د همدې براوزر په وسیله ثبتېږي.
+                </span>
 
-</div>
+              </div>
 
-</section>
+            </div>
 
-</main>
+            <div
+              class="visitor-id"
+              id="visitorId"
+            >
+              AF-------
+            </div>
 
+          </div>
 
-<!-- ================= MODAL ================= -->
+        </div>
 
-<div
-class="modal"
-id="imageModal"
-onclick="closeModal(event)">
+      </div>
 
-<div class="close" onclick="closeModal(event)">
-×
-</div>
+    </section>
 
-<div
-class="modal-content"
-onclick="event.stopPropagation()">
+  </main>
 
-<img
-id="modalImage"
-src=""
-alt="لوی انځور">
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
 
-<div class="modal-actions">
+  <footer>
 
-<a
-id="modalDownload"
-class="modal-download"
-href=""
-download
-target="_blank">
-⬇️ عکس ډاونلوډ کړئ
-</a>
+    <div class="container footer-content">
 
-</div>
+      <div class="footer-brand">
+        عبدالله مختار
+      </div>
 
-</div>
+      <div class="footer-copy">
 
-</div>
+        ©
+        <span id="year"></span>
+        ټول حقوق خوندي دي.
 
+      </div>
 
-<!-- ================= FOOTER ================= -->
+      <div class="footer-address">
+        📍 زابل، کلات ښار، افغانستان 🇦🇫
+      </div>
 
-<footer>
+    </div>
 
-<p>
-© <span id="year"></span>
-<span class="footer-name">عبدالله مختار</span>
-— ټول حقوق خوندي دي.
-</p>
+  </footer>
 
-<p style="margin-top:7px;">
-زابل ولایت، کلات ښار — افغانستان 🇦🇫
-</p>
+  <!-- =========================================================
+       IMAGE MODAL
+  ========================================================== -->
 
-</footer>
+  <div
+    class="modal"
+    id="imageModal"
+    role="dialog"
+    aria-modal="true"
+    aria-label="د عکس کتلو کړکۍ"
+  >
 
+    <div class="modal-content">
 
-<script>
+      <button
+        class="modal-close"
+        id="modalClose"
+        type="button"
+        aria-label="بندول"
+      >
+        ✕
+      </button>
 
-/* ================= YEAR ================= */
+      <button
+        class="modal-prev"
+        id="modalPrev"
+        type="button"
+        aria-label="مخکینی عکس"
+      >
+        →
+      </button>
 
-document.getElementById("year").textContent =
-new Date().getFullYear();
+      <img
+        class="modal-image"
+        id="modalImage"
+        src=""
+        alt="Gallery Image"
+      >
 
+      <button
+        class="modal-next"
+        id="modalNext"
+        type="button"
+        aria-label="بل عکس"
+      >
+        ←
+      </button>
 
-/* ================= MOBILE MENU ================= */
+      <div
+        class="modal-counter"
+        id="modalCounter"
+      >
+        1 / 33
+      </div>
 
-function toggleMobileMenu(){
+    </div>
 
-    document
-        .getElementById("mobileMenu")
-        .classList.toggle("show");
+  </div>
 
-}
+  <!-- BACK TO TOP -->
 
-function closeMobileMenu(){
+  <button
+    class="back-top"
+    id="backTop"
+    type="button"
+    aria-label="پورته تلل"
+  >
+    ↑
+  </button>
 
-    document
-        .getElementById("mobileMenu")
-        .classList.remove("show");
+  <!-- TOAST -->
 
-}
+  <div
+    class="toast"
+    id="toast"
+  >
+    کاپي شو!
+  </div>
 
+  <!-- =========================================================
+       JAVASCRIPT
+  ========================================================== -->
 
-/* ================= CLOCK ================= */
+  <script>
 
-function updateClock(){
+    /* =========================================================
+       GENERAL
+    ========================================================== */
 
-    const now = new Date();
+    const $ = (selector) =>
+      document.querySelector(selector);
 
-    const parts =
-        new Intl.DateTimeFormat(
-            "en-US",
-            {
-                timeZone:"Asia/Kabul",
-                hour:"2-digit",
-                minute:"2-digit",
-                second:"2-digit",
-                hour12:true
-            }
-        ).formatToParts(now);
+    const $$ = (selector) =>
+      document.querySelectorAll(selector);
 
-    const get =
-        type =>
-        parts.find(
-            p => p.type === type
-        )?.value || "";
 
-    document.getElementById("clockTime").textContent =
-        `${get("hour")}:${get("minute")}:${get("second")}`;
+    /* =========================================================
+       LOADER
+    ========================================================== */
 
-    document.getElementById("clockAMPM").textContent =
-        get("dayPeriod");
+    window.addEventListener("load", () => {
 
-    document.getElementById("clockDate").textContent =
-        new Intl.DateTimeFormat(
-            "ps-AF",
-            {
-                timeZone:"Asia/Kabul",
-                weekday:"long",
-                year:"numeric",
-                month:"long",
-                day:"numeric"
-            }
-        ).format(now);
+      setTimeout(() => {
 
-}
+        $("#loader").classList.add("hide");
 
-updateClock();
-
-setInterval(updateClock,1000);
-
-
-/* ================= WEATHER ================= */
-
-async function loadWeather(){
-
-    const lat = 32.1058;
-    const lon = 66.9083;
-
-    try{
-
-        const url =
-            "https://api.open-meteo.com/v1/forecast" +
-            `?latitude=${lat}` +
-            `&longitude=${lon}` +
-            "&current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code" +
-            "&timezone=Asia%2FKabul";
-
-        const response =
-            await fetch(url);
-
-        if(!response.ok){
-            throw new Error("Weather error");
-        }
-
-        const data =
-            await response.json();
-
-        const current =
-            data.current;
-
-        document.getElementById("temperature").textContent =
-            Math.round(current.temperature_2m) + "°C";
-
-        document.getElementById("humidity").textContent =
-            Math.round(current.relative_humidity_2m) + "%";
-
-        document.getElementById("wind").textContent =
-            Math.round(current.wind_speed_10m) + " km/h";
-
-        const weather =
-            getWeatherText(
-                current.weather_code
-            );
-
-        document.getElementById("weatherText").textContent =
-            weather.text;
-
-        document.getElementById("weatherIcon").textContent =
-            weather.icon;
-
-        document.getElementById("weatherStatus").textContent =
-            "ژوندۍ معلومات";
-
-    }catch(error){
-
-        document.getElementById("weatherStatus").textContent =
-            "معلومات موجود نه دي";
-
-        document.getElementById("weatherText").textContent =
-            "د هوا معلومات اوس نه شي ترلاسه کېدای.";
-
-    }
-
-}
-
-
-function getWeatherText(code){
-
-    if(code === 0)
-        return {text:"صافه هوا",icon:"☀️"};
-
-    if(code === 1 || code === 2)
-        return {text:"نیمه وريځ",icon:"🌤️"};
-
-    if(code === 3)
-        return {text:"وريځ",icon:"☁️"};
-
-    if(code >= 45 && code <= 48)
-        return {text:"دود / خړه هوا",icon:"🌫️"};
-
-    if(code >= 51 && code <= 57)
-        return {text:"سپک باران",icon:"🌦️"};
-
-    if(code >= 61 && code <= 67)
-        return {text:"باراني هوا",icon:"🌧️"};
-
-    if(code >= 71 && code <= 77)
-        return {text:"واوره",icon:"🌨️"};
-
-    if(code >= 80 && code <= 82)
-        return {text:"باراني ورښت",icon:"🌦️"};
-
-    if(code >= 95)
-        return {text:"تندر او باران",icon:"⛈️"};
-
-    return {text:"بدله هوا",icon:"🌤️"};
-
-}
-
-loadWeather();
-
-setInterval(
-    loadWeather,
-    15 * 60 * 1000
-);
-
-
-/* ================= CURRENCY ================= */
-
-let currencyRates = {
-    AFN:1,
-    USD:0,
-    EUR:0,
-    IRR:0,
-    PKR:0,
-    INR:0,
-    AED:0
-};
-
-
-async function loadCurrency(){
-
-    try{
-
-        const response =
-            await fetch(
-                "https://api.frankfurter.dev/v2/rates?base=AFN"
-            );
-
-        if(!response.ok){
-            throw new Error("Currency error");
-        }
-
-        const data =
-            await response.json();
-
-        if(Array.isArray(data)){
-
-            data.forEach(item => {
-
-                const quote =
-                    String(item.quote || "")
-                    .toUpperCase();
-
-                const rate =
-                    Number(item.rate);
-
-                if(
-                    Number.isFinite(rate) &&
-                    rate > 0 &&
-                    [
-                        "USD",
-                        "EUR",
-                        "PKR",
-                        "INR",
-                        "AED",
-                        "IRR"
-                    ].includes(quote)
-                ){
-
-                    currencyRates[quote] =
-                        1 / rate;
-
-                }
-
-            });
-
-        }
-
-        showCurrency();
-
-    }catch(error){
-
-        showCurrency();
-
-    }
-
-}
-
-
-function showCurrency(){
-
-    [
-        "USD",
-        "EUR",
-        "PKR",
-        "INR",
-        "AED"
-    ].forEach(id => {
-
-        const value =
-            currencyRates[id];
-
-        if(value > 0){
-
-            document.getElementById(id)
-                .textContent =
-                value.toFixed(4) + " AFN";
-
-        }
+      }, 650);
 
     });
 
 
-    if(currencyRates.IRR > 0){
+    /* =========================================================
+       YEAR
+    ========================================================== */
 
-        document.getElementById("IRR")
-            .textContent =
-            (currencyRates.IRR * 1000)
-            .toFixed(4) + " AFN";
+    $("#year").textContent =
+      new Date().getFullYear();
+
+
+    /* =========================================================
+       MOBILE MENU
+    ========================================================== */
+
+    const mobileMenu =
+      $("#mobileMenu");
+
+    const navLinks =
+      $("#navLinks");
+
+    mobileMenu.addEventListener(
+      "click",
+      () => {
+
+        const open =
+          navLinks.classList.toggle("open");
+
+        mobileMenu.setAttribute(
+          "aria-expanded",
+          String(open)
+        );
+
+        mobileMenu.textContent =
+          open ? "✕" : "☰";
+
+      }
+    );
+
+
+    $$("#navLinks a").forEach(link => {
+
+      link.addEventListener(
+        "click",
+        () => {
+
+          navLinks.classList.remove("open");
+
+          mobileMenu.setAttribute(
+            "aria-expanded",
+            "false"
+          );
+
+          mobileMenu.textContent = "☰";
+
+        }
+      );
+
+    });
+
+
+    /* =========================================================
+       THEME
+    ========================================================== */
+
+    const themeToggle =
+      $("#themeToggle");
+
+    const savedTheme =
+      localStorage.getItem(
+        "abdullah_theme"
+      );
+
+    if (savedTheme === "light") {
+
+      document.body.classList.add("light");
+
+      themeToggle.textContent = "🌙";
 
     }
 
-    convertCurrency();
+    themeToggle.addEventListener(
+      "click",
+      () => {
 
-}
+        document.body.classList.toggle("light");
 
+        const isLight =
+          document.body.classList.contains("light");
 
-loadCurrency();
+        localStorage.setItem(
+          "abdullah_theme",
+          isLight ? "light" : "dark"
+        );
 
-setInterval(
-    loadCurrency,
-    30 * 60 * 1000
-);
+        themeToggle.textContent =
+          isLight ? "🌙" : "☀️";
 
-
-/* ================= CONVERTER ================= */
-
-function convertCurrency(){
-
-    const amount =
-        Number(
-            document.getElementById("amount").value
-        ) || 0;
-
-    const from =
-        document.getElementById("fromCurrency").value;
-
-    const to =
-        document.getElementById("toCurrency").value;
+      }
+    );
 
 
-    let fromRate =
-        from === "AFN"
-        ? 1
-        : currencyRates[from];
+    /* =========================================================
+       HEADER + SCROLL PROGRESS
+    ========================================================== */
+
+    const header =
+      $("#header");
+
+    const progress =
+      $("#scrollProgress");
+
+    const backTop =
+      $("#backTop");
+
+    window.addEventListener(
+      "scroll",
+      () => {
+
+        const scrollTop =
+          window.scrollY;
+
+        const maxScroll =
+          document.documentElement.scrollHeight -
+          window.innerHeight;
+
+        const percent =
+          maxScroll > 0
+            ? (scrollTop / maxScroll) * 100
+            : 0;
+
+        progress.style.width =
+          percent + "%";
+
+        if (scrollTop > 30) {
+
+          header.classList.add(
+            "scrolled"
+          );
+
+        } else {
+
+          header.classList.remove(
+            "scrolled"
+          );
+
+        }
+
+        if (scrollTop > 500) {
+
+          backTop.classList.add(
+            "show"
+          );
+
+        } else {
+
+          backTop.classList.remove(
+            "show"
+          );
+
+        }
+
+      },
+      { passive: true }
+    );
 
 
-    let toRate =
-        to === "AFN"
-        ? 1
-        : currencyRates[to];
+    backTop.addEventListener(
+      "click",
+      () => {
+
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+
+      }
+    );
 
 
-    if(from === "IRR"){
-        fromRate =
-            currencyRates.IRR;
+    /* =========================================================
+       TYPING / ROLE ROTATION
+    ========================================================== */
+
+    const roles = [
+      "د ویب سیستمونو جوړونکی",
+      "د UI ډیزاین علاقه‌مند",
+      "د اداري سیستمونو جوړونکی",
+      "د ټکنالوژۍ مینه‌وال"
+    ];
+
+    const typedRole =
+      $("#typedRole");
+
+    let roleIndex = 0;
+
+    let charIndex = 0;
+
+    let deleting = false;
+
+
+    function typeRole() {
+
+      const current =
+        roles[roleIndex];
+
+      if (!deleting) {
+
+        charIndex++;
+
+        typedRole.textContent =
+          current.substring(
+            0,
+            charIndex
+          );
+
+        if (charIndex >= current.length) {
+
+          deleting = true;
+
+          setTimeout(
+            typeRole,
+            1500
+          );
+
+          return;
+
+        }
+
+      } else {
+
+        charIndex--;
+
+        typedRole.textContent =
+          current.substring(
+            0,
+            charIndex
+          );
+
+        if (charIndex <= 0) {
+
+          deleting = false;
+
+          roleIndex =
+            (roleIndex + 1) %
+            roles.length;
+
+        }
+
+      }
+
+      setTimeout(
+        typeRole,
+        deleting ? 45 : 75
+      );
+
     }
 
-    if(to === "IRR"){
-        toRate =
-            currencyRates.IRR;
+    setTimeout(
+      typeRole,
+      1000
+    );
+
+
+    /* =========================================================
+       REVEAL ANIMATION
+    ========================================================== */
+
+    const revealObserver =
+      new IntersectionObserver(
+        entries => {
+
+          entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+              entry.target.classList.add(
+                "visible"
+              );
+
+              revealObserver.unobserve(
+                entry.target
+              );
+
+            }
+
+          });
+
+        },
+        {
+          threshold: .12
+        }
+      );
+
+
+    $$(".reveal").forEach(element => {
+
+      revealObserver.observe(element);
+
+    });
+
+
+    /* =========================================================
+       SKILL BARS
+    ========================================================== */
+
+    const skillObserver =
+      new IntersectionObserver(
+        entries => {
+
+          entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+              entry.target
+                .querySelectorAll(
+                  ".skill-progress"
+                )
+                .forEach(bar => {
+
+                  bar.style.width =
+                    bar.dataset.width;
+
+                });
+
+              skillObserver.unobserve(
+                entry.target
+              );
+
+            }
+
+          });
+
+        },
+        {
+          threshold: .25
+        }
+      );
+
+
+    $$(".skills-card").forEach(card => {
+
+      skillObserver.observe(card);
+
+    });
+
+
+    /* =========================================================
+       CLOCK
+    ========================================================== */
+
+    function updateClock() {
+
+      const now =
+        new Date();
+
+      const time =
+        new Intl.DateTimeFormat(
+          "ps-AF",
+          {
+            timeZone:
+              "Asia/Kabul",
+
+            hour:
+              "2-digit",
+
+            minute:
+              "2-digit",
+
+            second:
+              "2-digit",
+
+            hour12:
+              false
+          }
+        ).format(now);
+
+      const date =
+        new Intl.DateTimeFormat(
+          "ps-AF",
+          {
+            timeZone:
+              "Asia/Kabul",
+
+            weekday:
+              "long",
+
+            year:
+              "numeric",
+
+            month:
+              "long",
+
+            day:
+              "numeric"
+          }
+        ).format(now);
+
+      $("#clock").textContent =
+        time;
+
+      $("#date").textContent =
+        date;
+
     }
 
+    updateClock();
 
-    let result = 0;
-
-    if(fromRate > 0 && toRate > 0){
-
-        const afn =
-            amount * fromRate;
-
-        result =
-            afn / toRate;
-
-    }
+    setInterval(
+      updateClock,
+      1000
+    );
 
 
-    const names = {
-        AFN:"افغانۍ",
-        USD:"ډالر",
-        EUR:"یورو",
-        IRR:"ایراني ریال",
-        PKR:"پاکستانۍ کلدارې",
-        INR:"هندي کلدارې",
-        AED:"درهم"
+    /* =========================================================
+       WEATHER
+    ========================================================== */
+
+    const weatherDescriptions = {
+
+      0:
+        "صافه هوا",
+
+      1:
+        "اکثراً صافه",
+
+      2:
+        "نیمه ورېځ",
+
+      3:
+        "ورېځمنه هوا",
+
+      45:
+        "لږه دوړه",
+
+      48:
+        "دوړه",
+
+      51:
+        "لږ باران",
+
+      53:
+        "منځنی باران",
+
+      55:
+        "زیات باران",
+
+      61:
+        "لږ باران",
+
+      63:
+        "منځنی باران",
+
+      65:
+        "زیات باران",
+
+      71:
+        "لږه واوره",
+
+      73:
+        "منځنۍ واوره",
+
+      75:
+        "زیاته واوره",
+
+      80:
+        "باراني څاڅکي",
+
+      81:
+        "باراني څاڅکي",
+
+      82:
+        "شدید باراني څاڅکي",
+
+      95:
+        "تندر او باران",
+
+      96:
+        "تندر او ږلۍ",
+
+      99:
+        "شدید تندر او ږلۍ"
+
     };
 
 
-    document.getElementById("convertResult")
-        .textContent =
-        `${amount.toLocaleString()} ${names[from]} = ${result.toLocaleString(undefined,{
-            maximumFractionDigits:4
-        })} ${names[to]}`;
+    function weatherEmoji(code) {
 
-}
+      if (code === 0) return "☀️";
 
+      if (
+        code === 1 ||
+        code === 2
+      ) return "🌤️";
 
-/* ================= GALLERY ================= */
+      if (code === 3) return "☁️";
 
-function toggleGallery(){
+      if (
+        code === 45 ||
+        code === 48
+      ) return "🌫️";
 
-    const gallery =
-        document.getElementById("galleryGrid");
+      if (
+        code >= 51 &&
+        code <= 67
+      ) return "🌧️";
 
-    const button =
-        document.getElementById("galleryButton");
+      if (
+        code >= 71 &&
+        code <= 77
+      ) return "❄️";
 
-    gallery.classList.toggle("show");
+      if (
+        code >= 80 &&
+        code <= 82
+      ) return "🌦️";
 
-    if(gallery.classList.contains("show")){
+      if (code >= 95) return "⛈️";
 
-        button.innerHTML =
-            "✖️ ګالري بندول";
-
-    }else{
-
-        button.innerHTML =
-            "📸 ګالري خلاصول";
+      return "🌤️";
 
     }
 
-}
 
+    async function loadWeather() {
 
-/* ================= MODAL ================= */
+      const url =
+        "https://api.open-meteo.com/v1/forecast" +
+        "?latitude=32.1058" +
+        "&longitude=66.9083" +
+        "&current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code" +
+        "&timezone=Asia%2FKabul";
 
-function openModal(element){
+      try {
 
-    const img =
-        element.querySelector("img");
+        const response =
+          await fetch(url);
 
-    if(!img){
-        return;
-    }
-
-    const src =
-        img.src;
-
-    document.getElementById("modalImage")
-        .src = src;
-
-    document.getElementById("modalDownload")
-        .href = src;
-
-    document.getElementById("imageModal")
-        .classList.add("show");
-
-    document.body.style.overflow =
-        "hidden";
-
-}
-
-
-function closeModal(event){
-
-    if(event){
-
-        if(
-            event.target.id !== "imageModal" &&
-            !event.target.classList.contains("close")
-        ){
-
-            return;
-
+        if (!response.ok) {
+          throw new Error(
+            "Weather request failed"
+          );
         }
 
+        const data =
+          await response.json();
+
+        const current =
+          data.current;
+
+        const code =
+          current.weather_code;
+
+        $("#temperature").textContent =
+          `${Math.round(current.temperature_2m)}°C`;
+
+        $("#humidity").textContent =
+          `${current.relative_humidity_2m}%`;
+
+        $("#wind").textContent =
+          `${Math.round(current.wind_speed_10m)} km/h`;
+
+        $("#weatherIcon").textContent =
+          weatherEmoji(code);
+
+        $("#weatherDescription").textContent =
+          weatherDescriptions[code] ||
+          "د هوا معلومات";
+
+      } catch (error) {
+
+        $("#temperature").textContent =
+          "--°C";
+
+        $("#humidity").textContent =
+          "--%";
+
+        $("#wind").textContent =
+          "-- km/h";
+
+        $("#weatherDescription").textContent =
+          "د هوا معلومات اوس نه دي ترلاسه شوي.";
+
+      }
+
     }
 
-    document.getElementById("imageModal")
-        .classList.remove("show");
-
-    document.body.style.overflow =
-        "";
-
-}
+    loadWeather();
 
 
-document.addEventListener(
-    "keydown",
-    function(event){
+    /* =========================================================
+       CURRENCY
+    ========================================================== */
 
-        if(event.key === "Escape"){
+    const currencyRates = {};
 
-            document.getElementById("imageModal")
-                .classList.remove("show");
+    const currencyNames = {
 
-            document.body.style.overflow =
-                "";
+      USD: "امریکایي ډالر",
+      EUR: "یورو",
+      PKR: "پاکستانۍ روپۍ",
+      INR: "هندۍ روپۍ",
+      AED: "اماراتي درهم",
+      IRR: "ایراني ریال"
 
+    };
+
+
+    async function loadCurrencies() {
+
+      const api =
+        "https://open.er-api.com/v6/latest/USD";
+
+      try {
+
+        const response =
+          await fetch(api);
+
+        if (!response.ok) {
+          throw new Error(
+            "Currency request failed"
+          );
         }
 
+        const data =
+          await response.json();
+
+        if (
+          !data ||
+          !data.rates ||
+          !data.rates.AFN
+        ) {
+          throw new Error(
+            "AFN rate unavailable"
+          );
+        }
+
+        const afnPerUsd =
+          data.rates.AFN;
+
+        const currencies = [
+          "USD",
+          "EUR",
+          "PKR",
+          "INR",
+          "AED",
+          "IRR"
+        ];
+
+        currencies.forEach(code => {
+
+          if (
+            code === "USD"
+          ) {
+
+            currencyRates[code] =
+              afnPerUsd;
+
+          } else if (
+            data.rates[code]
+          ) {
+
+            currencyRates[code] =
+              afnPerUsd /
+              data.rates[code];
+
+          }
+
+        });
+
+
+        /* UPDATE CARDS */
+
+        currencies.forEach(code => {
+
+          const element =
+            $(`#rate-${code}`);
+
+          if (!element) return;
+
+          const rate =
+            currencyRates[code];
+
+          if (
+            typeof rate ===
+            "number" &&
+            isFinite(rate)
+          ) {
+
+            if (code === "IRR") {
+
+              element.textContent =
+                `1000 IRR ≈ ${(
+                  rate * 1000
+                ).toFixed(2)} AFN`;
+
+            } else {
+
+              element.textContent =
+                `1 ${code} ≈ ${rate.toFixed(2)} AFN`;
+
+            }
+
+          } else {
+
+            element.textContent =
+              "موجود نه دی";
+
+          }
+
+        });
+
+
+        $("#currencyUpdated").textContent =
+          "د اسعارو معلومات له آنلاین سرچینې څخه ترلاسه شول.";
+
+        calculateCurrency();
+
+      } catch (error) {
+
+        $$("#currencyGrid .currency-rate")
+          .forEach(element => {
+
+            element.textContent =
+              "—";
+
+          });
+
+        $("#currencyUpdated").textContent =
+          "د اسعارو آنلاین معلومات اوس نه دي ترلاسه شوي.";
+
+        $("#converterResult").innerHTML =
+          "د تبادلې نرخونه اوس نه دي ترلاسه شوي.";
+
+      }
+
     }
-);
 
 
-/* ================= ANONYMOUS VISITOR ================= */
+    function calculateCurrency() {
 
-function createVisitorID(){
-
-    let id =
-        localStorage.getItem(
-            "abdullah_visitor_id"
-        );
-
-    if(!id){
-
-        id =
-            "AF-" +
-            Math.random()
-                .toString(36)
-                .substring(2,8)
-                .toUpperCase();
-
-        localStorage.setItem(
-            "abdullah_visitor_id",
-            id
-        );
-
-    }
-
-    document.getElementById("visitorId")
-        .textContent = id;
-
-}
-
-
-function countLocalVisits(){
-
-    let visits =
+      const amount =
         Number(
-            localStorage.getItem(
-                "abdullah_visit_count"
-            )
-        ) || 0;
+          $("#amount").value
+        );
 
-    visits++;
+      const code =
+        $("#currency").value;
 
-    localStorage.setItem(
-        "abdullah_visit_count",
-        visits
+      const rate =
+        currencyRates[code];
+
+      if (
+        !Number.isFinite(amount) ||
+        amount < 0
+      ) {
+
+        $("#converterResult").innerHTML =
+          "مهرباني وکړئ سمه اندازه ولیکئ.";
+
+        return;
+
+      }
+
+      if (
+        !rate ||
+        !Number.isFinite(rate)
+      ) {
+
+        $("#converterResult").innerHTML =
+          "د دې اسعارو نرخ اوس موجود نه دی.";
+
+        return;
+
+      }
+
+      const afn =
+        amount * rate;
+
+      $("#converterResult").innerHTML =
+        `<strong>${amount.toLocaleString("en-US")}</strong>
+        ${code}
+        =
+        <strong>${afn.toLocaleString("en-US", {
+          maximumFractionDigits: 2
+        })}</strong>
+        AFN`;
+
+    }
+
+
+    $("#amount").addEventListener(
+      "input",
+      calculateCurrency
     );
 
-    document.getElementById("visitCount")
-        .textContent =
-        visits.toLocaleString();
+    $("#currency").addEventListener(
+      "change",
+      calculateCurrency
+    );
 
-}
+    loadCurrencies();
 
 
-createVisitorID();
+    /* =========================================================
+       GALLERY
+    ========================================================== */
 
-countLocalVisits();
+    const galleryImages = [
 
-</script>
+      "https://i.ibb.co/C566gpXN/IMG-20260303-WA0121.jpg",
+
+      "https://i.ibb.co/VYx5vzp2/image.jpg",
+
+      "https://i.ibb.co/XZYGynys/1773051801334.jpg",
+
+      "https://i.ibb.co/Q7TZF4CQ/1758517957114.jpg",
+
+      "https://i.ibb.co/rRL5pCDM/IMG-20260910-WA0002.jpg",
+
+      "https://i.ibb.co/whjTz6Hz/Screenshot-Gallery.jpg",
+
+      "https://i.ibb.co/zH4JMhjH/Screenshot-Gallery.jpg",
+
+      "https://i.ibb.co/SDsjCLSY/Screenshot-Gallery.jpg",
+
+      "https://i.ibb.co/ZRM5R9n3/Hello-Sanghee-1-1.png",
+
+      "https://i.ibb.co/zVjn9KBV/IMG-20260609-WA0048.jpg",
+
+      "https://i.ibb.co/7dfRKf29/IMG-20260611-WA0042.jpg",
+
+      "https://i.ibb.co/yB8Bjr9Q/IMG-20260701-WA0023.jpg",
+
+      "https://i.ibb.co/fVDWncf2/IMG-20260701-WA0024.jpg",
+
+      "https://i.ibb.co/j9bhTjB5/Screenshot-20240909-130452-Remini.jpg",
+
+      "https://i.ibb.co/CKNxkjJh/Screenshot-20241204-115216-Remini.jpg",
+
+      "https://i.ibb.co/Lzktg9gm/1733296667513.jpg",
+
+      "https://i.ibb.co/B5SBbWtX/1733296573768.jpg",
+
+      "https://i.ibb.co/ccCv7cML/Screenshot-20241203-193311-Remini.jpg",
+
+      "https://i.ibb.co/FtnXMJv/Screenshot-20241203-193208-Remini.jpg",
+
+      "https://i.ibb.co/Lzg9M8n0/Screenshot-20241203-170824-Gallery.jpg",
+
+      "https://i.ibb.co/p6zxVwWb/Screenshot-Remini.jpg",
+
+      "https://i.ibb.co/6xnGCFL/C360-2024-03-10-07-46-19-918.jpg",
+
+      "https://i.ibb.co/ZbQ2mRx/1148.jpg",
+
+      "https://i.ibb.co/ksNdSvd4/Screenshot-20241206-190414-Remini.jpg",
+
+      "https://i.ibb.co/XZYGynys/Screenshot-20241204-183143-Remini.jpg",
+
+      "https://i.ibb.co/Swg3BFVZ/image.jpg",
+
+      "https://i.ibb.co/JR2W2910/Screenshot-20250820-082907-Gallery.jpg",
+
+      "https://i.ibb.co/Zz0ZVT2v/Screenshot-Cap-Cut.jpg",
+
+      "https://i.ibb.co/93Cv0dvC/Screenshot-Video-Player.jpg",
+
+      "https://i.ibb.co/99tY6NzK/Screenshot-Video-Player.jpg",
+
+      "https://i.ibb.co/S73Q19Gt/Screenshot-Video-Player.jpg",
+
+      "https://i.ibb.co/xS7Qq6rf/Screenshot-Video-Player.jpg",
+
+      "https://i.ibb.co/fzQwwDWF/Screenshot-Video-Player.jpg"
+
+    ];
+
+
+    const galleryGrid =
+      $("#galleryGrid");
+
+    galleryImages.forEach(
+      (src, index) => {
+
+        const item =
+          document.createElement("div");
+
+        item.className =
+          "gallery-item reveal";
+
+        item.dataset.index =
+          index;
+
+        item.innerHTML = `
+
+          <img
+            src="${src}"
+            alt="د ګالري عکس ${index + 1}"
+            loading="lazy"
+            decoding="async"
+          >
+
+          <div class="gallery-overlay">
+
+            <div class="zoom-icon">
+              🔍
+            </div>
+
+          </div>
+
+        `;
+
+        item.addEventListener(
+          "click",
+          () => {
+
+            openModal(index);
+
+          }
+        );
+
+        galleryGrid.appendChild(item);
+
+        revealObserver.observe(item);
+
+      }
+    );
+
+
+    /* =========================================================
+       GALLERY MODAL
+    ========================================================== */
+
+    const modal =
+      $("#imageModal");
+
+    const modalImage =
+      $("#modalImage");
+
+    const modalCounter =
+      $("#modalCounter");
+
+    let currentImageIndex = 0;
+
+
+    function openModal(index) {
+
+      currentImageIndex =
+        index;
+
+      updateModal();
+
+      modal.classList.add(
+        "open"
+      );
+
+      document.body.style.overflow =
+        "hidden";
+
+    }
+
+
+    function updateModal() {
+
+      modalImage.src =
+        galleryImages[
+          currentImageIndex
+        ];
+
+      modalImage.alt =
+        `د ګالري عکس ${
+          currentImageIndex + 1
+        }`;
+
+      modalCounter.textContent =
+        `${currentImageIndex + 1} / ${
+          galleryImages.length
+        }`;
+
+    }
+
+
+    function closeModal() {
+
+      modal.classList.remove(
+        "open"
+      );
+
+      document.body.style.overflow =
+        "";
+
+    }
+
+
+    function previousImage() {
+
+      currentImageIndex =
+        (
+          currentImageIndex -
+          1 +
+          galleryImages.length
+        ) %
+        galleryImages.length;
+
+      updateModal();
+
+    }
+
+
+    function nextImage() {
+
+      currentImageIndex =
+        (
+          currentImageIndex +
+          1
+        ) %
+        galleryImages.length;
+
+      updateModal();
+
+    }
+
+
+    $("#modalClose").addEventListener(
+      "click",
+      closeModal
+    );
+
+    $("#modalPrev").addEventListener(
+      "click",
+      previousImage
+    );
+
+    $("#modalNext").addEventListener(
+      "click",
+      nextImage
+    );
+
+
+    modal.addEventListener(
+      "click",
+      event => {
+
+        if (
+          event.target === modal
+        ) {
+
+          closeModal();
+
+        }
+
+      }
+    );
+
+
+    document.addEventListener(
+      "keydown",
+      event => {
+
+        if (
+          !modal.classList.contains(
+            "open"
+          )
+        ) {
+          return;
+        }
+
+        if (
+          event.key === "Escape"
+        ) {
+
+          closeModal();
+
+        }
+
+        if (
+          event.key === "ArrowRight"
+        ) {
+
+          previousImage();
+
+        }
+
+        if (
+          event.key === "ArrowLeft"
+        ) {
+
+          nextImage();
+
+        }
+
+      }
+    );
+
+
+    $("#galleryTopButton")
+      .addEventListener(
+        "click",
+        () => {
+
+          document
+            .querySelector("#gallery")
+            .scrollIntoView({
+              behavior: "smooth"
+            });
+
+        }
+      );
+
+
+    /* =========================================================
+       COPY PHONE
+    ========================================================== */
+
+    const phoneNumber =
+      "0702624188";
+
+    $("#copyPhone")
+      .addEventListener(
+        "click",
+        async () => {
+
+          try {
+
+            await navigator.clipboard.writeText(
+              phoneNumber
+            );
+
+            showToast(
+              "د WhatsApp نمبر کاپي شو."
+            );
+
+          } catch {
+
+            showToast(
+              "کاپي کول ممکن نه شول."
+            );
+
+          }
+
+        }
+      );
+
+
+    /* =========================================================
+       TOAST
+    ========================================================== */
+
+    let toastTimer;
+
+    function showToast(message) {
+
+      const toast =
+        $("#toast");
+
+      toast.textContent =
+        message;
+
+      toast.classList.add(
+        "show"
+      );
+
+      clearTimeout(
+        toastTimer
+      );
+
+      toastTimer =
+        setTimeout(
+          () => {
+
+            toast.classList.remove(
+              "show"
+            );
+
+          },
+          2500
+        );
+
+    }
+
+
+    /* =========================================================
+       VISITOR ID
+    ========================================================== */
+
+    let visitorId =
+      localStorage.getItem(
+        "abdullah_visitor_id"
+      );
+
+
+    if (!visitorId) {
+
+      const random =
+        Math.floor(
+          100000 +
+          Math.random() * 900000
+        );
+
+      visitorId =
+        `AF-${random}`;
+
+      localStorage.setItem(
+        "abdullah_visitor_id",
+        visitorId
+      );
+
+    }
+
+
+    $("#visitorId").textContent =
+      visitorId;
+
+
+    /* =========================================================
+       VISIT COUNT
+    ========================================================== */
+
+    let visitCount =
+      Number(
+        localStorage.getItem(
+          "abdullah_visit_count"
+        ) || 0
+      );
+
+    visitCount++;
+
+    localStorage.setItem(
+      "abdullah_visit_count",
+      visitCount
+    );
+
+
+    /* =========================================================
+       ACTIVE NAVIGATION
+    ========================================================== */
+
+    const sections =
+      document.querySelectorAll(
+        "main section[id]"
+      );
+
+    const navAnchors =
+      document.querySelectorAll(
+        ".nav-links a"
+      );
+
+
+    const sectionObserver =
+      new IntersectionObserver(
+        entries => {
+
+          entries.forEach(entry => {
+
+            if (
+              entry.isIntersecting
+            ) {
+
+              const id =
+                entry.target.id;
+
+              navAnchors.forEach(
+                anchor => {
+
+                  anchor.classList.toggle(
+                    "active",
+                    anchor.getAttribute(
+                      "href"
+                    ) === `#${id}`
+                  );
+
+                }
+              );
+
+            }
+
+          });
+
+        },
+        {
+          rootMargin:
+            "-25% 0px -65% 0px"
+        }
+      );
+
+
+    sections.forEach(section => {
+
+      sectionObserver.observe(
+        section
+      );
+
+    });
+
+
+    /* =========================================================
+       IMAGE ERROR HANDLING
+    ========================================================== */
+
+    document.addEventListener(
+      "error",
+      event => {
+
+        if (
+          event.target.tagName ===
+          "IMG"
+        ) {
+
+          event.target.style.background =
+            "linear-gradient(135deg,#101a2b,#0b1220)";
+
+        }
+
+      },
+      true
+    );
+
+  </script>
 
 </body>
 </html>
