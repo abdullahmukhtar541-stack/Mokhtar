@@ -2927,6 +2927,414 @@
         transition-duration: .01ms !important;
       }
     }
+    ```css
+/* ================= NEW PROJECT DESIGN ================= */
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:28px;
+}
+
+.project-card{
+    position:relative;
+    overflow:hidden;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(19,27,40,.96),
+            rgba(8,13,22,.96)
+        );
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:24px;
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.35);
+    transition:.4s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    border-color:rgba(25,195,125,.45);
+    box-shadow:
+        0 30px 90px rgba(0,0,0,.5),
+        0 0 35px rgba(25,195,125,.08);
+}
+
+
+/* ================= PROJECT LOGO ================= */
+
+.project-image.project-logo{
+    height:250px;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.project-image.project-logo::before{
+    content:"";
+    position:absolute;
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:
+        0 0 0 35px rgba(255,255,255,.015),
+        0 0 0 70px rgba(255,255,255,.01);
+}
+
+.project-image.project-logo::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(25,195,125,.12),
+            transparent 55%
+        );
+}
+
+.shop-logo{
+    background:
+        linear-gradient(
+            135deg,
+            #071a16,
+            #0d2c25 45%,
+            #07111c
+        );
+}
+
+.tailor-logo{
+    background:
+        linear-gradient(
+            135deg,
+            #10152b,
+            #17204a 45%,
+            #09101d
+        );
+}
+
+.system-logo{
+    position:relative;
+    z-index:2;
+    width:80%;
+    text-align:center;
+}
+
+.logo-icon{
+    width:85px;
+    height:85px;
+    margin:0 auto 15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:3rem;
+    border-radius:24px;
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,255,255,.12);
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.3);
+}
+
+.logo-title{
+    font-size:1.7rem;
+    font-weight:900;
+    color:#fff;
+}
+
+.logo-title span{
+    color:var(--accent);
+}
+
+.tailor-logo .logo-title span{
+    color:#60a5fa;
+}
+
+.logo-subtitle{
+    margin-top:3px;
+    color:#94a3b8;
+    font-family:Arial,sans-serif;
+    font-size:.75rem;
+    letter-spacing:.5px;
+}
+
+
+/* ================= PROJECT BODY ================= */
+
+.project-body{
+    padding:26px;
+}
+
+.project-tag{
+    display:inline-flex;
+    padding:5px 12px;
+    border-radius:50px;
+    background:rgba(25,195,125,.08);
+    border:1px solid rgba(25,195,125,.18);
+    color:var(--accent);
+    font-size:.78rem;
+    font-weight:900;
+}
+
+.project-body h3{
+    font-size:1.45rem;
+    margin:12px 0 8px;
+}
+
+.project-body p{
+    color:var(--muted);
+    line-height:1.9;
+    min-height:68px;
+}
+
+
+/* ================= FEATURES ================= */
+
+.project-features{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:18px;
+}
+
+.project-features span{
+    padding:6px 10px;
+    border-radius:9px;
+    background:rgba(255,255,255,.04);
+    border:1px solid var(--line);
+    color:#cbd5e1;
+    font-size:.78rem;
+}
+
+
+/* ================= PROJECT BUTTONS ================= */
+
+.project-buttons{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-top:22px;
+}
+
+.main-project-link{
+    flex:1;
+    text-align:center;
+    margin:0;
+    padding:11px 15px;
+    border-radius:11px;
+    background:var(--accent);
+    color:#03130c;
+    font-weight:900;
+    transition:.3s;
+}
+
+.main-project-link:hover{
+    color:#03130c;
+    transform:translateY(-2px);
+}
+
+.project-guide-btn{
+    flex:1;
+    border:1px solid rgba(255,255,255,.1);
+    background:rgba(255,255,255,.04);
+    color:#fff;
+    border-radius:11px;
+    padding:11px 15px;
+    font-family:inherit;
+    font-weight:900;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.project-guide-btn:hover{
+    background:rgba(255,255,255,.09);
+    border-color:rgba(25,195,125,.35);
+    transform:translateY(-2px);
+}
+
+
+/* ================= GUIDE MODAL ================= */
+
+.project-guide-modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    z-index:50000;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.project-guide-modal.show{
+    display:flex;
+}
+
+.project-guide-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.82);
+    backdrop-filter:blur(12px);
+}
+
+.project-guide-box{
+    position:relative;
+    z-index:2;
+    width:min(850px,100%);
+    max-height:90vh;
+    overflow-y:auto;
+    padding:35px;
+    border-radius:25px;
+    background:
+        linear-gradient(
+            145deg,
+            #111925,
+            #080d16
+        );
+    border:1px solid rgba(255,255,255,.1);
+    box-shadow:
+        0 35px 100px rgba(0,0,0,.7);
+}
+
+.guide-close{
+    position:absolute;
+    top:15px;
+    left:18px;
+    width:42px;
+    height:42px;
+    border:1px solid var(--line);
+    border-radius:50%;
+    background:rgba(255,255,255,.05);
+    color:#fff;
+    font-size:1.8rem;
+    cursor:pointer;
+    line-height:1;
+}
+
+.project-guide-content{
+    display:none;
+}
+
+.project-guide-content.active{
+    display:block;
+}
+
+.guide-icon{
+    width:75px;
+    height:75px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 12px;
+    border-radius:20px;
+    background:rgba(25,195,125,.08);
+    border:1px solid rgba(25,195,125,.2);
+    font-size:2.5rem;
+}
+
+.guide-tag{
+    text-align:center;
+    color:var(--accent);
+    font-family:Arial,sans-serif;
+    font-size:.75rem;
+    font-weight:900;
+    letter-spacing:1px;
+}
+
+.project-guide-content h2{
+    text-align:center;
+    font-size:2rem;
+    margin:5px 0 10px;
+}
+
+.guide-intro{
+    max-width:680px;
+    margin:0 auto 25px;
+    text-align:center;
+    color:var(--muted);
+}
+
+.guide-steps{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:13px;
+}
+
+.guide-step{
+    padding:18px;
+    border:1px solid var(--line);
+    background:rgba(255,255,255,.025);
+    border-radius:15px;
+}
+
+.guide-step strong{
+    color:var(--accent2);
+    font-size:1rem;
+}
+
+.guide-step p{
+    margin-top:6px;
+    color:#94a3b8;
+    font-size:.9rem;
+    line-height:1.8;
+}
+
+.guide-main-button{
+    display:block;
+    width:fit-content;
+    margin:25px auto 0;
+    padding:12px 25px;
+    border-radius:12px;
+    background:var(--accent);
+    color:#03130c;
+    font-weight:900;
+    transition:.3s;
+}
+
+.guide-main-button:hover{
+    transform:translateY(-3px);
+}
+
+
+/* ================= PROJECT MOBILE ================= */
+
+@media(max-width:800px){
+
+    .projects{
+        grid-template-columns:1fr;
+    }
+
+    .guide-steps{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:550px){
+
+    .project-image.project-logo{
+        height:220px;
+    }
+
+    .project-body{
+        padding:20px;
+    }
+
+    .project-buttons{
+        flex-direction:column;
+    }
+
+    .project-guide-box{
+        padding:28px 18px;
+        max-height:92vh;
+    }
+
+    .project-guide-content h2{
+        font-size:1.55rem;
+    }
+
+}
   </style>
 </head>
 
@@ -3596,163 +4004,363 @@
     <!-- =======================================================
          PROJECTS
     ======================================================== -->
+```html
+<!-- ================= PROJECTS ================= -->
 
-    <section id="projects">
+<section class="section container" id="projects">
 
-      <div class="container">
+    <div class="section-heading">
+        <div class="eyebrow">MY PROJECTS</div>
 
-        <div class="section-head reveal">
+        <h2>💻 زما پروژې</h2>
 
-          <span class="section-kicker">
-            PROJECTS
-          </span>
-
-          <h2>
-            زما پروژې
-          </h2>
-
-          <p>
+        <p>
             ځینې هغه ویب پروژې چې ما جوړې کړې دي
-          </p>
+        </p>
+    </div>
 
-        </div>
+    <div class="projects">
 
-        <div class="projects-grid">
+        <!-- ================= SHOP ACCOUNTING ================= -->
 
-          <article class="project-card reveal">
+        <div class="project-card">
 
-            <div class="project-image">
-
-              <img
-                src="https://i.ibb.co/jv0C0ks4/Chat-GPT-Image-Jul-13-2026-03-52-32-PM.png"
-                alt="د دوکان او محاسبې سیستم"
-                loading="lazy"
-              >
-
-              <div class="project-overlay">
-
-                <span class="project-tag">
-                  Accounting System
-                </span>
-
-              </div>
-
+            <div class="project-image project-logo shop-logo">
+                <div class="system-logo">
+                    <div class="logo-icon">🏪</div>
+                    <div class="logo-title">
+                        د دوکاندارۍ
+                        <span>سیستم</span>
+                    </div>
+                    <div class="logo-subtitle">
+                        Shop & Accounting System
+                    </div>
+                </div>
             </div>
 
             <div class="project-body">
 
-              <h3>
-                د دوکان او محاسبې سیستم
-              </h3>
+                <div class="project-tag">
+                    🏪 WEB SYSTEM
+                </div>
 
-              <p>
-                د دوکان د خرڅلاو، مشتریانو، حسابونو، جنسونو او
-                مدیریتي معلوماتو لپاره ویب سیستم.
-              </p>
+                <h3>
+                    د دوکاندارۍ او محاسبې سیستم
+                </h3>
 
-              <a
-                class="project-link"
-                href="https://abdullahmukhtar541-stack.github.io/abdullah-receipts/"
+                <p>
+                    د دوکان د موجودۍ، خرڅلاو، بیلونو، مشتریانو،
+                    پورونو، راپورونو او مالي معلوماتو لپاره
+                    پښتو او RTL ویب سیستم.
+                </p>
+
+                <div class="project-features">
+
+                    <span>📦 موجودي</span>
+                    <span>🧾 بیلونه</span>
+                    <span>💳 پورونه</span>
+                    <span>📊 راپورونه</span>
+
+                </div>
+
+                <div class="project-buttons">
+
+                    <a
+                        class="project-link main-project-link"
+                        href="https://abdullahmukhtar541-stack.github.io/shop-accounting-system/"
+                        target="_blank"
+                        rel="noopener">
+                        🌐 سیستم پرانیزئ
+                    </a>
+
+                    <button
+                        class="project-guide-btn"
+                        onclick="openProjectGuide('shopGuide')">
+                        📘 لارښود
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= TAILORING SYSTEM ================= -->
+
+        <div class="project-card">
+
+            <div class="project-image project-logo tailor-logo">
+                <div class="system-logo">
+
+                    <div class="logo-icon">🧵</div>
+
+                    <div class="logo-title">
+                        د خیاطۍ
+                        <span>سیستم</span>
+                    </div>
+
+                    <div class="logo-subtitle">
+                        Tailoring Management System
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="project-body">
+
+                <div class="project-tag">
+                    🧵 TAILORING SYSTEM
+                </div>
+
+                <h3>
+                    د خیاطۍ مدیریت سیستم
+                </h3>
+
+                <p>
+                    د خیاطۍ د مشتریانو، فرمایشونو، اندازو،
+                    جامو، بیلونو، نېټو او د کار د تعقیب لپاره
+                    ځانګړی پښتو ویب سیستم.
+                </p>
+
+                <div class="project-features">
+
+                    <span>👤 مشتریان</span>
+                    <span>📏 اندازې</span>
+                    <span>🧵 فرمایشونه</span>
+                    <span>🧾 بیلونه</span>
+
+                </div>
+
+                <div class="project-buttons">
+
+                    <a
+                        class="project-link main-project-link"
+                        href="https://abdullahmukhtar541-stack.github.io/Khayat---/"
+                        target="_blank"
+                        rel="noopener">
+                        🌐 سیستم پرانیزئ
+                    </a>
+
+                    <button
+                        class="project-guide-btn"
+                        onclick="openProjectGuide('tailorGuide')">
+                        📘 لارښود
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECT GUIDES ================= -->
+
+<div class="project-guide-modal" id="projectGuideModal">
+
+    <div class="project-guide-overlay"
+         onclick="closeProjectGuide()">
+    </div>
+
+    <div class="project-guide-box">
+
+        <button
+            class="guide-close"
+            onclick="closeProjectGuide()">
+            ×
+        </button>
+
+
+        <!-- SHOP GUIDE -->
+
+        <div
+            class="project-guide-content"
+            id="shopGuide">
+
+            <div class="guide-icon">
+                🏪
+            </div>
+
+            <div class="guide-tag">
+                SHOP & ACCOUNTING
+            </div>
+
+            <h2>
+                د دوکاندارۍ سیستم لارښود
+            </h2>
+
+            <p class="guide-intro">
+                دا سیستم د دوکان د جنسونو، موجودۍ، خرڅلاو،
+                بیلونو، پورونو او راپورونو د مدیریت لپاره جوړ شوی.
+            </p>
+
+
+            <div class="guide-steps">
+
+                <div class="guide-step">
+                    <strong>🏠 ۱ ـ ډشبورډ</strong>
+                    <p>
+                        د خرڅلاو، موجودۍ، پورونو، جنسونو او
+                        نورو مهمو معلوماتو لنډه کتنه وکړئ.
+                    </p>
+                </div>
+
+                <div class="guide-step">
+                    <strong>📦 ۲ ـ جنس ثبتول</strong>
+                    <p>
+                        نوی جنس، مقدار، واحد، نرخ او د ذخیرې
+                        معلومات ثبت کړئ.
+                    </p>
+                </div>
+
+                <div class="guide-step">
+                    <strong>🧾 ۳ ـ نوی بیل</strong>
+                    <p>
+                        مشتری، جنس، مقدار او قیمت داخل کړئ،
+                        بیا بیل ثبت کړئ.
+                    </p>
+                </div>
+
+                <div class="guide-step">
+                    <strong>💳 ۴ ـ پورونه</strong>
+                    <p>
+                        د مشتریانو پاتې پورونه او ورکړې
+                        له همدې برخې څخه تعقیب کړئ.
+                    </p>
+                </div>
+
+                <div class="guide-step">
+                    <strong>📊 ۵ ـ راپورونه</strong>
+                    <p>
+                        ورځني، میاشتني او ربع وار راپورونه
+                        وګورئ او چاپ یې کړئ.
+                    </p>
+                </div>
+
+                <div class="guide-step">
+                    <strong>💾 ۶ ـ بیکاپ</strong>
+                    <p>
+                        د مهمو معلوماتو Backup واخلئ او
+                        د اړتیا پر وخت یې بېرته راوړئ.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <a
+                href="https://abdullahmukhtar541-stack.github.io/shop-accounting-system/"
                 target="_blank"
                 rel="noopener"
-              >
-                پروژه پرانیزئ
-                ←
-              </a>
+                class="guide-main-button">
 
-            </div>
+                🚀 سیستم ته لاړ شئ
 
-          </article>
-
-          <article class="project-card reveal">
-
-            <div class="project-image">
-
-              <img
-                src="https://i.ibb.co/VYx5vzp2/image.jpg"
-                alt="Digital Solutions"
-                loading="lazy"
-              >
-
-              <div class="project-overlay">
-
-                <span class="project-tag">
-                  Digital Solutions
-                </span>
-
-              </div>
-
-            </div>
-
-            <div class="project-body">
-
-              <h3>
-                ډیجیټل حل‌لارې
-              </h3>
-
-              <p>
-                د ډیجیټل خدماتو او عصري ویب حل‌لارو لپاره
-                د ډیزاین او سیستم مفکوره.
-              </p>
-
-              <a
-                class="project-link"
-                href="#contact"
-              >
-                نور معلومات
-                ←
-              </a>
-
-            </div>
-
-          </article>
-
-          <article class="project-card reveal">
-
-            <div class="project-image">
-
-              <img
-                src="https://i.ibb.co/XZYGynys/1773051801334.jpg"
-                alt="شخصي Portfolio"
-                loading="lazy"
-              >
-
-              <div class="project-overlay">
-
-                <span class="project-tag">
-                  Portfolio
-                </span>
-
-              </div>
-
-            </div>
-
-            <div class="project-body">
-
-              <h3>
-                شخصي Portfolio
-              </h3>
-
-              <p>
-                د شخصي معلوماتو، پروژو، مهارتونو، ګالري او
-                ژوندیو معلوماتو لپاره عصري ویب‌سایټ.
-              </p>
-
-              <a
-                class="project-link"
-                href="#home"
-              >
-                اوسنی سایټ
-                ←
-              </a>
-
-            </div>
-
-          </article>
+            </a>
 
         </div>
 
-      </div>
+
+        <!-- TAILOR GUIDE -->
+
+        <div
+            class="project-guide-content"
+            id="tailorGuide">
+
+            <div class="guide-icon">
+                🧵
+            </div>
+
+            <div class="guide-tag">
+                TAILORING SYSTEM
+            </div>
+
+            <h2>
+                د خیاطۍ سیستم لارښود
+            </h2>
+
+            <p class="guide-intro">
+                دا سیستم د خیاطۍ د مشتریانو، فرمایشونو،
+                اندازو، جامو، بیلونو او د سپارلو نېټو
+                د تنظیم لپاره کارول کېږي.
+            </p>
+
+
+            <div class="guide-steps">
+
+                <div class="guide-step">
+                    <strong>👤 ۱ ـ مشتری ثبت کړئ</strong>
+                    <p>
+                        د مشتری نوم، موبایل شمېره او اړین
+                        معلومات ثبت کړئ.
+                    </p>
+                </div>
+
+                <div class="guide-step">
+                    <strong>🧵 ۲ ـ نوی فرمایش</strong>
+                    <p>
+                        د مشتری لپاره نوی فرمایش جوړ کړئ
+                        او د جامې اړوند معلومات ولیکئ.
+                    </p>
+                </div>
+
+                <div class="guide-step">
+                    <strong>📏 ۳ ـ اندازې ثبت کړئ</strong>
+                    <p>
+                        د اړوندې جامې ټولې اندازې په سیستم
+                        کې ثبت کړئ ترڅو وروسته په اسانه وکارول شي.
+                    </p>
+                </div>
+
+                <div class="guide-step">
+                    <strong>📅 ۴ ـ د سپارلو نېټه</strong>
+                    <p>
+                        د فرمایش لپاره د سپارلو نېټه وټاکئ
+                        ترڅو د کار وخت هېر نه شي.
+                    </p>
+                </div>
+
+                <div class="guide-step">
+                    <strong>🧾 ۵ ـ بیل او حساب</strong>
+                    <p>
+                        د فرمایش قیمت، ورکړل شوې پیسې او
+                        پاتې مبلغ تنظیم کړئ.
+                    </p>
+                </div>
+
+                <div class="guide-step">
+                    <strong>🔎 ۶ ـ فرمایش پیدا کړئ</strong>
+                    <p>
+                        د مشتری یا فرمایش د معلوماتو له لارې
+                        اړوند ریکارډ پیدا او وګورئ.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <a
+                href="https://abdullahmukhtar541-stack.github.io/Khayat---/"
+                target="_blank"
+                rel="noopener"
+                class="guide-main-button">
+
+                🚀 د خیاطۍ سیستم ته لاړ شئ
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
 
     </section>
 
@@ -5898,6 +6506,62 @@
       },
       true
     );
+```javascript
+/* ================= PROJECT GUIDES ================= */
+
+function openProjectGuide(guideId){
+
+    const modal =
+        document.getElementById("projectGuideModal");
+
+    const guides =
+        document.querySelectorAll(".project-guide-content");
+
+    guides.forEach(function(guide){
+        guide.classList.remove("active");
+    });
+
+    const selectedGuide =
+        document.getElementById(guideId);
+
+    if(!selectedGuide){
+        return;
+    }
+
+    selectedGuide.classList.add("active");
+
+    modal.classList.add("show");
+
+    document.body.style.overflow = "hidden";
+}
+
+
+function closeProjectGuide(){
+
+    const modal =
+        document.getElementById("projectGuideModal");
+
+    modal.classList.remove("show");
+
+    document.body.style.overflow = "";
+}
+
+
+/* د ESC تڼۍ سره لارښود بندول */
+
+document.addEventListener(
+    "keydown",
+    function(event){
+
+        if(event.key === "Escape"){
+
+            closeProjectGuide();
+
+        }
+
+    }
+);
+```
 
   </script>
 
