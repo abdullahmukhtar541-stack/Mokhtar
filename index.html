@@ -1,1 +1,6569 @@
-مختار مختار مختار مختار
+<!DOCTYPE html>
+<html lang="ps" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>عبدالله مختار | شخصي ویب سایټ</title>
+
+  <meta
+    name="description"
+    content="د عبدالله مختار شخصي ویب سایټ — د ویب سیستمونو جوړونکی، د ټکنالوژۍ مینه‌وال او د اداري او مالي سیستمونو علاقه‌مند."
+  >
+
+  <meta
+    name="keywords"
+    content="عبدالله مختار, ویب ډیزاین, ویب سیستم, پښتو ویب سایټ, افغانستان, کلات, زابل, حسابداري سیستم"
+  >
+
+  <meta name="author" content="عبدالله مختار">
+  <meta name="theme-color" content="#07111f">
+
+  <meta property="og:title" content="عبدالله مختار | شخصي ویب سایټ">
+  <meta
+    property="og:description"
+    content="د عبدالله مختار شخصي ویب سایټ او پروژې"
+  >
+  <meta
+    property="og:image"
+    content="https://i.ibb.co/C566gpXN/IMG-20260303-WA0121.jpg"
+  >
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="عبدالله مختار">
+  <meta
+    name="twitter:description"
+    content="د عبدالله مختار شخصي ویب سایټ"
+  >
+  <meta
+    name="twitter:image"
+    content="https://i.ibb.co/C566gpXN/IMG-20260303-WA0121.jpg"
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3A%3C/text%3E%3C/svg%3E"
+  >
+
+  <style>
+    /* =========================================================
+       ROOT
+    ========================================================= */
+
+    :root {
+      --bg: #050914;
+      --bg-soft: #08111f;
+      --card: rgba(13, 23, 39, 0.76);
+      --card-solid: #0d1727;
+      --card-light: #111d30;
+
+      --text: #f8fafc;
+      --text-soft: #dbe4ef;
+      --muted: #91a0b5;
+
+      --line: rgba(255,255,255,.09);
+      --line-strong: rgba(255,255,255,.16);
+
+      --primary: #18c783;
+      --primary-light: #36e89d;
+      --primary-dark: #0d9e68;
+
+      --blue: #3b82f6;
+      --purple: #8b5cf6;
+      --gold: #f5b942;
+      --danger: #ef4444;
+
+      --shadow:
+        0 25px 70px rgba(0,0,0,.35);
+
+      --shadow-small:
+        0 10px 35px rgba(0,0,0,.22);
+
+      --radius: 24px;
+      --radius-small: 16px;
+
+      --container: 1180px;
+
+      --header-height: 78px;
+    }
+
+    /* LIGHT MODE */
+
+    body.light {
+      --bg: #f4f8fb;
+      --bg-soft: #eaf1f7;
+
+      --card: rgba(255,255,255,.82);
+      --card-solid: #ffffff;
+      --card-light: #f8fbff;
+
+      --text: #102033;
+      --text-soft: #334155;
+      --muted: #64748b;
+
+      --line: rgba(15,23,42,.09);
+      --line-strong: rgba(15,23,42,.15);
+
+      --shadow:
+        0 25px 70px rgba(15,23,42,.10);
+
+      --shadow-small:
+        0 10px 35px rgba(15,23,42,.08);
+    }
+
+    /* =========================================================
+       RESET
+    ========================================================= */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      font-family: "Noto Naskh Arabic", Tahoma, Arial, sans-serif;
+      background:
+        radial-gradient(
+          circle at 15% 10%,
+          rgba(24,199,131,.08),
+          transparent 28%
+        ),
+        radial-gradient(
+          circle at 90% 30%,
+          rgba(59,130,246,.08),
+          transparent 30%
+        ),
+        var(--bg);
+
+      color: var(--text);
+
+      min-height: 100vh;
+
+      line-height: 1.9;
+
+      overflow-x: hidden;
+
+      transition:
+        background .3s ease,
+        color .3s ease;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+
+      background-image:
+        linear-gradient(
+          rgba(255,255,255,.018) 1px,
+          transparent 1px
+        ),
+        linear-gradient(
+          90deg,
+          rgba(255,255,255,.018) 1px,
+          transparent 1px
+        );
+
+      background-size: 45px 45px;
+
+      pointer-events: none;
+
+      z-index: -3;
+
+      mask-image: linear-gradient(
+        to bottom,
+        black,
+        transparent 85%
+      );
+    }
+
+    body::after {
+      content: "";
+
+      position: fixed;
+
+      width: 450px;
+      height: 450px;
+
+      border-radius: 50%;
+
+      background: rgba(24,199,131,.07);
+
+      filter: blur(100px);
+
+      top: -150px;
+      left: -150px;
+
+      pointer-events: none;
+
+      z-index: -2;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    select {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    ::selection {
+      background: var(--primary);
+      color: #03130d;
+    }
+
+    /* =========================================================
+       LOADER
+    ========================================================= */
+
+    .loader {
+      position: fixed;
+      inset: 0;
+
+      background: var(--bg);
+
+      display: grid;
+      place-items: center;
+
+      z-index: 99999;
+
+      transition:
+        opacity .5s ease,
+        visibility .5s ease;
+    }
+
+    .loader.hide {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .loader-box {
+      text-align: center;
+    }
+
+    .loader-logo {
+      width: 70px;
+      height: 70px;
+
+      margin: auto auto 15px;
+
+      border-radius: 22px;
+
+      display: grid;
+      place-items: center;
+
+      font-size: 30px;
+      font-weight: 800;
+
+      color: #03130d;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--primary),
+          var(--primary-light)
+        );
+
+      box-shadow:
+        0 0 50px rgba(24,199,131,.25);
+
+      animation: loaderPulse 1.3s infinite;
+    }
+
+    .loader-text {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @keyframes loaderPulse {
+      0%,100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.08);
+      }
+    }
+
+    /* =========================================================
+       SCROLL PROGRESS
+    ========================================================= */
+
+    .scroll-progress {
+      position: fixed;
+
+      top: 0;
+      right: 0;
+
+      width: 0%;
+      height: 3px;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--blue),
+          var(--primary),
+          var(--gold)
+        );
+
+      z-index: 10000;
+    }
+
+    /* =========================================================
+       CONTAINER
+    ========================================================= */
+
+    .container {
+      width: min(
+        calc(100% - 36px),
+        var(--container)
+      );
+
+      margin-inline: auto;
+    }
+
+    /* =========================================================
+       HEADER
+    ========================================================= */
+
+    .header {
+      position: fixed;
+
+      top: 0;
+      right: 0;
+      left: 0;
+
+      height: var(--header-height);
+
+      z-index: 5000;
+
+      border-bottom: 1px solid transparent;
+
+      background: rgba(5,9,20,.68);
+
+      backdrop-filter: blur(20px);
+
+      transition:
+        background .3s ease,
+        border .3s ease,
+        box-shadow .3s ease;
+    }
+
+    body.light .header {
+      background: rgba(244,248,251,.75);
+    }
+
+    .header.scrolled {
+      border-color: var(--line);
+
+      box-shadow:
+        0 12px 35px rgba(0,0,0,.12);
+    }
+
+    .nav {
+      height: 100%;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 25px;
+    }
+
+    .brand {
+      display: flex;
+
+      align-items: center;
+
+      gap: 12px;
+
+      min-width: max-content;
+    }
+
+    .brand-icon {
+      width: 46px;
+      height: 46px;
+
+      border-radius: 15px;
+
+      display: grid;
+      place-items: center;
+
+      font-size: 21px;
+      font-weight: 800;
+
+      color: #03130d;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--primary),
+          var(--primary-light)
+        );
+
+      box-shadow:
+        0 10px 30px rgba(24,199,131,.2);
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+
+      line-height: 1.35;
+    }
+
+    .brand-text strong {
+      font-size: 17px;
+    }
+
+    .brand-text span {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .nav-links {
+      display: flex;
+
+      align-items: center;
+
+      gap: 4px;
+    }
+
+    .nav-links a {
+      position: relative;
+
+      padding: 9px 11px;
+
+      color: var(--muted);
+
+      font-size: 13px;
+
+      border-radius: 11px;
+
+      transition:
+        color .25s ease,
+        background .25s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--text);
+
+      background: rgba(255,255,255,.055);
+    }
+
+    .nav-links a.active::after {
+      content: "";
+
+      position: absolute;
+
+      bottom: 2px;
+
+      right: 50%;
+
+      transform: translateX(50%);
+
+      width: 18px;
+      height: 2px;
+
+      border-radius: 99px;
+
+      background: var(--primary);
+    }
+
+    .nav-actions {
+      display: flex;
+
+      align-items: center;
+
+      gap: 8px;
+    }
+
+    .icon-btn {
+      width: 40px;
+      height: 40px;
+
+      border: 1px solid var(--line);
+
+      background: rgba(255,255,255,.035);
+
+      color: var(--text);
+
+      border-radius: 12px;
+
+      display: grid;
+      place-items: center;
+
+      transition: .25s ease;
+    }
+
+    .icon-btn:hover {
+      border-color: rgba(24,199,131,.4);
+
+      transform: translateY(-2px);
+
+      background:
+        rgba(24,199,131,.08);
+    }
+
+    .mobile-menu {
+      display: none;
+    }
+
+    /* =========================================================
+       HERO
+    ========================================================= */
+
+    .hero {
+      min-height: 100vh;
+
+      padding:
+        calc(var(--header-height) + 70px)
+        0
+        70px;
+
+      display: grid;
+
+      align-items: center;
+    }
+
+    .hero-grid {
+      display: grid;
+
+      grid-template-columns:
+        minmax(0, 1.12fr)
+        minmax(360px, .88fr);
+
+      gap: 70px;
+
+      align-items: center;
+    }
+
+    .hero-content {
+      animation:
+        heroText .9s ease both;
+    }
+
+    @keyframes heroText {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .eyebrow {
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 9px;
+
+      padding: 7px 13px;
+
+      border-radius: 99px;
+
+      border: 1px solid rgba(24,199,131,.22);
+
+      background:
+        rgba(24,199,131,.07);
+
+      color: var(--primary-light);
+
+      font-size: 13px;
+
+      margin-bottom: 20px;
+    }
+
+    .eyebrow-dot {
+      width: 8px;
+      height: 8px;
+
+      border-radius: 50%;
+
+      background: var(--primary);
+
+      box-shadow:
+        0 0 0 5px rgba(24,199,131,.09);
+
+      animation: onlinePulse 1.8s infinite;
+    }
+
+    @keyframes onlinePulse {
+      0%,100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: .45;
+      }
+    }
+
+    .hero h1 {
+      font-size:
+        clamp(38px, 5vw, 70px);
+
+      line-height: 1.2;
+
+      letter-spacing: -.8px;
+
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      background:
+        linear-gradient(
+          90deg,
+          var(--primary),
+          var(--primary-light),
+          #7dd3fc
+        );
+
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      color: transparent;
+    }
+
+    .hero-role {
+      min-height: 45px;
+
+      color: var(--text-soft);
+
+      font-size:
+        clamp(18px, 2.2vw, 25px);
+
+      font-weight: 700;
+
+      margin-bottom: 15px;
+    }
+
+    .hero-role span {
+      color: var(--primary-light);
+    }
+
+    .hero-description {
+      max-width: 680px;
+
+      color: var(--muted);
+
+      font-size: 16px;
+
+      line-height: 2.05;
+
+      margin-bottom: 23px;
+    }
+
+    .location {
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 8px;
+
+      color: var(--muted);
+
+      font-size: 13px;
+
+      margin-bottom: 25px;
+    }
+
+    .location-icon {
+      color: var(--primary);
+    }
+
+    .hero-buttons {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 11px;
+
+      margin-bottom: 28px;
+    }
+
+    .btn {
+      display: inline-flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      gap: 9px;
+
+      min-height: 47px;
+
+      padding:
+        9px 18px;
+
+      border-radius: 14px;
+
+      border: 1px solid var(--line);
+
+      font-size: 14px;
+
+      font-weight: 700;
+
+      transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease,
+        background .25s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    .btn-primary {
+      color: #03130d;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--primary),
+          var(--primary-light)
+        );
+
+      border-color: transparent;
+
+      box-shadow:
+        0 12px 35px rgba(24,199,131,.18);
+    }
+
+    .btn-primary:hover {
+      box-shadow:
+        0 18px 45px rgba(24,199,131,.27);
+    }
+
+    .btn-outline {
+      color: var(--text);
+
+      background:
+        rgba(255,255,255,.035);
+    }
+
+    .btn-outline:hover {
+      border-color:
+        rgba(24,199,131,.35);
+
+      background:
+        rgba(24,199,131,.06);
+    }
+
+    .hero-mini {
+      display: flex;
+
+      align-items: center;
+
+      flex-wrap: wrap;
+
+      gap: 12px;
+    }
+
+    .mini-status {
+      display: flex;
+
+      align-items: center;
+
+      gap: 8px;
+
+      padding: 8px 12px;
+
+      border: 1px solid var(--line);
+
+      border-radius: 12px;
+
+      background:
+        rgba(255,255,255,.025);
+
+      color: var(--muted);
+
+      font-size: 12px;
+    }
+
+    .mini-status strong {
+      color: var(--text);
+    }
+
+    /* HERO IMAGE */
+
+    .hero-visual {
+      position: relative;
+
+      min-height: 510px;
+
+      display: grid;
+
+      place-items: center;
+
+      animation:
+        heroVisual .9s .15s ease both;
+    }
+
+    @keyframes heroVisual {
+      from {
+        opacity: 0;
+        transform: scale(.94) translateY(25px);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    .hero-orb {
+      position: absolute;
+
+      width: 390px;
+      height: 390px;
+
+      border-radius: 50%;
+
+      background:
+        radial-gradient(
+          circle,
+          rgba(24,199,131,.22),
+          rgba(59,130,246,.08) 45%,
+          transparent 70%
+        );
+
+      filter: blur(10px);
+
+      animation:
+        floatOrb 6s ease-in-out infinite;
+    }
+
+    @keyframes floatOrb {
+      0%,100% {
+        transform: translateY(0) scale(1);
+      }
+
+      50% {
+        transform: translateY(-18px) scale(1.04);
+      }
+    }
+
+    .profile-ring {
+      position: relative;
+
+      width:
+        clamp(270px, 34vw, 400px);
+
+      aspect-ratio: 1;
+
+      padding: 9px;
+
+      border-radius: 50%;
+
+      background:
+        conic-gradient(
+          from 0deg,
+          var(--primary),
+          var(--blue),
+          var(--purple),
+          var(--gold),
+          var(--primary)
+        );
+
+      box-shadow:
+        0 30px 90px rgba(0,0,0,.35),
+        0 0 70px rgba(24,199,131,.13);
+
+      animation:
+        ringRotate 14s linear infinite;
+    }
+
+    @keyframes ringRotate {
+      to {
+        filter:
+          hue-rotate(360deg);
+      }
+    }
+
+    .profile-inner {
+      width: 100%;
+      height: 100%;
+
+      border-radius: 50%;
+
+      padding: 6px;
+
+      background: var(--bg);
+
+      animation: none;
+    }
+
+    .profile-inner img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+
+      border-radius: 50%;
+
+      border: 1px solid var(--line);
+    }
+
+    .floating-card {
+      position: absolute;
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 9px;
+
+      padding: 10px 13px;
+
+      border-radius: 15px;
+
+      background:
+        rgba(10,18,31,.78);
+
+      border: 1px solid var(--line-strong);
+
+      backdrop-filter: blur(15px);
+
+      box-shadow: var(--shadow-small);
+
+      color: var(--text);
+
+      font-size: 12px;
+
+      animation:
+        floatCard 4s ease-in-out infinite;
+    }
+
+    body.light .floating-card {
+      background:
+        rgba(255,255,255,.82);
+    }
+
+    .floating-card.one {
+      top: 15%;
+      right: 1%;
+    }
+
+    .floating-card.two {
+      bottom: 17%;
+      left: 0;
+      animation-delay: 1s;
+    }
+
+    .floating-card.three {
+      bottom: 4%;
+      right: 12%;
+      animation-delay: 2s;
+    }
+
+    @keyframes floatCard {
+      0%,100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-9px);
+      }
+    }
+
+    .floating-icon {
+      width: 31px;
+      height: 31px;
+
+      border-radius: 10px;
+
+      display: grid;
+      place-items: center;
+
+      background:
+        rgba(24,199,131,.1);
+
+      color: var(--primary);
+    }
+
+    /* =========================================================
+       STATS
+    ========================================================= */
+
+    .stats {
+      margin-top: -20px;
+
+      position: relative;
+
+      z-index: 5;
+    }
+
+    .stats-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap: 12px;
+    }
+
+    .stat-card {
+      padding: 19px;
+
+      border:
+        1px solid var(--line);
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255,255,255,.045),
+          rgba(255,255,255,.018)
+        );
+
+      border-radius: 18px;
+
+      transition: .25s ease;
+    }
+
+    body.light .stat-card {
+      background: rgba(255,255,255,.7);
+    }
+
+    .stat-card:hover {
+      transform: translateY(-5px);
+
+      border-color:
+        rgba(24,199,131,.25);
+    }
+
+    .stat-number {
+      font-size: 27px;
+
+      font-weight: 800;
+
+      color: var(--text);
+
+      line-height: 1.3;
+    }
+
+    .stat-label {
+      color: var(--muted);
+
+      font-size: 12px;
+    }
+
+    /* =========================================================
+       SECTIONS
+    ========================================================= */
+
+    section {
+      padding: 105px 0;
+    }
+
+    .section-head {
+      max-width: 720px;
+
+      margin:
+        0 auto 45px;
+
+      text-align: center;
+    }
+
+    .section-kicker {
+      display: inline-block;
+
+      color: var(--primary);
+
+      font-size: 13px;
+
+      font-weight: 800;
+
+      margin-bottom: 5px;
+    }
+
+    .section-head h2 {
+      font-size:
+        clamp(28px, 4vw, 43px);
+
+      line-height: 1.35;
+
+      margin-bottom: 8px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+
+      font-size: 14px;
+    }
+
+    /* =========================================================
+       ABOUT
+    ========================================================= */
+
+    .about-grid {
+      display: grid;
+
+      grid-template-columns:
+        .95fr 1.05fr;
+
+      gap: 22px;
+
+      align-items: stretch;
+    }
+
+    .glass-card {
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255,255,255,.045),
+          rgba(255,255,255,.018)
+        );
+
+      border: 1px solid var(--line);
+
+      border-radius: var(--radius);
+
+      box-shadow: var(--shadow-small);
+
+      backdrop-filter: blur(14px);
+    }
+
+    body.light .glass-card {
+      background:
+        rgba(255,255,255,.76);
+    }
+
+    .about-card {
+      padding: 30px;
+    }
+
+    .about-card h3 {
+      font-size: 24px;
+
+      margin-bottom: 13px;
+    }
+
+    .about-card p {
+      color: var(--muted);
+
+      line-height: 2.1;
+
+      font-size: 14px;
+
+      margin-bottom: 13px;
+    }
+
+    .about-points {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, 1fr);
+
+      gap: 11px;
+
+      margin-top: 22px;
+    }
+
+    .about-point {
+      display: flex;
+
+      align-items: center;
+
+      gap: 10px;
+
+      padding: 12px;
+
+      border: 1px solid var(--line);
+
+      border-radius: 14px;
+
+      color: var(--text-soft);
+
+      font-size: 12px;
+
+      background:
+        rgba(255,255,255,.025);
+    }
+
+    .check {
+      width: 26px;
+      height: 26px;
+
+      flex: 0 0 auto;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 9px;
+
+      color: var(--primary);
+
+      background:
+        rgba(24,199,131,.1);
+    }
+
+    /* =========================================================
+       SERVICES
+    ========================================================= */
+
+    .services-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, 1fr);
+
+      gap: 12px;
+    }
+
+    .service-card {
+      position: relative;
+
+      padding: 23px;
+
+      border: 1px solid var(--line);
+
+      border-radius: 20px;
+
+      background:
+        rgba(255,255,255,.025);
+
+      overflow: hidden;
+
+      transition: .3s ease;
+    }
+
+    .service-card::before {
+      content: "";
+
+      position: absolute;
+
+      width: 130px;
+      height: 130px;
+
+      border-radius: 50%;
+
+      background:
+        rgba(24,199,131,.08);
+
+      top: -70px;
+      left: -70px;
+
+      transition: .3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+
+      border-color:
+        rgba(24,199,131,.3);
+
+      box-shadow:
+        0 20px 50px rgba(0,0,0,.18);
+    }
+
+    .service-card:hover::before {
+      transform: scale(1.6);
+    }
+
+    .service-icon {
+      width: 46px;
+      height: 46px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 14px;
+
+      background:
+        rgba(24,199,131,.09);
+
+      color: var(--primary);
+
+      font-size: 20px;
+
+      margin-bottom: 13px;
+
+      position: relative;
+    }
+
+    .service-card h4 {
+      font-size: 17px;
+
+      margin-bottom: 5px;
+
+      position: relative;
+    }
+
+    .service-card p {
+      color: var(--muted);
+
+      font-size: 12px;
+
+      line-height: 1.9;
+
+      position: relative;
+    }
+
+    /* =========================================================
+       SKILLS
+    ========================================================= */
+
+    .skills-grid {
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 22px;
+    }
+
+    .skills-card {
+      padding: 29px;
+    }
+
+    .skill {
+      margin-bottom: 20px;
+    }
+
+    .skill:last-child {
+      margin-bottom: 0;
+    }
+
+    .skill-head {
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      margin-bottom: 7px;
+
+      font-size: 13px;
+    }
+
+    .skill-head span:last-child {
+      color: var(--primary);
+
+      font-size: 12px;
+    }
+
+    .skill-bar {
+      height: 8px;
+
+      border-radius: 99px;
+
+      overflow: hidden;
+
+      background:
+        rgba(255,255,255,.07);
+    }
+
+    .skill-progress {
+      width: 0;
+
+      height: 100%;
+
+      border-radius: inherit;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--blue),
+          var(--primary),
+          var(--primary-light)
+        );
+
+      transition:
+        width 1.3s cubic-bezier(.2,.7,.2,1);
+    }
+
+    .skills-description {
+      color: var(--muted);
+
+      font-size: 14px;
+
+      line-height: 2;
+
+      margin-bottom: 22px;
+    }
+
+    .tech-list {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 8px;
+    }
+
+    .tech {
+      padding: 7px 10px;
+
+      border-radius: 10px;
+
+      border: 1px solid var(--line);
+
+      background:
+        rgba(255,255,255,.025);
+
+      color: var(--text-soft);
+
+      font-size: 11px;
+    }
+
+    /* =========================================================
+       PROJECTS
+    ========================================================= */
+
+    .projects-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 17px;
+    }
+
+    .project-card {
+      overflow: hidden;
+
+      border:
+        1px solid var(--line);
+
+      border-radius: 22px;
+
+      background:
+        rgba(255,255,255,.025);
+
+      transition: .3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+
+      border-color:
+        rgba(24,199,131,.25);
+
+      box-shadow:
+        0 25px 60px rgba(0,0,0,.25);
+    }
+
+    .project-image {
+      height: 225px;
+
+      position: relative;
+
+      overflow: hidden;
+    }
+
+    .project-image img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+
+      transition:
+        transform .55s ease;
+    }
+
+    .project-card:hover .project-image img {
+      transform: scale(1.07);
+    }
+
+    .project-overlay {
+      position: absolute;
+
+      inset: 0;
+
+      display: flex;
+
+      align-items: flex-end;
+
+      padding: 15px;
+
+      background:
+        linear-gradient(
+          transparent 35%,
+          rgba(0,0,0,.75)
+        );
+
+      opacity: .95;
+    }
+
+    .project-tag {
+      display: inline-flex;
+
+      padding: 5px 9px;
+
+      border-radius: 9px;
+
+      background:
+        rgba(0,0,0,.4);
+
+      border: 1px solid rgba(255,255,255,.13);
+
+      color: white;
+
+      font-size: 10px;
+    }
+
+    .project-body {
+      padding: 20px;
+    }
+
+    .project-body h3 {
+      font-size: 19px;
+
+      margin-bottom: 7px;
+    }
+
+    .project-body p {
+      color: var(--muted);
+
+      font-size: 12px;
+
+      line-height: 1.9;
+
+      min-height: 48px;
+
+      margin-bottom: 15px;
+    }
+
+    .project-link {
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 7px;
+
+      color: var(--primary-light);
+
+      font-size: 12px;
+
+      font-weight: 700;
+    }
+
+    /* =========================================================
+       ROADMAP
+    ========================================================= */
+
+    .roadmap {
+      position: relative;
+
+      max-width: 850px;
+
+      margin: auto;
+    }
+
+    .roadmap::before {
+      content: "";
+
+      position: absolute;
+
+      top: 0;
+      bottom: 0;
+
+      right: 24px;
+
+      width: 2px;
+
+      background:
+        linear-gradient(
+          var(--primary),
+          rgba(24,199,131,.04)
+        );
+    }
+
+    .road-item {
+      position: relative;
+
+      padding-right: 70px;
+
+      margin-bottom: 27px;
+    }
+
+    .road-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .road-dot {
+      position: absolute;
+
+      right: 11px;
+      top: 6px;
+
+      width: 28px;
+      height: 28px;
+
+      border-radius: 50%;
+
+      display: grid;
+      place-items: center;
+
+      background:
+        var(--bg);
+
+      border:
+        2px solid var(--primary);
+
+      color: var(--primary);
+
+      font-size: 11px;
+
+      z-index: 2;
+    }
+
+    .road-content {
+      padding: 19px;
+
+      border: 1px solid var(--line);
+
+      border-radius: 18px;
+
+      background:
+        rgba(255,255,255,.025);
+
+      transition: .25s ease;
+    }
+
+    .road-content:hover {
+      transform: translateX(-5px);
+
+      border-color:
+        rgba(24,199,131,.25);
+    }
+
+    .road-content h3 {
+      font-size: 17px;
+
+      margin-bottom: 4px;
+    }
+
+    .road-content p {
+      color: var(--muted);
+
+      font-size: 12px;
+    }
+
+    /* =========================================================
+       LIVE INFO
+    ========================================================= */
+
+    .live-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 14px;
+    }
+
+    .live-card {
+      padding: 25px;
+
+      border:
+        1px solid var(--line);
+
+      border-radius: 21px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255,255,255,.045),
+          rgba(255,255,255,.015)
+        );
+    }
+
+    .live-top {
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      margin-bottom: 18px;
+    }
+
+    .live-title {
+      display: flex;
+
+      align-items: center;
+
+      gap: 9px;
+
+      font-size: 14px;
+
+      font-weight: 700;
+    }
+
+    .live-icon {
+      width: 39px;
+      height: 39px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 12px;
+
+      background:
+        rgba(24,199,131,.09);
+
+      color: var(--primary);
+    }
+
+    .live-badge {
+      color: var(--primary);
+
+      font-size: 10px;
+
+      padding: 4px 8px;
+
+      border-radius: 8px;
+
+      background:
+        rgba(24,199,131,.08);
+    }
+
+    .clock {
+      font-family:
+        Tahoma,
+        Arial,
+        sans-serif;
+
+      direction: ltr;
+
+      text-align: center;
+
+      font-size: 34px;
+
+      font-weight: 800;
+
+      letter-spacing: 2px;
+
+      margin: 10px 0 4px;
+    }
+
+    .date {
+      text-align: center;
+
+      color: var(--muted);
+
+      font-size: 11px;
+    }
+
+    .weather-main {
+      display: flex;
+
+      align-items: center;
+
+      gap: 16px;
+
+      margin-bottom: 15px;
+    }
+
+    .weather-icon {
+      font-size: 48px;
+    }
+
+    .temperature {
+      font-family: Tahoma, Arial, sans-serif;
+
+      direction: ltr;
+
+      font-size: 36px;
+
+      font-weight: 800;
+    }
+
+    .weather-description {
+      color: var(--muted);
+
+      font-size: 12px;
+    }
+
+    .weather-details {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2,1fr);
+
+      gap: 8px;
+    }
+
+    .weather-detail {
+      padding: 9px;
+
+      border-radius: 11px;
+
+      background:
+        rgba(255,255,255,.025);
+
+      border: 1px solid var(--line);
+
+      font-size: 10px;
+
+      color: var(--muted);
+
+      text-align: center;
+    }
+
+    .weather-detail strong {
+      display: block;
+
+      color: var(--text);
+
+      font-size: 12px;
+    }
+
+    /* =========================================================
+       CURRENCY
+    ========================================================= */
+
+    .currency-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap: 12px;
+
+      margin-bottom: 22px;
+    }
+
+    .currency-card {
+      padding: 18px;
+
+      border:
+        1px solid var(--line);
+
+      border-radius: 17px;
+
+      background:
+        rgba(255,255,255,.025);
+
+      transition: .25s ease;
+    }
+
+    .currency-card:hover {
+      transform: translateY(-4px);
+
+      border-color:
+        rgba(59,130,246,.25);
+    }
+
+    .currency-head {
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      margin-bottom: 12px;
+    }
+
+    .currency-code {
+      font-family:
+        Tahoma,
+        Arial,
+        sans-serif;
+
+      direction: ltr;
+
+      font-weight: 800;
+    }
+
+    .currency-flag {
+      font-size: 19px;
+    }
+
+    .currency-rate {
+      direction: ltr;
+
+      text-align: right;
+
+      font-family:
+        Tahoma,
+        Arial,
+        sans-serif;
+
+      font-size: 18px;
+
+      font-weight: 700;
+    }
+
+    .currency-name {
+      color: var(--muted);
+
+      font-size: 10px;
+
+      margin-top: 2px;
+    }
+
+    .currency-updated {
+      color: var(--muted);
+
+      font-size: 10px;
+
+      margin-top: 14px;
+
+      text-align: center;
+    }
+
+    .converter {
+      padding: 24px;
+
+      border:
+        1px solid var(--line);
+
+      border-radius: 21px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(59,130,246,.07),
+          rgba(24,199,131,.05)
+        );
+    }
+
+    .converter h3 {
+      margin-bottom: 15px;
+
+      font-size: 19px;
+    }
+
+    .converter-grid {
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 11px;
+    }
+
+    .field {
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 6px;
+    }
+
+    .field label {
+      color: var(--muted);
+
+      font-size: 11px;
+    }
+
+    .field input,
+    .field select {
+      width: 100%;
+
+      min-height: 47px;
+
+      border:
+        1px solid var(--line);
+
+      outline: none;
+
+      border-radius: 12px;
+
+      padding:
+        7px 12px;
+
+      background:
+        rgba(0,0,0,.13);
+
+      color: var(--text);
+
+      transition: .2s ease;
+    }
+
+    body.light .field input,
+    body.light .field select {
+      background: #f8fafc;
+    }
+
+    .field input:focus,
+    .field select:focus {
+      border-color:
+        rgba(24,199,131,.45);
+
+      box-shadow:
+        0 0 0 3px rgba(24,199,131,.07);
+    }
+
+    .converter-result {
+      margin-top: 13px;
+
+      padding: 15px;
+
+      border-radius: 13px;
+
+      background:
+        rgba(24,199,131,.07);
+
+      border:
+        1px solid rgba(24,199,131,.13);
+
+      text-align: center;
+
+      color: var(--text-soft);
+
+      font-size: 14px;
+    }
+
+    .converter-result strong {
+      color: var(--primary-light);
+
+      font-size: 20px;
+    }
+
+    /* =========================================================
+       GALLERY
+    ========================================================= */
+
+    .gallery-top {
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 15px;
+
+      margin-bottom: 20px;
+    }
+
+    .gallery-count {
+      color: var(--muted);
+
+      font-size: 13px;
+    }
+
+    .gallery-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap: 10px;
+    }
+
+    .gallery-item {
+      position: relative;
+
+      aspect-ratio: 1 / 1;
+
+      overflow: hidden;
+
+      border-radius: 16px;
+
+      border: 1px solid var(--line);
+
+      background:
+        #0b1220;
+
+      cursor: pointer;
+
+      transition: .3s ease;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+
+      transition:
+        transform .5s ease,
+        filter .5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.09);
+
+      filter:
+        brightness(.7);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+
+      inset: 0;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      opacity: 0;
+
+      background:
+        rgba(0,0,0,.45);
+
+      transition: .25s ease;
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    .zoom-icon {
+      width: 42px;
+      height: 42px;
+
+      border-radius: 13px;
+
+      display: grid;
+      place-items: center;
+
+      background:
+        rgba(255,255,255,.14);
+
+      backdrop-filter: blur(10px);
+
+      color: white;
+    }
+
+    /* =========================================================
+       CONTACT
+    ========================================================= */
+
+    .contact-box {
+      position: relative;
+
+      overflow: hidden;
+
+      padding: 40px;
+
+      border-radius: 28px;
+
+      border:
+        1px solid rgba(24,199,131,.18);
+
+      background:
+        radial-gradient(
+          circle at 10% 10%,
+          rgba(24,199,131,.13),
+          transparent 28%
+        ),
+        radial-gradient(
+          circle at 90% 80%,
+          rgba(59,130,246,.13),
+          transparent 30%
+        ),
+        rgba(255,255,255,.025);
+    }
+
+    .contact-box::before {
+      content: "";
+
+      position: absolute;
+
+      width: 200px;
+      height: 200px;
+
+      border-radius: 50%;
+
+      border:
+        1px solid rgba(24,199,131,.12);
+
+      left: -80px;
+      bottom: -100px;
+    }
+
+    .contact-content {
+      position: relative;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 30px;
+    }
+
+    .contact-content h2 {
+      font-size:
+        clamp(25px, 4vw, 38px);
+
+      margin-bottom: 8px;
+    }
+
+    .contact-content p {
+      color: var(--muted);
+
+      font-size: 13px;
+    }
+
+    .contact-actions {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 10px;
+    }
+
+    /* =========================================================
+       VISITOR
+    ========================================================= */
+
+    .visitor-card {
+      margin-top: 25px;
+
+      padding: 18px;
+
+      border:
+        1px solid var(--line);
+
+      border-radius: 18px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 15px;
+
+      background:
+        rgba(255,255,255,.02);
+    }
+
+    .visitor-left {
+      display: flex;
+
+      align-items: center;
+
+      gap: 11px;
+    }
+
+    .visitor-icon {
+      width: 40px;
+      height: 40px;
+
+      border-radius: 12px;
+
+      display: grid;
+      place-items: center;
+
+      background:
+        rgba(139,92,246,.1);
+
+      color: #a78bfa;
+    }
+
+    .visitor-text strong {
+      display: block;
+
+      font-size: 13px;
+    }
+
+    .visitor-text span {
+      color: var(--muted);
+
+      font-size: 10px;
+    }
+
+    .visitor-id {
+      direction: ltr;
+
+      font-family:
+        Tahoma,
+        Arial,
+        sans-serif;
+
+      color: var(--primary);
+
+      font-size: 11px;
+    }
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+
+    footer {
+      padding:
+        35px 0 25px;
+
+      border-top:
+        1px solid var(--line);
+    }
+
+    .footer-content {
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 20px;
+    }
+
+    .footer-brand {
+      font-size: 14px;
+
+      font-weight: 700;
+    }
+
+    .footer-copy,
+    .footer-address {
+      color: var(--muted);
+
+      font-size: 11px;
+    }
+
+    /* =========================================================
+       MODAL
+    ========================================================= */
+
+    .modal {
+      position: fixed;
+
+      inset: 0;
+
+      background:
+        rgba(0,0,0,.86);
+
+      backdrop-filter: blur(12px);
+
+      z-index: 9000;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      padding: 20px;
+
+      opacity: 0;
+
+      visibility: hidden;
+
+      transition: .3s ease;
+    }
+
+    .modal.open {
+      opacity: 1;
+
+      visibility: visible;
+    }
+
+    .modal-content {
+      position: relative;
+
+      max-width: min(1000px, 96vw);
+
+      max-height: 90vh;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+    }
+
+    .modal-image {
+      max-width: 90vw;
+
+      max-height: 82vh;
+
+      object-fit: contain;
+
+      border-radius: 17px;
+
+      box-shadow:
+        0 30px 100px rgba(0,0,0,.5);
+    }
+
+    .modal-close,
+    .modal-prev,
+    .modal-next {
+      position: absolute;
+
+      width: 44px;
+      height: 44px;
+
+      border: 1px solid rgba(255,255,255,.15);
+
+      border-radius: 13px;
+
+      background:
+        rgba(10,15,25,.72);
+
+      color: white;
+
+      display: grid;
+      place-items: center;
+
+      z-index: 5;
+
+      backdrop-filter: blur(10px);
+
+      transition: .2s ease;
+    }
+
+    .modal-close:hover,
+    .modal-prev:hover,
+    .modal-next:hover {
+      background:
+        rgba(24,199,131,.18);
+
+      border-color:
+        rgba(24,199,131,.4);
+    }
+
+    .modal-close {
+      top: -15px;
+      left: -15px;
+    }
+
+    .modal-prev {
+      right: -65px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .modal-next {
+      left: -65px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .modal-counter {
+      position: absolute;
+
+      bottom: -40px;
+
+      left: 50%;
+
+      transform: translateX(-50%);
+
+      color: white;
+
+      font-size: 12px;
+    }
+
+    /* =========================================================
+       BACK TO TOP
+    ========================================================= */
+
+    .back-top {
+      position: fixed;
+
+      bottom: 22px;
+      left: 22px;
+
+      width: 45px;
+      height: 45px;
+
+      border:
+        1px solid var(--line);
+
+      border-radius: 14px;
+
+      background:
+        rgba(12,20,33,.8);
+
+      color: var(--text);
+
+      display: grid;
+      place-items: center;
+
+      opacity: 0;
+
+      visibility: hidden;
+
+      transform: translateY(15px);
+
+      transition: .25s ease;
+
+      z-index: 4000;
+
+      backdrop-filter: blur(15px);
+    }
+
+    body.light .back-top {
+      background:
+        rgba(255,255,255,.82);
+    }
+
+    .back-top.show {
+      opacity: 1;
+
+      visibility: visible;
+
+      transform: translateY(0);
+    }
+
+    /* =========================================================
+       TOAST
+    ========================================================= */
+
+    .toast {
+      position: fixed;
+
+      bottom: 25px;
+      right: 50%;
+
+      transform:
+        translate(50%, 25px);
+
+      padding: 11px 16px;
+
+      border-radius: 12px;
+
+      background:
+        rgba(12,20,33,.92);
+
+      border:
+        1px solid var(--line);
+
+      color: white;
+
+      font-size: 12px;
+
+      opacity: 0;
+
+      visibility: hidden;
+
+      transition: .3s ease;
+
+      z-index: 10000;
+
+      box-shadow: var(--shadow-small);
+    }
+
+    .toast.show {
+      opacity: 1;
+
+      visibility: visible;
+
+      transform:
+        translate(50%, 0);
+    }
+
+    /* =========================================================
+       REVEAL ANIMATION
+    ========================================================= */
+
+    .reveal {
+      opacity: 0;
+
+      transform:
+        translateY(28px);
+
+      transition:
+        opacity .7s ease,
+        transform .7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+
+      transform:
+        translateY(0);
+    }
+
+    /* =========================================================
+       RESPONSIVE
+    ========================================================= */
+
+    @media (max-width: 1100px) {
+
+      .nav-links {
+        gap: 0;
+      }
+
+      .nav-links a {
+        padding-inline: 8px;
+      }
+
+      .hero-grid {
+        gap: 35px;
+      }
+
+      .projects-grid {
+        grid-template-columns:
+          repeat(2,1fr);
+      }
+
+      .gallery-grid {
+        grid-template-columns:
+          repeat(3,1fr);
+      }
+    }
+
+    @media (max-width: 900px) {
+
+      .nav-links {
+        position: fixed;
+
+        top: calc(var(--header-height) + 8px);
+
+        right: 18px;
+        left: 18px;
+
+        padding: 12px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        background:
+          rgba(8,15,27,.95);
+
+        border:
+          1px solid var(--line);
+
+        border-radius: 18px;
+
+        backdrop-filter: blur(25px);
+
+        box-shadow:
+          0 25px 70px rgba(0,0,0,.3);
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        transform:
+          translateY(-10px);
+
+        transition: .25s ease;
+      }
+
+      body.light .nav-links {
+        background:
+          rgba(255,255,255,.96);
+      }
+
+      .nav-links.open {
+        opacity: 1;
+
+        visibility: visible;
+
+        transform:
+          translateY(0);
+      }
+
+      .nav-links a {
+        width: 100%;
+
+        padding: 12px 14px;
+      }
+
+      .nav-links a.active::after {
+        right: 7px;
+
+        top: 50%;
+        bottom: auto;
+
+        transform:
+          translateY(-50%);
+
+        width: 3px;
+        height: 18px;
+      }
+
+      .mobile-menu {
+        display: grid;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-content {
+        text-align: center;
+      }
+
+      .hero-description {
+        margin-inline: auto;
+      }
+
+      .location,
+      .hero-buttons,
+      .hero-mini {
+        justify-content: center;
+      }
+
+      .hero-visual {
+        min-height: 430px;
+
+        grid-row: 1;
+      }
+
+      .about-grid,
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .live-grid {
+        grid-template-columns:
+          repeat(2,1fr);
+      }
+
+      .contact-content {
+        flex-direction: column;
+
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 700px) {
+
+      section {
+        padding: 75px 0;
+      }
+
+      .container {
+        width:
+          min(
+            calc(100% - 26px),
+            var(--container)
+          );
+      }
+
+      .stats-grid {
+        grid-template-columns:
+          repeat(2,1fr);
+      }
+
+      .services-grid,
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .currency-grid {
+        grid-template-columns:
+          repeat(2,1fr);
+      }
+
+      .gallery-grid {
+        grid-template-columns:
+          repeat(2,1fr);
+      }
+
+      .live-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .converter-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-box {
+        padding: 27px 20px;
+      }
+
+      .footer-content {
+        flex-direction: column;
+
+        text-align: center;
+      }
+
+      .floating-card.one {
+        right: -2px;
+      }
+
+      .floating-card.two {
+        left: -2px;
+      }
+
+      .modal-prev {
+        right: 8px;
+        top: auto;
+        bottom: 10px;
+
+        transform: none;
+      }
+
+      .modal-next {
+        left: 8px;
+        top: auto;
+        bottom: 10px;
+
+        transform: none;
+      }
+
+      .modal-close {
+        top: 8px;
+        left: 8px;
+      }
+    }
+
+    @media (max-width: 500px) {
+
+      .brand-text {
+        display: none;
+      }
+
+      .hero {
+        padding-top:
+          calc(var(--header-height) + 35px);
+      }
+
+      .hero h1 {
+        font-size: 37px;
+      }
+
+      .hero-role {
+        font-size: 18px;
+      }
+
+      .hero-description {
+        font-size: 13px;
+      }
+
+      .hero-visual {
+        min-height: 350px;
+      }
+
+      .profile-ring {
+        width: 270px;
+      }
+
+      .hero-orb {
+        width: 300px;
+        height: 300px;
+      }
+
+      .floating-card {
+        font-size: 10px;
+
+        padding: 8px 9px;
+      }
+
+      .floating-icon {
+        width: 27px;
+        height: 27px;
+      }
+
+      .floating-card.one {
+        top: 8%;
+      }
+
+      .floating-card.two {
+        bottom: 13%;
+      }
+
+      .floating-card.three {
+        bottom: 2%;
+      }
+
+      .about-points {
+        grid-template-columns: 1fr;
+      }
+
+      .currency-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        gap: 7px;
+      }
+
+      .gallery-item {
+        border-radius: 11px;
+      }
+
+      .visitor-card {
+        align-items: flex-start;
+
+        flex-direction: column;
+      }
+
+      .visitor-id {
+        margin-right: 50px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+
+        transition-duration: .01ms !important;
+      }
+    }
+    ```css
+/* ================= NEW PROJECT DESIGN ================= */
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:28px;
+}
+
+.project-card{
+    position:relative;
+    overflow:hidden;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(19,27,40,.96),
+            rgba(8,13,22,.96)
+        );
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:24px;
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.35);
+    transition:.4s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    border-color:rgba(25,195,125,.45);
+    box-shadow:
+        0 30px 90px rgba(0,0,0,.5),
+        0 0 35px rgba(25,195,125,.08);
+}
+
+
+/* ================= PROJECT LOGO ================= */
+
+.project-image.project-logo{
+    height:250px;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.project-image.project-logo::before{
+    content:"";
+    position:absolute;
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:
+        0 0 0 35px rgba(255,255,255,.015),
+        0 0 0 70px rgba(255,255,255,.01);
+}
+
+.project-image.project-logo::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(25,195,125,.12),
+            transparent 55%
+        );
+}
+
+.shop-logo{
+    background:
+        linear-gradient(
+            135deg,
+            #071a16,
+            #0d2c25 45%,
+            #07111c
+        );
+}
+
+.tailor-logo{
+    background:
+        linear-gradient(
+            135deg,
+            #10152b,
+            #17204a 45%,
+            #09101d
+        );
+}
+
+.system-logo{
+    position:relative;
+    z-index:2;
+    width:80%;
+    text-align:center;
+}
+
+.logo-icon{
+    width:85px;
+    height:85px;
+    margin:0 auto 15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:3rem;
+    border-radius:24px;
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,255,255,.12);
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.3);
+}
+
+.logo-title{
+    font-size:1.7rem;
+    font-weight:900;
+    color:#fff;
+}
+
+.logo-title span{
+    color:var(--accent);
+}
+
+.tailor-logo .logo-title span{
+    color:#60a5fa;
+}
+
+.logo-subtitle{
+    margin-top:3px;
+    color:#94a3b8;
+    font-family:Arial,sans-serif;
+    font-size:.75rem;
+    letter-spacing:.5px;
+}
+
+
+/* ================= PROJECT BODY ================= */
+
+.project-body{
+    padding:26px;
+}
+
+.project-tag{
+    display:inline-flex;
+    padding:5px 12px;
+    border-radius:50px;
+    background:rgba(25,195,125,.08);
+    border:1px solid rgba(25,195,125,.18);
+    color:var(--accent);
+    font-size:.78rem;
+    font-weight:900;
+}
+
+.project-body h3{
+    font-size:1.45rem;
+    margin:12px 0 8px;
+}
+
+.project-body p{
+    color:var(--muted);
+    line-height:1.9;
+    min-height:68px;
+}
+
+
+/* ================= FEATURES ================= */
+
+.project-features{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:18px;
+}
+
+.project-features span{
+    padding:6px 10px;
+    border-radius:9px;
+    background:rgba(255,255,255,.04);
+    border:1px solid var(--line);
+    color:#cbd5e1;
+    font-size:.78rem;
+}
+
+
+/* ================= PROJECT BUTTONS ================= */
+
+.project-buttons{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-top:22px;
+}
+
+.main-project-link{
+    flex:1;
+    text-align:center;
+    margin:0;
+    padding:11px 15px;
+    border-radius:11px;
+    background:var(--accent);
+    color:#03130c;
+    font-weight:900;
+    transition:.3s;
+}
+
+.main-project-link:hover{
+    color:#03130c;
+    transform:translateY(-2px);
+}
+
+.project-guide-btn{
+    flex:1;
+    border:1px solid rgba(255,255,255,.1);
+    background:rgba(255,255,255,.04);
+    color:#fff;
+    border-radius:11px;
+    padding:11px 15px;
+    font-family:inherit;
+    font-weight:900;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.project-guide-btn:hover{
+    background:rgba(255,255,255,.09);
+    border-color:rgba(25,195,125,.35);
+    transform:translateY(-2px);
+}
+
+
+/* ================= GUIDE MODAL ================= */
+
+.project-guide-modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    z-index:50000;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.project-guide-modal.show{
+    display:flex;
+}
+
+.project-guide-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.82);
+    backdrop-filter:blur(12px);
+}
+
+.project-guide-box{
+    position:relative;
+    z-index:2;
+    width:min(850px,100%);
+    max-height:90vh;
+    overflow-y:auto;
+    padding:35px;
+    border-radius:25px;
+    background:
+        linear-gradient(
+            145deg,
+            #111925,
+            #080d16
+        );
+    border:1px solid rgba(255,255,255,.1);
+    box-shadow:
+        0 35px 100px rgba(0,0,0,.7);
+}
+
+.guide-close{
+    position:absolute;
+    top:15px;
+    left:18px;
+    width:42px;
+    height:42px;
+    border:1px solid var(--line);
+    border-radius:50%;
+    background:rgba(255,255,255,.05);
+    color:#fff;
+    font-size:1.8rem;
+    cursor:pointer;
+    line-height:1;
+}
+
+.project-guide-content{
+    display:none;
+}
+
+.project-guide-content.active{
+    display:block;
+}
+
+.guide-icon{
+    width:75px;
+    height:75px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 12px;
+    border-radius:20px;
+    background:rgba(25,195,125,.08);
+    border:1px solid rgba(25,195,125,.2);
+    font-size:2.5rem;
+}
+
+.guide-tag{
+    text-align:center;
+    color:var(--accent);
+    font-family:Arial,sans-serif;
+    font-size:.75rem;
+    font-weight:900;
+    letter-spacing:1px;
+}
+
+.project-guide-content h2{
+    text-align:center;
+    font-size:2rem;
+    margin:5px 0 10px;
+}
+
+.guide-intro{
+    max-width:680px;
+    margin:0 auto 25px;
+    text-align:center;
+    color:var(--muted);
+}
+
+.guide-steps{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:13px;
+}
+
+.guide-step{
+    padding:18px;
+    border:1px solid var(--line);
+    background:rgba(255,255,255,.025);
+    border-radius:15px;
+}
+
+.guide-step strong{
+    color:var(--accent2);
+    font-size:1rem;
+}
+
+.guide-step p{
+    margin-top:6px;
+    color:#94a3b8;
+    font-size:.9rem;
+    line-height:1.8;
+}
+
+.guide-main-button{
+    display:block;
+    width:fit-content;
+    margin:25px auto 0;
+    padding:12px 25px;
+    border-radius:12px;
+    background:var(--accent);
+    color:#03130c;
+    font-weight:900;
+    transition:.3s;
+}
+
+.guide-main-button:hover{
+    transform:translateY(-3px);
+}
+
+
+/* ================= PROJECT MOBILE ================= */
+
+@media(max-width:800px){
+
+    .projects{
+        grid-template-columns:1fr;
+    }
+
+    .guide-steps{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:550px){
+
+    .project-image.project-logo{
+        height:220px;
+    }
+
+    .project-body{
+        padding:20px;
+    }
+
+    .project-buttons{
+        flex-direction:column;
+    }
+
+    .project-guide-box{
+        padding:28px 18px;
+        max-height:92vh;
+    }
+
+    .project-guide-content h2{
+        font-size:1.55rem;
+    }
+
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================================================
+       LOADER
+  ========================================================== -->
+
+  <div class="loader" id="loader">
+    <div class="loader-box">
+      <div class="loader-logo">ع</div>
+      <div class="loader-text">
+        ویب سایټ چمتو کېږي...
+      </div>
+    </div>
+  </div>
+
+  <!-- SCROLL PROGRESS -->
+
+  <div
+    class="scroll-progress"
+    id="scrollProgress"
+  ></div>
+
+  <!-- =========================================================
+       HEADER
+  ========================================================== -->
+
+  <header
+    class="header"
+    id="header"
+  >
+
+    <div class="container nav">
+
+      <a
+        href="#home"
+        class="brand"
+        aria-label="عبدالله مختار"
+      >
+
+        <div class="brand-icon">
+          ع
+        </div>
+
+        <div class="brand-text">
+          <strong>
+            عبدالله مختار
+          </strong>
+
+          <span>
+            شخصي ویب سایټ
+          </span>
+        </div>
+
+      </a>
+
+      <nav
+        class="nav-links"
+        id="navLinks"
+      >
+
+        <a
+          href="#home"
+          class="active"
+        >
+          کور
+        </a>
+
+        <a href="#about">
+          زما په اړه
+        </a>
+
+        <a href="#skills">
+          مهارتونه
+        </a>
+
+        <a href="#projects">
+          پروژې
+        </a>
+
+        <a href="#live">
+          ژوندۍ معلومات
+        </a>
+
+        <a href="#currency">
+          اسعار
+        </a>
+
+        <a href="#gallery">
+          ګالري
+        </a>
+
+        <a href="#contact">
+          اړیکه
+        </a>
+
+      </nav>
+
+      <div class="nav-actions">
+
+        <button
+          class="icon-btn"
+          id="themeToggle"
+          type="button"
+          title="رنګ بدلول"
+          aria-label="د ویب سایټ بڼه بدلول"
+        >
+          ☀️
+        </button>
+
+        <button
+          class="icon-btn mobile-menu"
+          id="mobileMenu"
+          type="button"
+          aria-label="مینو خلاصول"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <!-- =======================================================
+         HERO
+    ======================================================== -->
+
+    <section
+      class="hero"
+      id="home"
+    >
+
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            <span>
+              شخصي Portfolio
+            </span>
+          </div>
+
+          <h1>
+            سلام، زه
+            <span>
+              عبدالله مختار
+            </span>
+            یم
+          </h1>
+
+          <div class="hero-role">
+            زه
+            <span id="typedRole">
+              د ویب سیستمونو جوړونکی
+            </span>
+          </div>
+
+          <p class="hero-description">
+            د ویب سیستمونو جوړونکی، د ټکنالوژۍ مینه‌وال او د اداري او مالي چارو علاقه‌مند.
+            زما هدف دا دی چې ساده، ښکلي، چټک او د کار وړ ډیجیټل سیستمونه جوړ کړم.
+          </p>
+
+          <div class="location">
+            <span class="location-icon">
+              📍
+            </span>
+
+            <span>
+              زابل ولایت، کلات ښار — افغانستان 🇦🇫
+            </span>
+          </div>
+
+          <div class="hero-buttons">
+
+            <a
+              class="btn btn-primary"
+              href="https://wa.me/93702624188"
+              target="_blank"
+              rel="noopener"
+            >
+              💬 WhatsApp
+            </a>
+
+            <a
+              class="btn btn-outline"
+              href="https://abdullahmukhtar541-stack.github.io/abdullah-receipts/"
+              target="_blank"
+              rel="noopener"
+            >
+              🚀 زما پروژه وګورئ
+            </a>
+
+            <a
+              class="btn btn-outline"
+              href="#gallery"
+            >
+              🖼️ ګالري
+            </a>
+
+          </div>
+
+          <div class="hero-mini">
+
+            <div class="mini-status">
+              <span class="eyebrow-dot"></span>
+              <strong>
+                Online
+              </strong>
+              حالت فعال
+            </div>
+
+            <div class="mini-status">
+              🌐
+              <strong>
+                پښتو
+              </strong>
+              RTL
+            </div>
+
+            <div class="mini-status">
+              ⚡
+              <strong>
+                Responsive
+              </strong>
+              ډیزاین
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- HERO IMAGE -->
+
+        <div class="hero-visual">
+
+          <div class="hero-orb"></div>
+
+          <div class="profile-ring">
+
+            <div class="profile-inner">
+
+              <img
+                src="https://i.ibb.co/C566gpXN/IMG-20260303-WA0121.jpg"
+                alt="عبدالله مختار"
+                loading="eager"
+              >
+
+            </div>
+
+          </div>
+
+          <div class="floating-card one">
+
+            <div class="floating-icon">
+              💻
+            </div>
+
+            <div>
+              <strong>
+                Web Development
+              </strong>
+              <br>
+              <span>
+                ویب سیستمونه
+              </span>
+            </div>
+
+          </div>
+
+          <div class="floating-card two">
+
+            <div class="floating-icon">
+              📊
+            </div>
+
+            <div>
+              <strong>
+                Management
+              </strong>
+              <br>
+              <span>
+                اداري سیستمونه
+              </span>
+            </div>
+
+          </div>
+
+          <div class="floating-card three">
+
+            <div class="floating-icon">
+              ⚡
+            </div>
+
+            <div>
+              <strong>
+                Modern UI
+              </strong>
+              <br>
+              <span>
+                عصري ډیزاین
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =======================================================
+         STATS
+    ======================================================== -->
+
+    <div class="stats">
+
+      <div class="container stats-grid">
+
+        <div class="stat-card reveal">
+          <div class="stat-number">
+            33+
+          </div>
+          <div class="stat-label">
+            د ګالري عکسونه
+          </div>
+        </div>
+
+        <div class="stat-card reveal">
+          <div class="stat-number">
+            24/7
+          </div>
+          <div class="stat-label">
+            شخصي Portfolio
+          </div>
+        </div>
+
+        <div class="stat-card reveal">
+          <div class="stat-number">
+            6+
+          </div>
+          <div class="stat-label">
+            د اسعارو معلومات
+          </div>
+        </div>
+
+        <div class="stat-card reveal">
+          <div class="stat-number">
+            100%
+          </div>
+          <div class="stat-label">
+            Responsive ډیزاین
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- =======================================================
+         ABOUT
+    ======================================================== -->
+
+    <section id="about">
+
+      <div class="container">
+
+        <div class="section-head reveal">
+
+          <span class="section-kicker">
+            ABOUT ME
+          </span>
+
+          <h2>
+            زما په اړه
+          </h2>
+
+          <p>
+            د ټکنالوژۍ، ویب سیستمونو او عملي ډیجیټل حل‌لارو سره زما علاقه
+          </p>
+
+        </div>
+
+        <div class="about-grid">
+
+          <div class="glass-card about-card reveal">
+
+            <h3>
+              زه څه ډول کار کوم؟
+            </h3>
+
+            <p>
+              زه هڅه کوم چې د کاروونکي لپاره داسې سیستمونه جوړ کړم چې
+              هم ښکلي وي او هم استعمال یې ساده وي.
+            </p>
+
+            <p>
+              په ځانګړي ډول د دوکانونو، حسابدارۍ، مدیریت، راپورونو،
+              معلوماتو او شخصي ویب‌سایټونو په جوړولو کې علاقه لرم.
+            </p>
+
+            <div class="about-points">
+
+              <div class="about-point">
+                <span class="check">✓</span>
+                ساده او واضح ډیزاین
+              </div>
+
+              <div class="about-point">
+                <span class="check">✓</span>
+                پښتو او RTL ملاتړ
+              </div>
+
+              <div class="about-point">
+                <span class="check">✓</span>
+                Mobile Responsive
+              </div>
+
+              <div class="about-point">
+                <span class="check">✓</span>
+                عملي ویب سیستمونه
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="services-grid">
+
+            <div class="service-card reveal">
+
+              <div class="service-icon">
+                💻
+              </div>
+
+              <h4>
+                ویب سیستمونه
+              </h4>
+
+              <p>
+                د دوکان، حسابدارۍ، مدیریت او نورو اړتیاوو لپاره
+                د ویب پر بنسټ سیستمونه.
+              </p>
+
+            </div>
+
+            <div class="service-card reveal">
+
+              <div class="service-icon">
+                🎨
+              </div>
+
+              <h4>
+                UI ډیزاین
+              </h4>
+
+              <p>
+                عصري، پاک او د موبایل او کمپیوټر لپاره مناسب
+                User Interface.
+              </p>
+
+            </div>
+
+            <div class="service-card reveal">
+
+              <div class="service-icon">
+                📊
+              </div>
+
+              <h4>
+                اداري سیستمونه
+              </h4>
+
+              <p>
+                د معلوماتو، ریکارډونو، راپورونو او مدیریت لپاره
+                منظم سیستمونه.
+              </p>
+
+            </div>
+
+            <div class="service-card reveal">
+
+              <div class="service-icon">
+                ⚙️
+              </div>
+
+              <h4>
+                JavaScript
+              </h4>
+
+              <p>
+                متحرک امکانات، محاسبې، API، Modal، Gallery او
+                Interactive برخې.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =======================================================
+         SKILLS
+    ======================================================== -->
+
+    <section id="skills">
+
+      <div class="container">
+
+        <div class="section-head reveal">
+
+          <span class="section-kicker">
+            SKILLS
+          </span>
+
+          <h2>
+            زما مهارتونه
+          </h2>
+
+          <p>
+            هغه تخنیکي برخې چې زه پرې کار کوم
+          </p>
+
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="glass-card skills-card reveal">
+
+            <div class="skill">
+
+              <div class="skill-head">
+                <span>Web Development</span>
+                <span>90%</span>
+              </div>
+
+              <div class="skill-bar">
+                <div
+                  class="skill-progress"
+                  data-width="90%"
+                ></div>
+              </div>
+
+            </div>
+
+            <div class="skill">
+
+              <div class="skill-head">
+                <span>UI / UX Design</span>
+                <span>85%</span>
+              </div>
+
+              <div class="skill-bar">
+                <div
+                  class="skill-progress"
+                  data-width="85%"
+                ></div>
+              </div>
+
+            </div>
+
+            <div class="skill">
+
+              <div class="skill-head">
+                <span>JavaScript</span>
+                <span>80%</span>
+              </div>
+
+              <div class="skill-bar">
+                <div
+                  class="skill-progress"
+                  data-width="80%"
+                ></div>
+              </div>
+
+            </div>
+
+            <div class="skill">
+
+              <div class="skill-head">
+                <span>Management Systems</span>
+                <span>88%</span>
+              </div>
+
+              <div class="skill-bar">
+                <div
+                  class="skill-progress"
+                  data-width="88%"
+                ></div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="glass-card skills-card reveal">
+
+            <p class="skills-description">
+              زما د ویب پروژو په جوړولو کې هڅه دا وي چې
+              ډیزاین، فعالیت، سرعت او ساده استعمال یو ځای وساتل شي.
+            </p>
+
+            <div class="tech-list">
+
+              <span class="tech">
+                HTML5
+              </span>
+
+              <span class="tech">
+                CSS3
+              </span>
+
+              <span class="tech">
+                JavaScript
+              </span>
+
+              <span class="tech">
+                Responsive Design
+              </span>
+
+              <span class="tech">
+                REST API
+              </span>
+
+              <span class="tech">
+                GitHub Pages
+              </span>
+
+              <span class="tech">
+                MySQL
+              </span>
+
+              <span class="tech">
+                Python
+              </span>
+
+              <span class="tech">
+                RTL
+              </span>
+
+              <span class="tech">
+                PWA
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =======================================================
+         PROJECTS
+    ======================================================== -->
+```html
+<!-- ================= PROJECTS ================= -->
+
+<section class="section container" id="projects">
+
+    <div class="section-heading">
+        <div class="eyebrow">MY PROJECTS</div>
+
+        <h2>💻 زما پروژې</h2>
+
+        <p>
+            ځینې هغه ویب پروژې چې ما جوړې کړې دي
+        </p>
+    </div>
+
+    <div class="projects">
+
+        <!-- ================= SHOP ACCOUNTING ================= -->
+
+        <div class="project-card">
+
+            <div class="project-image project-logo shop-logo">
+                <div class="system-logo">
+                    <div class="logo-icon">🏪</div>
+                    <div class="logo-title">
+                        د دوکاندارۍ
+                        <span>سیستم</span>
+                    </div>
+                    <div class="logo-subtitle">
+                        Shop & Accounting System
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-body">
+
+                <div class="project-tag">
+                    🏪 WEB SYSTEM
+                </div>
+
+                <h3>
+                    د دوکاندارۍ او محاسبې سیستم
+                </h3>
+
+                <p>
+                    د دوکان د موجودۍ، خرڅلاو، بیلونو، مشتریانو،
+                    پورونو، راپورونو او مالي معلوماتو لپاره
+                    پښتو او RTL ویب سیستم.
+                </p>
+
+                <div class="project-features">
+
+                    <span>📦 موجودي</span>
+                    <span>🧾 بیلونه</span>
+                    <span>💳 پورونه</span>
+                    <span>📊 راپورونه</span>
+
+                </div>
+
+                <div class="project-buttons">
+
+                    <a
+                        class="project-link main-project-link"
+                        href="https://abdullahmukhtar541-stack.github.io/shop-accounting-system/"
+                        target="_blank"
+                        rel="noopener">
+                        🌐 سیستم پرانیزئ
+                    </a>
+
+                    <button
+                        class="project-guide-btn"
+                        onclick="openProjectGuide('shopGuide')">
+                        📘 لارښود
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= TAILORING SYSTEM ================= -->
+
+        <div class="project-card">
+
+            <div class="project-image project-logo tailor-logo">
+                <div class="system-logo">
+
+                    <div class="logo-icon">🧵</div>
+
+                    <div class="logo-title">
+                        د خیاطۍ
+                        <span>سیستم</span>
+                    </div>
+
+                    <div class="logo-subtitle">
+                        Tailoring Management System
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="project-body">
+
+                <div class="project-tag">
+                    🧵 TAILORING SYSTEM
+                </div>
+
+                <h3>
+                    د خیاطۍ مدیریت سیستم
+                </h3>
+
+                <p>
+                    د خیاطۍ د مشتریانو، فرمایشونو، اندازو،
+                    جامو، بیلونو، نېټو او د کار د تعقیب لپاره
+                    ځانګړی پښتو ویب سیستم.
+                </p>
+
+                <div class="project-features">
+
+                    <span>👤 مشتریان</span>
+                    <span>📏 اندازې</span>
+                    <span>🧵 فرمایشونه</span>
+                    <span>🧾 بیلونه</span>
+
+                </div>
+
+                <div class="project-buttons">
+
+                    <a
+                        class="project-link main-project-link"
+                        href="https://abdullahmukhtar541-stack.github.io/Khayat---/"
+                        target="_blank"
+                        rel="noopener">
+                        🌐 سیستم پرانیزئ
+                    </a>
+
+                    <button
+                        class="project-guide-btn"
+                        onclick="openProjectGuide('tailorGuide')">
+                        📘 لارښود
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECT GUIDES ================= -->
+
+<div class="project-guide-modal" id="projectGuideModal">
+
+    <div class="project-guide-overlay"
+         onclick="closeProjectGuide()">
+    </div>
+
+    <div class="project-guide-box">
+
+        <button
+            class="guide-close"
+            onclick="closeProjectGuide()">
+            ×
+        </button>
+
+
+        <!-- SHOP GUIDE -->
+
+        <div
+            class="project-guide-content"
+            id="shopGuide">
+
+            <div class="guide-icon">
+                🏪
+            </div>
+
+            <div class="guide-tag">
+                SHOP & ACCOUNTING
+            </div>
+
+            <h2>
+                د دوکاندارۍ سیستم لارښود
+            </h2>
+
+            <p class="guide-intro">
+                دا سیستم د دوکان د جنسونو، موجودۍ، خرڅلاو،
+                بیلونو، پورونو او راپورونو د مدیریت لپاره جوړ شوی.
+            </p>
+
+
+            <div class="guide-steps">
+
+                <div class="guide-step">
+                    <strong>🏠 ۱ ـ ډشبورډ</strong>
+                    <p>
+                        د خرڅلاو، موجودۍ، پورونو، جنسونو او
+                        نورو مهمو معلوماتو لنډه کتنه وکړئ.
+                    </p>
+                </div>
+
+                <div class="guide-step">
+                    <strong>📦 ۲ ـ جنس ثبتول</strong>
+                    <p>
+                        نوی جنس، مقدار، واحد، نرخ او د ذخیرې
+                        معلومات ثبت کړئ.
+                    </p>
+                </div>
+
+                <div class="guide-step">
+                    <strong>🧾 ۳ ـ نوی بیل</strong>
+                    <p>
+                        مشتری، جنس، مقدار او قیمت داخل کړئ،
+                        بیا بیل ثبت کړئ.
+                    </p>
+                </div>
+
+                <div class="guide-step">
+                    <strong>💳 ۴ ـ پورونه</strong>
+                    <p>
+                        د مشتریانو پاتې پورونه او ورکړې
+                        له همدې برخې څخه تعقیب کړئ.
+                    </p>
+                </div>
+
+                <div class="guide-step">
+                    <strong>📊 ۵ ـ راپورونه</strong>
+                    <p>
+                        ورځني، میاشتني او ربع وار راپورونه
+                        وګورئ او چاپ یې کړئ.
+                    </p>
+                </div>
+
+                <div class="guide-step">
+                    <strong>💾 ۶ ـ بیکاپ</strong>
+                    <p>
+                        د مهمو معلوماتو Backup واخلئ او
+                        د اړتیا پر وخت یې بېرته راوړئ.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <a
+                href="https://abdullahmukhtar541-stack.github.io/shop-accounting-system/"
+                target="_blank"
+                rel="noopener"
+                class="guide-main-button">
+
+                🚀 سیستم ته لاړ شئ
+
+            </a>
+
+        </div>
+
+
+        <!-- TAILOR GUIDE -->
+
+        <div
+            class="project-guide-content"
+            id="tailorGuide">
+
+            <div class="guide-icon">
+                🧵
+            </div>
+
+            <div class="guide-tag">
+                TAILORING SYSTEM
+            </div>
+
+            <h2>
+                د خیاطۍ سیستم لارښود
+            </h2>
+
+            <p class="guide-intro">
+                دا سیستم د خیاطۍ د مشتریانو، فرمایشونو،
+                اندازو، جامو، بیلونو او د سپارلو نېټو
+                د تنظیم لپاره کارول کېږي.
+            </p>
+
+
+            <div class="guide-steps">
+
+                <div class="guide-step">
+                    <strong>👤 ۱ ـ مشتری ثبت کړئ</strong>
+                    <p>
+                        د مشتری نوم، موبایل شمېره او اړین
+                        معلومات ثبت کړئ.
+                    </p>
+                </div>
+
+                <div class="guide-step">
+                    <strong>🧵 ۲ ـ نوی فرمایش</strong>
+                    <p>
+                        د مشتری لپاره نوی فرمایش جوړ کړئ
+                        او د جامې اړوند معلومات ولیکئ.
+                    </p>
+                </div>
+
+                <div class="guide-step">
+                    <strong>📏 ۳ ـ اندازې ثبت کړئ</strong>
+                    <p>
+                        د اړوندې جامې ټولې اندازې په سیستم
+                        کې ثبت کړئ ترڅو وروسته په اسانه وکارول شي.
+                    </p>
+                </div>
+
+                <div class="guide-step">
+                    <strong>📅 ۴ ـ د سپارلو نېټه</strong>
+                    <p>
+                        د فرمایش لپاره د سپارلو نېټه وټاکئ
+                        ترڅو د کار وخت هېر نه شي.
+                    </p>
+                </div>
+
+                <div class="guide-step">
+                    <strong>🧾 ۵ ـ بیل او حساب</strong>
+                    <p>
+                        د فرمایش قیمت، ورکړل شوې پیسې او
+                        پاتې مبلغ تنظیم کړئ.
+                    </p>
+                </div>
+
+                <div class="guide-step">
+                    <strong>🔎 ۶ ـ فرمایش پیدا کړئ</strong>
+                    <p>
+                        د مشتری یا فرمایش د معلوماتو له لارې
+                        اړوند ریکارډ پیدا او وګورئ.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <a
+                href="https://abdullahmukhtar541-stack.github.io/Khayat---/"
+                target="_blank"
+                rel="noopener"
+                class="guide-main-button">
+
+                🚀 د خیاطۍ سیستم ته لاړ شئ
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+
+    </section>
+
+    <!-- =======================================================
+         ROADMAP
+    ======================================================== -->
+
+    <section>
+
+      <div class="container">
+
+        <div class="section-head reveal">
+
+          <span class="section-kicker">
+            WORKFLOW
+          </span>
+
+          <h2>
+            زما د کار طریقه
+          </h2>
+
+          <p>
+            د یوې ویب پروژې د جوړولو ساده بهیر
+          </p>
+
+        </div>
+
+        <div class="roadmap">
+
+          <div class="road-item reveal">
+
+            <div class="road-dot">
+              ۱
+            </div>
+
+            <div class="road-content">
+
+              <h3>
+                پلان جوړول
+              </h3>
+
+              <p>
+                لومړی د پروژې هدف، اړتیاوې او د کاروونکي اړتیا معلومېږي.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="road-item reveal">
+
+            <div class="road-dot">
+              ۲
+            </div>
+
+            <div class="road-content">
+
+              <h3>
+                ډیزاین
+              </h3>
+
+              <p>
+                د ویب‌سایټ یا سیستم لپاره عصري او د کاروونکي لپاره ساده
+                Interface جوړېږي.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="road-item reveal">
+
+            <div class="road-dot">
+              ۳
+            </div>
+
+            <div class="road-content">
+
+              <h3>
+                پروګرام کول
+              </h3>
+
+              <p>
+                HTML، CSS، JavaScript او اړین API یا Backend برخې
+                له سیستم سره نښلول کېږي.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="road-item reveal">
+
+            <div class="road-dot">
+              ۴
+            </div>
+
+            <div class="road-content">
+
+              <h3>
+                ازموینه او پرمختګ
+              </h3>
+
+              <p>
+                سیستم ازمویل کېږي، ستونزې اصلاح کېږي او د موبایل او
+                کمپیوټر لپاره برابرېږي.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =======================================================
+         LIVE INFORMATION
+    ======================================================== -->
+
+    <section id="live">
+
+      <div class="container">
+
+        <div class="section-head reveal">
+
+          <span class="section-kicker">
+            LIVE INFORMATION
+          </span>
+
+          <h2>
+            ژوندۍ معلومات
+          </h2>
+
+          <p>
+            د کلات ښار وخت او د هوا معلومات
+          </p>
+
+        </div>
+
+        <div class="live-grid">
+
+          <!-- CLOCK -->
+
+          <div class="live-card reveal">
+
+            <div class="live-top">
+
+              <div class="live-title">
+
+                <div class="live-icon">
+                  🕐
+                </div>
+
+                افغانستان وخت
+
+              </div>
+
+              <span class="live-badge">
+                LIVE
+              </span>
+
+            </div>
+
+            <div
+              class="clock"
+              id="clock"
+            >
+              --:--:--
+            </div>
+
+            <div
+              class="date"
+              id="date"
+            >
+              معلومات چمتو کېږي...
+            </div>
+
+          </div>
+
+          <!-- WEATHER -->
+
+          <div class="live-card reveal">
+
+            <div class="live-top">
+
+              <div class="live-title">
+
+                <div class="live-icon">
+                  🌤️
+                </div>
+
+                کلات هوا
+
+              </div>
+
+              <span class="live-badge">
+                LIVE
+              </span>
+
+            </div>
+
+            <div class="weather-main">
+
+              <div
+                class="weather-icon"
+                id="weatherIcon"
+              >
+                🌤️
+              </div>
+
+              <div>
+
+                <div
+                  class="temperature"
+                  id="temperature"
+                >
+                  --°C
+                </div>
+
+                <div
+                  class="weather-description"
+                  id="weatherDescription"
+                >
+                  معلومات چمتو کېږي...
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="weather-details">
+
+              <div class="weather-detail">
+
+                رطوبت
+
+                <strong id="humidity">
+                  --%
+                </strong>
+
+              </div>
+
+              <div class="weather-detail">
+
+                باد
+
+                <strong id="wind">
+                  -- km/h
+                </strong>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- SITE STATUS -->
+
+          <div class="live-card reveal">
+
+            <div class="live-top">
+
+              <div class="live-title">
+
+                <div class="live-icon">
+                  🌐
+                </div>
+
+                ویب‌سایټ حالت
+
+              </div>
+
+              <span class="live-badge">
+                ACTIVE
+              </span>
+
+            </div>
+
+            <div
+              style="
+                text-align:center;
+                font-size:55px;
+                margin:10px 0;
+              "
+            >
+              🟢
+            </div>
+
+            <div
+              style="
+                text-align:center;
+                font-size:16px;
+                font-weight:700;
+              "
+            >
+              ویب‌سایټ فعال دی
+            </div>
+
+            <div
+              style="
+                text-align:center;
+                color:var(--muted);
+                font-size:11px;
+                margin-top:5px;
+              "
+            >
+              Portfolio آنلاین دی
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =======================================================
+         CURRENCY
+    ======================================================== -->
+
+    <section id="currency">
+
+      <div class="container">
+
+        <div class="section-head reveal">
+
+          <span class="section-kicker">
+            CURRENCY
+          </span>
+
+          <h2>
+            د اسعارو معلومات
+          </h2>
+
+          <p>
+            د AFN پر بنسټ د اسعارو د تبادلې معلومات
+          </p>
+
+        </div>
+
+        <div
+          class="currency-grid"
+          id="currencyGrid"
+        >
+
+          <div class="currency-card reveal">
+            <div class="currency-head">
+              <span class="currency-code">
+                USD
+              </span>
+              <span class="currency-flag">🇺🇸</span>
+            </div>
+            <div
+              class="currency-rate"
+              id="rate-USD"
+            >
+              --
+            </div>
+            <div class="currency-name">
+              امریکایي ډالر
+            </div>
+          </div>
+
+          <div class="currency-card reveal">
+            <div class="currency-head">
+              <span class="currency-code">
+                EUR
+              </span>
+              <span class="currency-flag">🇪🇺</span>
+            </div>
+            <div
+              class="currency-rate"
+              id="rate-EUR"
+            >
+              --
+            </div>
+            <div class="currency-name">
+              یورو
+            </div>
+          </div>
+
+          <div class="currency-card reveal">
+            <div class="currency-head">
+              <span class="currency-code">
+                PKR
+              </span>
+              <span class="currency-flag">🇵🇰</span>
+            </div>
+            <div
+              class="currency-rate"
+              id="rate-PKR"
+            >
+              --
+            </div>
+            <div class="currency-name">
+              پاکستانۍ روپۍ
+            </div>
+          </div>
+
+          <div class="currency-card reveal">
+            <div class="currency-head">
+              <span class="currency-code">
+                INR
+              </span>
+              <span class="currency-flag">🇮🇳</span>
+            </div>
+            <div
+              class="currency-rate"
+              id="rate-INR"
+            >
+              --
+            </div>
+            <div class="currency-name">
+              هندۍ روپۍ
+            </div>
+          </div>
+
+          <div class="currency-card reveal">
+            <div class="currency-head">
+              <span class="currency-code">
+                AED
+              </span>
+              <span class="currency-flag">🇦🇪</span>
+            </div>
+            <div
+              class="currency-rate"
+              id="rate-AED"
+            >
+              --
+            </div>
+            <div class="currency-name">
+              اماراتي درهم
+            </div>
+          </div>
+
+          <div class="currency-card reveal">
+            <div class="currency-head">
+              <span class="currency-code">
+                IRR
+              </span>
+              <span class="currency-flag">🇮🇷</span>
+            </div>
+            <div
+              class="currency-rate"
+              id="rate-IRR"
+            >
+              --
+            </div>
+            <div class="currency-name">
+              ایراني ریال
+            </div>
+          </div>
+
+        </div>
+
+        <div class="converter reveal">
+
+          <h3>
+            💱 د اسعارو محاسبه
+          </h3>
+
+          <div class="converter-grid">
+
+            <div class="field">
+
+              <label for="amount">
+                اندازه
+              </label>
+
+              <input
+                type="number"
+                id="amount"
+                value="1000"
+                min="0"
+                step="any"
+              >
+
+            </div>
+
+            <div class="field">
+
+              <label for="currency">
+                اسعار
+              </label>
+
+              <select id="currency">
+
+                <option value="USD">
+                  USD — ډالر
+                </option>
+
+                <option value="EUR">
+                  EUR — یورو
+                </option>
+
+                <option value="PKR">
+                  PKR — روپۍ
+                </option>
+
+                <option value="INR">
+                  INR — هندۍ روپۍ
+                </option>
+
+                <option value="AED">
+                  AED — درهم
+                </option>
+
+                <option value="IRR">
+                  IRR — ریال
+                </option>
+
+              </select>
+
+            </div>
+
+          </div>
+
+          <div
+            class="converter-result"
+            id="converterResult"
+          >
+            د نرخ معلومات راځي...
+          </div>
+
+          <div
+            class="currency-updated"
+            id="currencyUpdated"
+          >
+            د اسعارو معلومات ترلاسه کېږي...
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =======================================================
+         GALLERY
+    ======================================================== -->
+
+    <section id="gallery">
+
+      <div class="container">
+
+        <div class="section-head reveal">
+
+          <span class="section-kicker">
+            GALLERY
+          </span>
+
+          <h2>
+            زما ګالري
+          </h2>
+
+          <p>
+            د پروژو او یادګارونو انځورونه
+          </p>
+
+        </div>
+
+        <div class="gallery-top">
+
+          <div class="gallery-count">
+            ټول
+            <strong>
+              33
+            </strong>
+            عکسونه
+          </div>
+
+          <button
+            class="btn btn-outline"
+            id="galleryTopButton"
+            type="button"
+          >
+            🖼️ ټول عکسونه
+          </button>
+
+        </div>
+
+        <div
+          class="gallery-grid"
+          id="galleryGrid"
+        >
+          <!-- JavaScript will load images -->
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =======================================================
+         CONTACT
+    ======================================================== -->
+
+    <section id="contact">
+
+      <div class="container">
+
+        <div class="contact-box reveal">
+
+          <div class="contact-content">
+
+            <div>
+
+              <h2>
+                راځئ اړیکه ونیسو
+              </h2>
+
+              <p>
+                که زما د پروژو، ویب سیستمونو یا ډیزاین په اړه
+                معلومات غواړئ، له ما سره اړیکه ونیسئ.
+              </p>
+
+            </div>
+
+            <div class="contact-actions">
+
+              <a
+                class="btn btn-primary"
+                href="https://wa.me/93702624188"
+                target="_blank"
+                rel="noopener"
+              >
+                💬 WhatsApp
+              </a>
+
+              <button
+                class="btn btn-outline"
+                type="button"
+                id="copyPhone"
+              >
+                📋 نمبر کاپي
+              </button>
+
+              <a
+                class="btn btn-outline"
+                href="https://abdullahmukhtar541-stack.github.io/abdullah-receipts/"
+                target="_blank"
+                rel="noopener"
+              >
+                🚀 پروژه
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="visitor-card">
+
+            <div class="visitor-left">
+
+              <div class="visitor-icon">
+                👁️
+              </div>
+
+              <div class="visitor-text">
+
+                <strong>
+                  ستا د براوزر معلومات
+                </strong>
+
+                <span>
+                  دا شمېر د همدې براوزر په وسیله ثبتېږي.
+                </span>
+
+              </div>
+
+            </div>
+
+            <div
+              class="visitor-id"
+              id="visitorId"
+            >
+              AF-------
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+
+  <footer>
+
+    <div class="container footer-content">
+
+      <div class="footer-brand">
+        عبدالله مختار
+      </div>
+
+      <div class="footer-copy">
+
+        ©
+        <span id="year"></span>
+        ټول حقوق خوندي دي.
+
+      </div>
+
+      <div class="footer-address">
+        📍 زابل، کلات ښار، افغانستان 🇦🇫
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- =========================================================
+       IMAGE MODAL
+  ========================================================== -->
+
+  <div
+    class="modal"
+    id="imageModal"
+    role="dialog"
+    aria-modal="true"
+    aria-label="د عکس کتلو کړکۍ"
+  >
+
+    <div class="modal-content">
+
+      <button
+        class="modal-close"
+        id="modalClose"
+        type="button"
+        aria-label="بندول"
+      >
+        ✕
+      </button>
+
+      <button
+        class="modal-prev"
+        id="modalPrev"
+        type="button"
+        aria-label="مخکینی عکس"
+      >
+        →
+      </button>
+
+      <img
+        class="modal-image"
+        id="modalImage"
+        src=""
+        alt="Gallery Image"
+      >
+
+      <button
+        class="modal-next"
+        id="modalNext"
+        type="button"
+        aria-label="بل عکس"
+      >
+        ←
+      </button>
+
+      <div
+        class="modal-counter"
+        id="modalCounter"
+      >
+        1 / 33
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- BACK TO TOP -->
+
+  <button
+    class="back-top"
+    id="backTop"
+    type="button"
+    aria-label="پورته تلل"
+  >
+    ↑
+  </button>
+
+  <!-- TOAST -->
+
+  <div
+    class="toast"
+    id="toast"
+  >
+    کاپي شو!
+  </div>
+
+  <!-- =========================================================
+       JAVASCRIPT
+  ========================================================== -->
+
+  <script>
+
+    /* =========================================================
+       GENERAL
+    ========================================================== */
+
+    const $ = (selector) =>
+      document.querySelector(selector);
+
+    const $$ = (selector) =>
+      document.querySelectorAll(selector);
+
+
+    /* =========================================================
+       LOADER
+    ========================================================== */
+
+    window.addEventListener("load", () => {
+
+      setTimeout(() => {
+
+        $("#loader").classList.add("hide");
+
+      }, 650);
+
+    });
+
+
+    /* =========================================================
+       YEAR
+    ========================================================== */
+
+    $("#year").textContent =
+      new Date().getFullYear();
+
+
+    /* =========================================================
+       MOBILE MENU
+    ========================================================== */
+
+    const mobileMenu =
+      $("#mobileMenu");
+
+    const navLinks =
+      $("#navLinks");
+
+    mobileMenu.addEventListener(
+      "click",
+      () => {
+
+        const open =
+          navLinks.classList.toggle("open");
+
+        mobileMenu.setAttribute(
+          "aria-expanded",
+          String(open)
+        );
+
+        mobileMenu.textContent =
+          open ? "✕" : "☰";
+
+      }
+    );
+
+
+    $$("#navLinks a").forEach(link => {
+
+      link.addEventListener(
+        "click",
+        () => {
+
+          navLinks.classList.remove("open");
+
+          mobileMenu.setAttribute(
+            "aria-expanded",
+            "false"
+          );
+
+          mobileMenu.textContent = "☰";
+
+        }
+      );
+
+    });
+
+
+    /* =========================================================
+       THEME
+    ========================================================== */
+
+    const themeToggle =
+      $("#themeToggle");
+
+    const savedTheme =
+      localStorage.getItem(
+        "abdullah_theme"
+      );
+
+    if (savedTheme === "light") {
+
+      document.body.classList.add("light");
+
+      themeToggle.textContent = "🌙";
+
+    }
+
+    themeToggle.addEventListener(
+      "click",
+      () => {
+
+        document.body.classList.toggle("light");
+
+        const isLight =
+          document.body.classList.contains("light");
+
+        localStorage.setItem(
+          "abdullah_theme",
+          isLight ? "light" : "dark"
+        );
+
+        themeToggle.textContent =
+          isLight ? "🌙" : "☀️";
+
+      }
+    );
+
+
+    /* =========================================================
+       HEADER + SCROLL PROGRESS
+    ========================================================== */
+
+    const header =
+      $("#header");
+
+    const progress =
+      $("#scrollProgress");
+
+    const backTop =
+      $("#backTop");
+
+    window.addEventListener(
+      "scroll",
+      () => {
+
+        const scrollTop =
+          window.scrollY;
+
+        const maxScroll =
+          document.documentElement.scrollHeight -
+          window.innerHeight;
+
+        const percent =
+          maxScroll > 0
+            ? (scrollTop / maxScroll) * 100
+            : 0;
+
+        progress.style.width =
+          percent + "%";
+
+        if (scrollTop > 30) {
+
+          header.classList.add(
+            "scrolled"
+          );
+
+        } else {
+
+          header.classList.remove(
+            "scrolled"
+          );
+
+        }
+
+        if (scrollTop > 500) {
+
+          backTop.classList.add(
+            "show"
+          );
+
+        } else {
+
+          backTop.classList.remove(
+            "show"
+          );
+
+        }
+
+      },
+      { passive: true }
+    );
+
+
+    backTop.addEventListener(
+      "click",
+      () => {
+
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+
+      }
+    );
+
+
+    /* =========================================================
+       TYPING / ROLE ROTATION
+    ========================================================== */
+
+    const roles = [
+      "د ویب سیستمونو جوړونکی",
+      "د UI ډیزاین علاقه‌مند",
+      "د اداري سیستمونو جوړونکی",
+      "د ټکنالوژۍ مینه‌وال"
+    ];
+
+    const typedRole =
+      $("#typedRole");
+
+    let roleIndex = 0;
+
+    let charIndex = 0;
+
+    let deleting = false;
+
+
+    function typeRole() {
+
+      const current =
+        roles[roleIndex];
+
+      if (!deleting) {
+
+        charIndex++;
+
+        typedRole.textContent =
+          current.substring(
+            0,
+            charIndex
+          );
+
+        if (charIndex >= current.length) {
+
+          deleting = true;
+
+          setTimeout(
+            typeRole,
+            1500
+          );
+
+          return;
+
+        }
+
+      } else {
+
+        charIndex--;
+
+        typedRole.textContent =
+          current.substring(
+            0,
+            charIndex
+          );
+
+        if (charIndex <= 0) {
+
+          deleting = false;
+
+          roleIndex =
+            (roleIndex + 1) %
+            roles.length;
+
+        }
+
+      }
+
+      setTimeout(
+        typeRole,
+        deleting ? 45 : 75
+      );
+
+    }
+
+    setTimeout(
+      typeRole,
+      1000
+    );
+
+
+    /* =========================================================
+       REVEAL ANIMATION
+    ========================================================== */
+
+    const revealObserver =
+      new IntersectionObserver(
+        entries => {
+
+          entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+              entry.target.classList.add(
+                "visible"
+              );
+
+              revealObserver.unobserve(
+                entry.target
+              );
+
+            }
+
+          });
+
+        },
+        {
+          threshold: .12
+        }
+      );
+
+
+    $$(".reveal").forEach(element => {
+
+      revealObserver.observe(element);
+
+    });
+
+
+    /* =========================================================
+       SKILL BARS
+    ========================================================== */
+
+    const skillObserver =
+      new IntersectionObserver(
+        entries => {
+
+          entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+              entry.target
+                .querySelectorAll(
+                  ".skill-progress"
+                )
+                .forEach(bar => {
+
+                  bar.style.width =
+                    bar.dataset.width;
+
+                });
+
+              skillObserver.unobserve(
+                entry.target
+              );
+
+            }
+
+          });
+
+        },
+        {
+          threshold: .25
+        }
+      );
+
+
+    $$(".skills-card").forEach(card => {
+
+      skillObserver.observe(card);
+
+    });
+
+
+    /* =========================================================
+       CLOCK
+    ========================================================== */
+
+    function updateClock() {
+
+      const now =
+        new Date();
+
+      const time =
+        new Intl.DateTimeFormat(
+          "ps-AF",
+          {
+            timeZone:
+              "Asia/Kabul",
+
+            hour:
+              "2-digit",
+
+            minute:
+              "2-digit",
+
+            second:
+              "2-digit",
+
+            hour12:
+              false
+          }
+        ).format(now);
+
+      const date =
+        new Intl.DateTimeFormat(
+          "ps-AF",
+          {
+            timeZone:
+              "Asia/Kabul",
+
+            weekday:
+              "long",
+
+            year:
+              "numeric",
+
+            month:
+              "long",
+
+            day:
+              "numeric"
+          }
+        ).format(now);
+
+      $("#clock").textContent =
+        time;
+
+      $("#date").textContent =
+        date;
+
+    }
+
+    updateClock();
+
+    setInterval(
+      updateClock,
+      1000
+    );
+
+
+    /* =========================================================
+       WEATHER
+    ========================================================== */
+
+    const weatherDescriptions = {
+
+      0:
+        "صافه هوا",
+
+      1:
+        "اکثراً صافه",
+
+      2:
+        "نیمه ورېځ",
+
+      3:
+        "ورېځمنه هوا",
+
+      45:
+        "لږه دوړه",
+
+      48:
+        "دوړه",
+
+      51:
+        "لږ باران",
+
+      53:
+        "منځنی باران",
+
+      55:
+        "زیات باران",
+
+      61:
+        "لږ باران",
+
+      63:
+        "منځنی باران",
+
+      65:
+        "زیات باران",
+
+      71:
+        "لږه واوره",
+
+      73:
+        "منځنۍ واوره",
+
+      75:
+        "زیاته واوره",
+
+      80:
+        "باراني څاڅکي",
+
+      81:
+        "باراني څاڅکي",
+
+      82:
+        "شدید باراني څاڅکي",
+
+      95:
+        "تندر او باران",
+
+      96:
+        "تندر او ږلۍ",
+
+      99:
+        "شدید تندر او ږلۍ"
+
+    };
+
+
+    function weatherEmoji(code) {
+
+      if (code === 0) return "☀️";
+
+      if (
+        code === 1 ||
+        code === 2
+      ) return "🌤️";
+
+      if (code === 3) return "☁️";
+
+      if (
+        code === 45 ||
+        code === 48
+      ) return "🌫️";
+
+      if (
+        code >= 51 &&
+        code <= 67
+      ) return "🌧️";
+
+      if (
+        code >= 71 &&
+        code <= 77
+      ) return "❄️";
+
+      if (
+        code >= 80 &&
+        code <= 82
+      ) return "🌦️";
+
+      if (code >= 95) return "⛈️";
+
+      return "🌤️";
+
+    }
+
+
+    async function loadWeather() {
+
+      const url =
+        "https://api.open-meteo.com/v1/forecast" +
+        "?latitude=32.1058" +
+        "&longitude=66.9083" +
+        "&current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code" +
+        "&timezone=Asia%2FKabul";
+
+      try {
+
+        const response =
+          await fetch(url);
+
+        if (!response.ok) {
+          throw new Error(
+            "Weather request failed"
+          );
+        }
+
+        const data =
+          await response.json();
+
+        const current =
+          data.current;
+
+        const code =
+          current.weather_code;
+
+        $("#temperature").textContent =
+          `${Math.round(current.temperature_2m)}°C`;
+
+        $("#humidity").textContent =
+          `${current.relative_humidity_2m}%`;
+
+        $("#wind").textContent =
+          `${Math.round(current.wind_speed_10m)} km/h`;
+
+        $("#weatherIcon").textContent =
+          weatherEmoji(code);
+
+        $("#weatherDescription").textContent =
+          weatherDescriptions[code] ||
+          "د هوا معلومات";
+
+      } catch (error) {
+
+        $("#temperature").textContent =
+          "--°C";
+
+        $("#humidity").textContent =
+          "--%";
+
+        $("#wind").textContent =
+          "-- km/h";
+
+        $("#weatherDescription").textContent =
+          "د هوا معلومات اوس نه دي ترلاسه شوي.";
+
+      }
+
+    }
+
+    loadWeather();
+
+
+    /* =========================================================
+       CURRENCY
+    ========================================================== */
+
+    const currencyRates = {};
+
+    const currencyNames = {
+
+      USD: "امریکایي ډالر",
+      EUR: "یورو",
+      PKR: "پاکستانۍ روپۍ",
+      INR: "هندۍ روپۍ",
+      AED: "اماراتي درهم",
+      IRR: "ایراني ریال"
+
+    };
+
+
+    async function loadCurrencies() {
+
+      const api =
+        "https://open.er-api.com/v6/latest/USD";
+
+      try {
+
+        const response =
+          await fetch(api);
+
+        if (!response.ok) {
+          throw new Error(
+            "Currency request failed"
+          );
+        }
+
+        const data =
+          await response.json();
+
+        if (
+          !data ||
+          !data.rates ||
+          !data.rates.AFN
+        ) {
+          throw new Error(
+            "AFN rate unavailable"
+          );
+        }
+
+        const afnPerUsd =
+          data.rates.AFN;
+
+        const currencies = [
+          "USD",
+          "EUR",
+          "PKR",
+          "INR",
+          "AED",
+          "IRR"
+        ];
+
+        currencies.forEach(code => {
+
+          if (
+            code === "USD"
+          ) {
+
+            currencyRates[code] =
+              afnPerUsd;
+
+          } else if (
+            data.rates[code]
+          ) {
+
+            currencyRates[code] =
+              afnPerUsd /
+              data.rates[code];
+
+          }
+
+        });
+
+
+        /* UPDATE CARDS */
+
+        currencies.forEach(code => {
+
+          const element =
+            $(`#rate-${code}`);
+
+          if (!element) return;
+
+          const rate =
+            currencyRates[code];
+
+          if (
+            typeof rate ===
+            "number" &&
+            isFinite(rate)
+          ) {
+
+            if (code === "IRR") {
+
+              element.textContent =
+                `1000 IRR ≈ ${(
+                  rate * 1000
+                ).toFixed(2)} AFN`;
+
+            } else {
+
+              element.textContent =
+                `1 ${code} ≈ ${rate.toFixed(2)} AFN`;
+
+            }
+
+          } else {
+
+            element.textContent =
+              "موجود نه دی";
+
+          }
+
+        });
+
+
+        $("#currencyUpdated").textContent =
+          "د اسعارو معلومات له آنلاین سرچینې څخه ترلاسه شول.";
+
+        calculateCurrency();
+
+      } catch (error) {
+
+        $$("#currencyGrid .currency-rate")
+          .forEach(element => {
+
+            element.textContent =
+              "—";
+
+          });
+
+        $("#currencyUpdated").textContent =
+          "د اسعارو آنلاین معلومات اوس نه دي ترلاسه شوي.";
+
+        $("#converterResult").innerHTML =
+          "د تبادلې نرخونه اوس نه دي ترلاسه شوي.";
+
+      }
+
+    }
+
+
+    function calculateCurrency() {
+
+      const amount =
+        Number(
+          $("#amount").value
+        );
+
+      const code =
+        $("#currency").value;
+
+      const rate =
+        currencyRates[code];
+
+      if (
+        !Number.isFinite(amount) ||
+        amount < 0
+      ) {
+
+        $("#converterResult").innerHTML =
+          "مهرباني وکړئ سمه اندازه ولیکئ.";
+
+        return;
+
+      }
+
+      if (
+        !rate ||
+        !Number.isFinite(rate)
+      ) {
+
+        $("#converterResult").innerHTML =
+          "د دې اسعارو نرخ اوس موجود نه دی.";
+
+        return;
+
+      }
+
+      const afn =
+        amount * rate;
+
+      $("#converterResult").innerHTML =
+        `<strong>${amount.toLocaleString("en-US")}</strong>
+        ${code}
+        =
+        <strong>${afn.toLocaleString("en-US", {
+          maximumFractionDigits: 2
+        })}</strong>
+        AFN`;
+
+    }
+
+
+    $("#amount").addEventListener(
+      "input",
+      calculateCurrency
+    );
+
+    $("#currency").addEventListener(
+      "change",
+      calculateCurrency
+    );
+
+    loadCurrencies();
+
+
+    /* =========================================================
+       GALLERY
+    ========================================================== */
+
+    const galleryImages = [
+
+      "https://i.ibb.co/C566gpXN/IMG-20260303-WA0121.jpg",
+
+      "https://i.ibb.co/VYx5vzp2/image.jpg",
+
+      "https://i.ibb.co/XZYGynys/1773051801334.jpg",
+
+      "https://i.ibb.co/Q7TZF4CQ/1758517957114.jpg",
+
+      "https://i.ibb.co/rRL5pCDM/IMG-20260910-WA0002.jpg",
+
+      "https://i.ibb.co/whjTz6Hz/Screenshot-Gallery.jpg",
+
+      "https://i.ibb.co/zH4JMhjH/Screenshot-Gallery.jpg",
+
+      "https://i.ibb.co/SDsjCLSY/Screenshot-Gallery.jpg",
+
+      "https://i.ibb.co/ZRM5R9n3/Hello-Sanghee-1-1.png",
+
+      "https://i.ibb.co/zVjn9KBV/IMG-20260609-WA0048.jpg",
+
+      "https://i.ibb.co/7dfRKf29/IMG-20260611-WA0042.jpg",
+
+      "https://i.ibb.co/yB8Bjr9Q/IMG-20260701-WA0023.jpg",
+
+      "https://i.ibb.co/fVDWncf2/IMG-20260701-WA0024.jpg",
+
+      "https://i.ibb.co/j9bhTjB5/Screenshot-20240909-130452-Remini.jpg",
+
+      "https://i.ibb.co/CKNxkjJh/Screenshot-20241204-115216-Remini.jpg",
+
+      "https://i.ibb.co/Lzktg9gm/1733296667513.jpg",
+
+      "https://i.ibb.co/B5SBbWtX/1733296573768.jpg",
+
+      "https://i.ibb.co/ccCv7cML/Screenshot-20241203-193311-Remini.jpg",
+
+      "https://i.ibb.co/FtnXMJv/Screenshot-20241203-193208-Remini.jpg",
+
+      "https://i.ibb.co/Lzg9M8n0/Screenshot-20241203-170824-Gallery.jpg",
+
+      "https://i.ibb.co/p6zxVwWb/Screenshot-Remini.jpg",
+
+      "https://i.ibb.co/6xnGCFL/C360-2024-03-10-07-46-19-918.jpg",
+
+      "https://i.ibb.co/ZbQ2mRx/1148.jpg",
+
+      "https://i.ibb.co/ksNdSvd4/Screenshot-20241206-190414-Remini.jpg",
+
+      "https://i.ibb.co/XZYGynys/Screenshot-20241204-183143-Remini.jpg",
+
+      "https://i.ibb.co/Swg3BFVZ/image.jpg",
+
+      "https://i.ibb.co/JR2W2910/Screenshot-20250820-082907-Gallery.jpg",
+
+      "https://i.ibb.co/Zz0ZVT2v/Screenshot-Cap-Cut.jpg",
+
+      "https://i.ibb.co/93Cv0dvC/Screenshot-Video-Player.jpg",
+
+      "https://i.ibb.co/99tY6NzK/Screenshot-Video-Player.jpg",
+
+      "https://i.ibb.co/S73Q19Gt/Screenshot-Video-Player.jpg",
+
+      "https://i.ibb.co/xS7Qq6rf/Screenshot-Video-Player.jpg",
+
+      "https://i.ibb.co/fzQwwDWF/Screenshot-Video-Player.jpg"
+
+    ];
+
+
+    const galleryGrid =
+      $("#galleryGrid");
+
+    galleryImages.forEach(
+      (src, index) => {
+
+        const item =
+          document.createElement("div");
+
+        item.className =
+          "gallery-item reveal";
+
+        item.dataset.index =
+          index;
+
+        item.innerHTML = `
+
+          <img
+            src="${src}"
+            alt="د ګالري عکس ${index + 1}"
+            loading="lazy"
+            decoding="async"
+          >
+
+          <div class="gallery-overlay">
+
+            <div class="zoom-icon">
+              🔍
+            </div>
+
+          </div>
+
+        `;
+
+        item.addEventListener(
+          "click",
+          () => {
+
+            openModal(index);
+
+          }
+        );
+
+        galleryGrid.appendChild(item);
+
+        revealObserver.observe(item);
+
+      }
+    );
+
+
+    /* =========================================================
+       GALLERY MODAL
+    ========================================================== */
+
+    const modal =
+      $("#imageModal");
+
+    const modalImage =
+      $("#modalImage");
+
+    const modalCounter =
+      $("#modalCounter");
+
+    let currentImageIndex = 0;
+
+
+    function openModal(index) {
+
+      currentImageIndex =
+        index;
+
+      updateModal();
+
+      modal.classList.add(
+        "open"
+      );
+
+      document.body.style.overflow =
+        "hidden";
+
+    }
+
+
+    function updateModal() {
+
+      modalImage.src =
+        galleryImages[
+          currentImageIndex
+        ];
+
+      modalImage.alt =
+        `د ګالري عکس ${
+          currentImageIndex + 1
+        }`;
+
+      modalCounter.textContent =
+        `${currentImageIndex + 1} / ${
+          galleryImages.length
+        }`;
+
+    }
+
+
+    function closeModal() {
+
+      modal.classList.remove(
+        "open"
+      );
+
+      document.body.style.overflow =
+        "";
+
+    }
+
+
+    function previousImage() {
+
+      currentImageIndex =
+        (
+          currentImageIndex -
+          1 +
+          galleryImages.length
+        ) %
+        galleryImages.length;
+
+      updateModal();
+
+    }
+
+
+    function nextImage() {
+
+      currentImageIndex =
+        (
+          currentImageIndex +
+          1
+        ) %
+        galleryImages.length;
+
+      updateModal();
+
+    }
+
+
+    $("#modalClose").addEventListener(
+      "click",
+      closeModal
+    );
+
+    $("#modalPrev").addEventListener(
+      "click",
+      previousImage
+    );
+
+    $("#modalNext").addEventListener(
+      "click",
+      nextImage
+    );
+
+
+    modal.addEventListener(
+      "click",
+      event => {
+
+        if (
+          event.target === modal
+        ) {
+
+          closeModal();
+
+        }
+
+      }
+    );
+
+
+    document.addEventListener(
+      "keydown",
+      event => {
+
+        if (
+          !modal.classList.contains(
+            "open"
+          )
+        ) {
+          return;
+        }
+
+        if (
+          event.key === "Escape"
+        ) {
+
+          closeModal();
+
+        }
+
+        if (
+          event.key === "ArrowRight"
+        ) {
+
+          previousImage();
+
+        }
+
+        if (
+          event.key === "ArrowLeft"
+        ) {
+
+          nextImage();
+
+        }
+
+      }
+    );
+
+
+    $("#galleryTopButton")
+      .addEventListener(
+        "click",
+        () => {
+
+          document
+            .querySelector("#gallery")
+            .scrollIntoView({
+              behavior: "smooth"
+            });
+
+        }
+      );
+
+
+    /* =========================================================
+       COPY PHONE
+    ========================================================== */
+
+    const phoneNumber =
+      "0702624188";
+
+    $("#copyPhone")
+      .addEventListener(
+        "click",
+        async () => {
+
+          try {
+
+            await navigator.clipboard.writeText(
+              phoneNumber
+            );
+
+            showToast(
+              "د WhatsApp نمبر کاپي شو."
+            );
+
+          } catch {
+
+            showToast(
+              "کاپي کول ممکن نه شول."
+            );
+
+          }
+
+        }
+      );
+
+
+    /* =========================================================
+       TOAST
+    ========================================================== */
+
+    let toastTimer;
+
+    function showToast(message) {
+
+      const toast =
+        $("#toast");
+
+      toast.textContent =
+        message;
+
+      toast.classList.add(
+        "show"
+      );
+
+      clearTimeout(
+        toastTimer
+      );
+
+      toastTimer =
+        setTimeout(
+          () => {
+
+            toast.classList.remove(
+              "show"
+            );
+
+          },
+          2500
+        );
+
+    }
+
+
+    /* =========================================================
+       VISITOR ID
+    ========================================================== */
+
+    let visitorId =
+      localStorage.getItem(
+        "abdullah_visitor_id"
+      );
+
+
+    if (!visitorId) {
+
+      const random =
+        Math.floor(
+          100000 +
+          Math.random() * 900000
+        );
+
+      visitorId =
+        `AF-${random}`;
+
+      localStorage.setItem(
+        "abdullah_visitor_id",
+        visitorId
+      );
+
+    }
+
+
+    $("#visitorId").textContent =
+      visitorId;
+
+
+    /* =========================================================
+       VISIT COUNT
+    ========================================================== */
+
+    let visitCount =
+      Number(
+        localStorage.getItem(
+          "abdullah_visit_count"
+        ) || 0
+      );
+
+    visitCount++;
+
+    localStorage.setItem(
+      "abdullah_visit_count",
+      visitCount
+    );
+
+
+    /* =========================================================
+       ACTIVE NAVIGATION
+    ========================================================== */
+
+    const sections =
+      document.querySelectorAll(
+        "main section[id]"
+      );
+
+    const navAnchors =
+      document.querySelectorAll(
+        ".nav-links a"
+      );
+
+
+    const sectionObserver =
+      new IntersectionObserver(
+        entries => {
+
+          entries.forEach(entry => {
+
+            if (
+              entry.isIntersecting
+            ) {
+
+              const id =
+                entry.target.id;
+
+              navAnchors.forEach(
+                anchor => {
+
+                  anchor.classList.toggle(
+                    "active",
+                    anchor.getAttribute(
+                      "href"
+                    ) === `#${id}`
+                  );
+
+                }
+              );
+
+            }
+
+          });
+
+        },
+        {
+          rootMargin:
+            "-25% 0px -65% 0px"
+        }
+      );
+
+
+    sections.forEach(section => {
+
+      sectionObserver.observe(
+        section
+      );
+
+    });
+
+
+    /* =========================================================
+       IMAGE ERROR HANDLING
+    ========================================================== */
+
+    document.addEventListener(
+      "error",
+      event => {
+
+        if (
+          event.target.tagName ===
+          "IMG"
+        ) {
+
+          event.target.style.background =
+            "linear-gradient(135deg,#101a2b,#0b1220)";
+
+        }
+
+      },
+      true
+    );
+```javascript
+/* ================= PROJECT GUIDES ================= */
+
+function openProjectGuide(guideId){
+
+    const modal =
+        document.getElementById("projectGuideModal");
+
+    const guides =
+        document.querySelectorAll(".project-guide-content");
+
+    guides.forEach(function(guide){
+        guide.classList.remove("active");
+    });
+
+    const selectedGuide =
+        document.getElementById(guideId);
+
+    if(!selectedGuide){
+        return;
+    }
+
+    selectedGuide.classList.add("active");
+
+    modal.classList.add("show");
+
+    document.body.style.overflow = "hidden";
+}
+
+
+function closeProjectGuide(){
+
+    const modal =
+        document.getElementById("projectGuideModal");
+
+    modal.classList.remove("show");
+
+    document.body.style.overflow = "";
+}
+
+
+/* د ESC تڼۍ سره لارښود بندول */
+
+document.addEventListener(
+    "keydown",
+    function(event){
+
+        if(event.key === "Escape"){
+
+            closeProjectGuide();
+
+        }
+
+    }
+);
+```
+
+  </script>
+
+</body>
+</html>
