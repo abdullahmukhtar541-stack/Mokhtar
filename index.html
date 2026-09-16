@@ -6631,7 +6631,172 @@ document.addEventListener(
   "use strict";
   const timerElement=document.getElementById("typingTimer"),wpmElement=document.getElementById("typingWPM"),accuracyElement=document.getElementById("typingAccuracy"),errorsElement=document.getElementById("typingErrors"),progressElement=document.getElementById("typingProgress"),textElement=document.getElementById("typingText"),inputElement=document.getElementById("typingInput"),startButton=document.getElementById("typingStart"),resetButton=document.getElementById("typingReset"),resultElement=document.getElementById("typingResult"),finalWPM=document.getElementById("typingFinalWPM"),finalAccuracy=document.getElementById("typingFinalAccuracy"),finalChars=document.getElementById("typingFinalChars"),finalErrors=document.getElementById("typingFinalErrors"),bestWPMElement=document.getElementById("typingBestWPM");
   if(!timerElement||!wpmElement||!accuracyElement||!errorsElement||!progressElement||!textElement||!inputElement||!startButton||!resetButton||!resultElement||!finalWPM||!finalAccuracy||!finalChars||!finalErrors||!bestWPMElement)return;
-  const texts={ps:["زه غواړم خپل د کمپیوټر ټایپینګ سرعت زیات کړم. هره ورځ تمرین کول د کیبورډ د کارولو مهارت ښه کوي.","ټکنالوژي زموږ په ورځني ژوند کې مهم رول لري. د کمپیوټر او کیبورډ ښه استعمال کولی شي زموږ کارونه چټک او اسانه کړي.","ښه ټایپیسټ باید په کیبورډ باندې تمرکز وکړي او هڅه وکړي چې د هر حرف ځای په یاد وساتي. دوامداره تمرین د سرعت او دقت سبب کېږي.","پښتو ژبه زموږ ښکلی ملي هویت دی. د پښتو لیکلو لپاره د کمپیوټر کیبورډ کارول یو مهم مهارت دی چې باید تمرین شي."],en:["Typing faster requires regular practice. The more you use your keyboard, the better your speed and accuracy become.","Technology is an important part of modern life. Learning to use a computer keyboard can make many daily tasks easier and faster.","A good typist should focus on accuracy first and then gradually increase speed. Daily practice can improve keyboard skills.","Learning keyboard shortcuts and practicing typing every day can help you become more comfortable and productive on a computer."]};
+  const texts = {
+
+  ps: [
+
+    /* =========================
+       الفبا
+    ========================== */
+
+    "ا ب ت ث ج ح خ د ذ ر ز ژ ړ",
+
+    "س ش ص ض ط ظ ع غ ف ق ک ګ",
+
+    "ل م ن ڼ و ه ی ې ۍ ئ",
+
+    /* =========================
+       ډېرې لنډې جملې
+    ========================== */
+
+    "زه زده کوم.",
+
+    "زه کتاب لولم.",
+
+    "زه ټایپ کوم.",
+
+    "دا زما کمپیوټر دی.",
+
+    "کیبورډ ښه دی.",
+
+    "زه هره ورځ تمرین کوم.",
+
+    "زه پښتو لیکم.",
+
+    "زه کمپیوټر کاروم.",
+
+    "ټایپ کول اسانه دي.",
+
+    "تمرین مهارت زیاتوي.",
+
+    /* =========================
+       منځنۍ لنډې جملې
+    ========================== */
+
+    "زه غواړم خپل ټایپینګ چټک کړم.",
+
+    "زه هره ورځ د کیبورډ تمرین کوم.",
+
+    "کمپیوټر زموږ کارونه اسانه کوي.",
+
+    "ښه ټایپ کول ډېر تمرین غواړي.",
+
+    "زه په کمپیوټر کې پښتو لیکم.",
+
+    "د کیبورډ توري باید ښه زده کړو.",
+
+    "زه هڅه کوم چې تېروتنې کمې کړم.",
+
+    "د ټایپ سرعت د تمرین له لارې زیاتېږي.",
+
+    "زه غواړم په چټکۍ او دقت ټایپ وکړم.",
+
+    "هره ورځ تمرین زما مهارت ښه کوي.",
+
+    /* =========================
+       اوږدې جملې
+    ========================== */
+
+    "زه غواړم د کمپیوټر په کیبورډ باندې په چټکۍ او دقت سره ټایپ کول زده کړم.",
+
+    "هره ورځ د ټایپینګ تمرین کول کولی شي زما د کیبورډ سرعت او دقت ډېر ښه کړي.",
+
+    "کله چې موږ په منظم ډول تمرین وکړو، نو د کیبورډ توري په اسانۍ سره پېژنو او چټک ټایپ کولی شو.",
+
+    "د کمپیوټر ښه کارول او چټک ټایپ کول زموږ ورځني کارونه اسانه، منظم او ډېر چټک کوي.",
+
+    "یو ښه ټایپیسټ باید لومړی د ټایپ دقت ته پام وکړي او وروسته ورو ورو خپل سرعت زیات کړي.",
+
+    "پښتو ژبه زموږ ښکلی ملي هویت دی او د کمپیوټر له لارې په سمه توګه لیکل یې یو مهم مهارت دی.",
+
+    "د ټایپینګ د سرعت د زیاتولو لپاره باید هره ورځ څو دقیقې تمرین وکړو او د کیبورډ توري په یاد وساتو.",
+
+    "کمپیوټر او کیبورډ د زده کړې، کار او معلوماتو لیکلو لپاره مهم وسایل دي چې باید په سمه توګه یې وکاروو."
+
+  ],
+
+
+  en: [
+
+    /* =========================
+       ALPHABET
+    ========================== */
+
+    "a b c d e f g h i j k l m",
+
+    "n o p q r s t u v w x y z",
+
+    /* =========================
+       VERY SHORT SENTENCES
+    ========================== */
+
+    "I am learning.",
+
+    "I type.",
+
+    "I read.",
+
+    "I use a computer.",
+
+    "I like typing.",
+
+    "Typing is easy.",
+
+    "I practice every day.",
+
+    "My keyboard is ready.",
+
+    "I type in English.",
+
+    "Practice makes progress.",
+
+    /* =========================
+       MEDIUM SHORT SENTENCES
+    ========================== */
+
+    "I want to type faster.",
+
+    "I practice typing every day.",
+
+    "The keyboard is easy to use.",
+
+    "Typing requires regular practice.",
+
+    "I use my computer every day.",
+
+    "I am learning to type faster.",
+
+    "Good typing requires accuracy.",
+
+    "I want to improve my typing skills.",
+
+    "Daily practice improves typing speed.",
+
+    "I try to type without mistakes.",
+
+    /* =========================
+       LONG SENTENCES
+    ========================== */
+
+    "I want to learn how to type quickly and accurately on a computer keyboard.",
+
+    "Daily typing practice can improve both your keyboard speed and your typing accuracy.",
+
+    "When we practice regularly, we can remember the keyboard keys and type more comfortably.",
+
+    "Using a computer and typing quickly can make many daily tasks easier, faster, and more organized.",
+
+    "A good typist should focus on accuracy first and then gradually increase typing speed.",
+
+    "Learning keyboard skills is useful for studying, working, writing, and using a computer efficiently.",
+
+    "To improve typing speed, you should practice every day and learn the position of the keyboard keys.",
+
+    "Regular typing practice helps you become faster, more accurate, and more comfortable when using a computer."
+
+  ]
+
+};
   let language="ps",duration=60,remaining=60,currentText="",timer=null,running=false,startedAt=0;
   const bestKey="abdullah_typing_best_wpm";let best=Number(localStorage.getItem(bestKey)||0);
   function randomText(){const list=texts[language];return list[Math.floor(Math.random()*list.length)];}
