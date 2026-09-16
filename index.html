@@ -2927,7 +2927,6 @@
         transition-duration: .01ms !important;
       }
     }
-    ```css
 /* ================= NEW PROJECT DESIGN ================= */
 
 .projects{
@@ -3335,6 +3334,25 @@
     }
 
 }
+
+/* TYPING SPEED TEST */
+.typing-test-card{width:100%;max-width:1050px;margin:0 auto;padding:30px}
+.typing-stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px}
+.typing-stat-box{position:relative;text-align:center;padding:20px 12px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.025);overflow:hidden}
+.typing-stat-box::before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,rgba(24,199,131,.05),transparent);pointer-events:none}
+.typing-stat-icon{font-size:24px;margin-bottom:5px}.typing-stat-box span{display:block;color:var(--muted);font-size:12px;margin-bottom:3px}.typing-stat-box strong{display:inline-block;font-family:Tahoma,Arial,sans-serif;direction:ltr;font-size:30px;line-height:1.2;color:var(--primary-light)}.typing-stat-box small{color:var(--muted);font-size:10px;margin-right:4px}
+.typing-settings{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;padding:15px;margin-bottom:18px;border:1px solid var(--line);border-radius:17px;background:rgba(255,255,255,.02)}
+.typing-setting-group{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.typing-setting-group>span{color:var(--muted);font-size:12px;margin-left:4px}
+.typing-option,.typing-language{border:1px solid var(--line);border-radius:10px;padding:8px 14px;background:rgba(255,255,255,.025);color:var(--text-soft);font-family:inherit;font-size:12px;cursor:pointer;transition:.2s ease}.typing-option:hover,.typing-language:hover{border-color:rgba(24,199,131,.45);transform:translateY(-1px)}.typing-option.active,.typing-language.active{background:rgba(24,199,131,.12);border-color:rgba(24,199,131,.55);color:var(--primary-light)}
+.typing-test-area{overflow:hidden;border:1px solid var(--line);border-radius:20px;background:rgba(0,0,0,.10)}.typing-test-header{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px 18px;border-bottom:1px solid var(--line)}.typing-test-header strong{font-size:13px}#typingProgress{min-width:45px;text-align:center;direction:ltr;font-family:Tahoma,Arial,sans-serif;font-size:12px;color:var(--primary-light)}
+.typing-text-display{min-height:170px;padding:25px;color:var(--muted);font-size:20px;line-height:2.4;word-break:normal;white-space:pre-wrap;user-select:none}.typing-text-display span{border-radius:3px}.typing-text-display span.typing-correct{color:var(--primary-light)}.typing-text-display span.typing-wrong{color:var(--danger);background:rgba(239,68,68,.13)}.typing-text-display span.typing-current{background:rgba(59,130,246,.25);box-shadow:0 0 0 2px rgba(59,130,246,.12)}
+.typing-input-box{display:block;width:100%;min-height:140px;margin-top:15px;padding:18px;border:1px solid var(--line);border-radius:18px;outline:none;resize:vertical;background:rgba(0,0,0,.13);color:var(--text);font-family:"Noto Naskh Arabic",Tahoma,Arial,sans-serif;font-size:18px;line-height:2;direction:rtl;transition:.2s ease;box-sizing:border-box}.typing-input-box:focus{border-color:rgba(24,199,131,.55);box-shadow:0 0 0 4px rgba(24,199,131,.07)}.typing-input-box:disabled{opacity:.58;cursor:not-allowed}.typing-input-box::placeholder{color:var(--muted)}.typing-input-box.typing-english{direction:ltr;text-align:left}
+.typing-buttons{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}.typing-buttons button{min-width:170px}
+.typing-result-box{margin-top:25px;padding:25px;text-align:center;border:1px solid rgba(24,199,131,.22);border-radius:22px;background:linear-gradient(145deg,rgba(24,199,131,.08),rgba(59,130,246,.04))}.typing-result-icon{font-size:45px;margin-bottom:5px}.typing-result-box h3{margin:0 0 5px;font-size:23px}.typing-result-box p{color:var(--muted);font-size:13px;margin-bottom:20px}.typing-result-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.typing-result-grid>div{padding:15px 8px;border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.025)}.typing-result-grid strong{display:block;font-family:Tahoma,Arial,sans-serif;direction:ltr;color:var(--primary-light);font-size:24px;margin-bottom:4px}.typing-result-grid span{color:var(--muted);font-size:10px}.typing-best-score{margin-top:18px;padding:12px;border-radius:13px;border:1px solid rgba(245,185,66,.15);background:rgba(245,185,66,.06);color:var(--text-soft);font-size:12px}.typing-best-score strong{direction:ltr;font-family:Tahoma,Arial,sans-serif;color:var(--gold);margin-right:5px}
+@media(max-width:800px){.typing-stats-grid{grid-template-columns:repeat(2,1fr)}.typing-settings{align-items:flex-start;flex-direction:column}.typing-text-display{font-size:18px;min-height:190px}}
+@media(max-width:520px){.typing-test-card{padding:18px}.typing-stat-box{padding:15px 8px}.typing-stat-box strong{font-size:25px}.typing-text-display{padding:18px;font-size:17px;line-height:2.2}.typing-input-box{min-height:125px;font-size:16px}.typing-result-grid{grid-template-columns:repeat(2,1fr)}.typing-buttons{flex-direction:column}.typing-buttons button{width:100%}}
+@media(max-width:350px){.typing-stats-grid{gap:7px}.typing-stat-box strong{font-size:22px}.typing-stat-box span{font-size:10px}}
+
   </style>
 </head>
 
@@ -3433,6 +3451,9 @@
           اړیکه
         </a>
 
+        <a href="#typing">
+          ⌨️ خپل ټایپینګ چټک کړی
+        </a>
       </nav>
 
       <div class="nav-actions">
@@ -4007,7 +4028,6 @@
     <!-- =======================================================
          PROJECTS
     ======================================================== -->
-```html
 <!-- ================= PROJECTS ================= -->
 
 <section class="section container" id="projects">
@@ -4362,7 +4382,6 @@
     </div>
 
 </div>
-```
 
 
     </section>
@@ -4959,6 +4978,43 @@
       </div>
 
     </section>
+
+
+<!-- =======================================================
+     TYPING SPEED TEST
+======================================================== -->
+<section id="typing">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-kicker">TYPING SPEED</span>
+      <h2>⌨️ خپل ټایپینګ چټک کړی</h2>
+      <p>د کمپیوټر په کیبورډ خپل د ټایپینګ سرعت، دقت او مهارت وازمویئ.</p>
+    </div>
+    <div class="typing-test-card glass-card reveal">
+      <div class="typing-stats-grid">
+        <div class="typing-stat-box"><div class="typing-stat-icon">⏱️</div><span>پاتې وخت</span><strong id="typingTimer">60</strong><small>ثانیې</small></div>
+        <div class="typing-stat-box"><div class="typing-stat-icon">🚀</div><span>سرعت</span><strong id="typingWPM">0</strong><small>WPM</small></div>
+        <div class="typing-stat-box"><div class="typing-stat-icon">🎯</div><span>دقت</span><strong id="typingAccuracy">100</strong><small>%</small></div>
+        <div class="typing-stat-box"><div class="typing-stat-icon">❌</div><span>غلط حروف</span><strong id="typingErrors">0</strong><small>حروف</small></div>
+      </div>
+      <div class="typing-settings">
+        <div class="typing-setting-group"><span>⏱️ د تمرین وخت:</span><button type="button" class="typing-option active" data-typing-time="60">۶۰ ثانیې</button><button type="button" class="typing-option" data-typing-time="30">۳۰ ثانیې</button><button type="button" class="typing-option" data-typing-time="120">۱۲۰ ثانیې</button></div>
+        <div class="typing-setting-group"><span>🌐 ژبه:</span><button type="button" class="typing-language active" data-typing-language="ps">پښتو</button><button type="button" class="typing-language" data-typing-language="en">English</button></div>
+      </div>
+      <div class="typing-test-area">
+        <div class="typing-test-header"><strong>⌨️ دا متن په کیبورډ ولیکئ</strong><span id="typingProgress">0%</span></div>
+        <div id="typingText" class="typing-text-display"></div>
+      </div>
+      <textarea id="typingInput" class="typing-input-box" placeholder="لومړی د «تمرین پیل کړه» تڼۍ کېکاږئ، بیا دلته ټایپ کول پیل کړئ..." spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off" disabled></textarea>
+      <div class="typing-buttons"><button type="button" id="typingStart" class="btn btn-primary">🚀 تمرین پیل کړه</button><button type="button" id="typingReset" class="btn btn-outline">🔄 بیا پیل</button></div>
+      <div id="typingResult" class="typing-result-box" hidden>
+        <div class="typing-result-icon">🏆</div><h3>تمرین بشپړ شو!</h3><p>ستا د ټایپینګ نتیجه</p>
+        <div class="typing-result-grid"><div><strong id="typingFinalWPM">0</strong><span>WPM</span></div><div><strong id="typingFinalAccuracy">0%</strong><span>دقت</span></div><div><strong id="typingFinalChars">0</strong><span>ټایپ شوي حروف</span></div><div><strong id="typingFinalErrors">0</strong><span>غلطۍ</span></div></div>
+        <div class="typing-best-score">🥇 ستا تر ټولو لوړ سرعت: <strong id="typingBestWPM">0 WPM</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- =======================================================
          CONTACT
@@ -6512,7 +6568,6 @@
       },
       true
     );
-```javascript
 /* ================= PROJECT GUIDES ================= */
 
 function openProjectGuide(guideId){
@@ -6567,9 +6622,32 @@ document.addEventListener(
 
     }
 );
-```
 
-  </script>
+  
+/* =========================================================
+   REAL TYPING SPEED TEST
+========================================================= */
+(function(){
+  "use strict";
+  const timerElement=document.getElementById("typingTimer"),wpmElement=document.getElementById("typingWPM"),accuracyElement=document.getElementById("typingAccuracy"),errorsElement=document.getElementById("typingErrors"),progressElement=document.getElementById("typingProgress"),textElement=document.getElementById("typingText"),inputElement=document.getElementById("typingInput"),startButton=document.getElementById("typingStart"),resetButton=document.getElementById("typingReset"),resultElement=document.getElementById("typingResult"),finalWPM=document.getElementById("typingFinalWPM"),finalAccuracy=document.getElementById("typingFinalAccuracy"),finalChars=document.getElementById("typingFinalChars"),finalErrors=document.getElementById("typingFinalErrors"),bestWPMElement=document.getElementById("typingBestWPM");
+  if(!timerElement||!wpmElement||!accuracyElement||!errorsElement||!progressElement||!textElement||!inputElement||!startButton||!resetButton||!resultElement||!finalWPM||!finalAccuracy||!finalChars||!finalErrors||!bestWPMElement)return;
+  const texts={ps:["زه غواړم خپل د کمپیوټر ټایپینګ سرعت زیات کړم. هره ورځ تمرین کول د کیبورډ د کارولو مهارت ښه کوي.","ټکنالوژي زموږ په ورځني ژوند کې مهم رول لري. د کمپیوټر او کیبورډ ښه استعمال کولی شي زموږ کارونه چټک او اسانه کړي.","ښه ټایپیسټ باید په کیبورډ باندې تمرکز وکړي او هڅه وکړي چې د هر حرف ځای په یاد وساتي. دوامداره تمرین د سرعت او دقت سبب کېږي.","پښتو ژبه زموږ ښکلی ملي هویت دی. د پښتو لیکلو لپاره د کمپیوټر کیبورډ کارول یو مهم مهارت دی چې باید تمرین شي."],en:["Typing faster requires regular practice. The more you use your keyboard, the better your speed and accuracy become.","Technology is an important part of modern life. Learning to use a computer keyboard can make many daily tasks easier and faster.","A good typist should focus on accuracy first and then gradually increase speed. Daily practice can improve keyboard skills.","Learning keyboard shortcuts and practicing typing every day can help you become more comfortable and productive on a computer."]};
+  let language="ps",duration=60,remaining=60,currentText="",timer=null,running=false,startedAt=0;
+  const bestKey="abdullah_typing_best_wpm";let best=Number(localStorage.getItem(bestKey)||0);
+  function randomText(){const list=texts[language];return list[Math.floor(Math.random()*list.length)];}
+  function setInputDirection(){inputElement.classList.toggle("typing-english",language==="en");inputElement.dir=language==="en"?"ltr":"rtl";}
+  function calculateStats(){const typed=inputElement.value;let correct=0,errors=0;[...typed].forEach((c,i)=>c===currentText[i]?correct++:errors++);const elapsed=startedAt?Math.max(1,(Date.now()-startedAt)/1000):1;const wpm=Math.max(0,Math.round((correct/5)/(elapsed/60)));const accuracy=typed.length?Math.max(0,Math.round(correct/typed.length*100)):100;return{typed,correct,errors,wpm,accuracy};}
+  function updateDisplay(){const typed=inputElement.value,spans=textElement.querySelectorAll("span");spans.forEach((span,i)=>{span.classList.remove("typing-correct","typing-wrong","typing-current");if(i<typed.length)span.classList.add(typed[i]===currentText[i]?"typing-correct":"typing-wrong");if(i===typed.length&&running)span.classList.add("typing-current");});const s=calculateStats();wpmElement.textContent=s.wpm;accuracyElement.textContent=s.accuracy;errorsElement.textContent=s.errors;progressElement.textContent+("" );progressElement.textContent=(currentText.length?Math.min(100,Math.round(typed.length/currentText.length*100)):0)+"%";if(running&&typed.length>=currentText.length)finish();}
+  function renderText(){textElement.innerHTML="";[...currentText].forEach(c=>{const span=document.createElement("span");span.textContent=c;textElement.appendChild(span);});updateDisplay();}
+  function start(){if(running)return;running=true;remaining=duration;startedAt=Date.now();inputElement.disabled=false;inputElement.focus();startButton.disabled=true;startButton.textContent="⌨️ ټایپ کوئ...";resultElement.hidden=true;timerElement.textContent=remaining;clearInterval(timer);timer=setInterval(()=>{remaining--;timerElement.textContent=Math.max(0,remaining);const s=calculateStats();wpmElement.textContent=s.wpm;accuracyElement.textContent=s.accuracy;errorsElement.textContent=s.errors;if(remaining<=0)finish();},1000);updateDisplay();}
+  function finish(){if(!running)return;running=false;clearInterval(timer);timer=null;inputElement.disabled=true;startButton.disabled=false;startButton.textContent="🚀 بیا تمرین پیل کړه";const s=calculateStats();wpmElement.textContent=s.wpm;accuracyElement.textContent=s.accuracy;errorsElement.textContent=s.errors;finalWPM.textContent=s.wpm;finalAccuracy.textContent=s.accuracy+"%";finalChars.textContent=s.typed.length;finalErrors.textContent=s.errors;if(s.wpm>best){best=s.wpm;localStorage.setItem(bestKey,String(best));}bestWPMElement.textContent=best+" WPM";resultElement.hidden=false;}
+  function reset(){clearInterval(timer);timer=null;running=false;startedAt=0;remaining=duration;currentText=randomText();inputElement.value="";inputElement.disabled=true;startButton.disabled=false;startButton.textContent="🚀 تمرین پیل کړه";resultElement.hidden=true;timerElement.textContent=duration;wpmElement.textContent="0";accuracyElement.textContent="100";errorsElement.textContent="0";progressElement.textContent="0%";bestWPMElement.textContent=best+" WPM";setInputDirection();renderText();}
+  document.querySelectorAll("[data-typing-time]").forEach(b=>b.addEventListener("click",()=>{if(running)return;document.querySelectorAll("[data-typing-time]").forEach(x=>x.classList.remove("active"));b.classList.add("active");duration=Number(b.dataset.typingTime);reset();}));
+  document.querySelectorAll("[data-typing-language]").forEach(b=>b.addEventListener("click",()=>{if(running)return;document.querySelectorAll("[data-typing-language]").forEach(x=>x.classList.remove("active"));b.classList.add("active");language=b.dataset.typingLanguage;reset();}));
+  inputElement.addEventListener("input",updateDisplay);inputElement.addEventListener("paste",e=>{if(running)e.preventDefault();});inputElement.addEventListener("keydown",e=>{if(e.key==="Tab")e.preventDefault();});startButton.addEventListener("click",start);resetButton.addEventListener("click",reset);reset();
+})();
+
+</script>
 
 </body>
 </html>
